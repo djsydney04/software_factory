@@ -1,0 +1,59 @@
+{
+  "probe": "paused goal persistence",
+  "codex_version": "0.159.3",
+  "requests": [
+    "thread/start read-only",
+    "thread/goal/set paused",
+    "thread/goal/get",
+    "process restart",
+    "thread/goal/get before resume",
+    "thread/resume excludeTurns=true",
+    "thread/goal/get",
+    "thread/turns/list"
+  ],
+  "isolated_codex_home": "/Users/dylanmitic/Documents/Codex/2026-10-31/go/work/codex-paused-goal-probe/codex-home",
+  "thread_id": "01a19500-1268-7333-957d-fc30f116e97b",
+  "before": {
+    "threadId": "01a19500-1268-7333-957d-fc30f116e97b",
+    "objective": "Metadata-only paused persistence probe; do not execute work.",
+    "status": "paused",
+    "tokenBudget": 1,
+    "tokensUsed": 0,
+    "timeUsedSeconds": 0,
+    "createdAt": 1793501172,
+    "updatedAt": 1793501172
+  },
+  "get_before_resume_after_restart": {
+    "threadId": "01a19500-1268-7333-957d-fc30f116e97b",
+    "objective": "Metadata-only paused persistence probe; do not execute work.",
+    "status": "paused",
+    "tokenBudget": 1,
+    "tokensUsed": 0,
+    "timeUsedSeconds": 0,
+    "createdAt": 1793501172,
+    "updatedAt": 1793501172
+  },
+  "after_resume": {
+    "threadId": "01a19500-1268-7333-957d-fc30f116e97b",
+    "objective": "Metadata-only paused persistence probe; do not execute work.",
+    "status": "paused",
+    "tokenBudget": 1,
+    "tokensUsed": 0,
+    "timeUsedSeconds": 0,
+    "createdAt": 1793501172,
+    "updatedAt": 1793501172
+  },
+  "resumed_thread_status": {
+    "type": "idle"
+  },
+  "turn_count": 0,
+  "generation_notifications": [],
+  "notification_methods": [
+    "remoteControl/status/changed",
+    "thread/goal/updated",
+    "thread/started",
+    "thread/status/changed"
+  ],
+  "identity_equal": true,
+  "active_goal_tested": false
+}

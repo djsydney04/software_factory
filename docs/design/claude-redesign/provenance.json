@@ -1,0 +1,27 @@
+{
+  "model": "Claude Opus 5.5 300K High",
+  "session_id": "ece40c8d-8029-465d-b2cc-a6d7d1fac512",
+  "provider": "Cursor CLI",
+  "model_requested": "claude-opus-5-5-high",
+  "mode": "plan",
+  "exit_code": 0,
+  "terminal_result": "success",
+  "raw_private_reasoning_included": false,
+  "radar_refinement": {
+    "session_id": "ece40c8d-8029-465d-b2cc-a6d7d1fac512",
+    "exit_code": 0,
+    "duration_seconds": 61
+  },
+  "renderer": "built-in Image Gen",
+  "preview_source": {
+    "repository": "djsydney04/greenroom-monorepo",
+    "path": "docs/product/images/collection-gallery.png",
+    "sha256": "5c5c550721ac48cee2d76c01194051d88a15e2de316232732d056f89228bf2d7",
+    "nature": "approved isolated example journal screenshot"
+  },
+  "artifact_files": [
+    "conversation.png",
+    "radar.png",
+    "reviews.png"
+  ]
+}
