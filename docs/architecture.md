@@ -21,11 +21,13 @@ The daemon can run on an awake local machine or an always-on remote host. Closin
 
 ## Client experience
 
-Both clients use the same simple structure: Conversation, Progress and Reviews. Conversation is the primary surface, with one human-facing main agent that owns the goal, accepts steering, and explains current decisions. Worker agents report through it; they do not create competing chat inboxes.
+Both clients expose a workspace overview across projects. Each project owns its own Conversation, Progress and Reviews destinations; navigation and actions make the selected project explicit. Conversation is the primary surface, with one human-facing main agent that owns the goal, accepts steering, and explains current decisions. Worker agents report through it; they do not create competing chat inboxes.
 
 Progress is a separate surface for inspecting work through graph, board, or radar views. These are alternate projections of the same tasks and runs, not independent workflows. Start with a quiet overview and reveal worker activity, dependencies, logs, provider details, and evidence when a person selects an item. The current Sundial radar shows only planning, building, checking and waiting work; changes, PR previews, diffs and merge actions belong exclusively to Reviews. Reviews gives the selected change most of its workspace. Keep operational metadata out of the main conversation until it helps a decision. Final layout and visual treatment remain subject to the user's refined visual selection.
 
-Radar geometry must derive stage and stage-entry time from actual run/check/approval events, rather than generic task update times. Preserve stage angle and age radius during label/collision layout. Waiting marks may retain a static delegation arm without implying a running process or a live lease; heartbeat styling applies only to observed active runs. Missing and disconnected state must be explicit. See the [current design](design/claude-redesign/README.md).
+Radar geometry must derive stage and stage-entry time from actual run/check/approval events, rather than generic task update times. Preserve stage angle and age radius during label/collision layout. Waiting marks may retain a static delegation arm without implying a running process or a live lease; heartbeat styling applies only to observed active runs. Missing and disconnected state must be explicit. See the [current design](design/charcoal-desk/README.md).
+
+Model selection has explicit scope: a workspace default initializes new projects; a project default applies to new worker runs without a task override; a lead selector applies from the next conversation turn; and a task override applies to its next run. Existing runs retain their recorded provider, model and effort. Populate choices from observed capabilities rather than treating mockup examples as available models.
 
 ## Modules and ownership
 
