@@ -4,7 +4,9 @@ Status: current Claude design proposal, November 1, 2026; awaiting visual select
 
 The latest user request is authoritative: more compact controls, clearer hierarchy, no changes embedded in Radar or other monitoring views, and a distinctive original radar design. The user specifically requested Claude through the Cursor CLI. Claude inspected the previous screens and references, authored the redesign, and refined the radar in the same session.
 
-[Open the complete current design and screens](claude-redesign/README.md).
+[Open the current Operating Desk redesign and screens](operating-desk/README.md).
+
+The latest pass removes emoji, reduces chrome and puts active-work rows and blocker actions first. A smaller Sundial accompanies task details. [The preceding Claude mockups](claude-redesign/README.md) remain available for comparison.
 
 ## Current hierarchy
 
@@ -13,7 +15,7 @@ The latest user request is authoritative: more compact controls, clearer hierarc
 - **Reviews:** changes have their own destination, with a compact queue and a large selected preview/diff, checks, limitations and actions.
 - **Settings:** a secondary bottom utility.
 
-A project switcher replaces the large wordmark and repeated project list. The goal, focus and state share one compact header. The target at 1440×900 uses a 184px sidebar, 44px header and readable 14–16px main text. Exact raster dimensions are illustrative; implementation must verify actual geometry, accessibility and reflow.
+A project switcher replaces the large wordmark and repeated project list. The goal, focus and state share one compact header. The target at 1440×900 uses a 168px sidebar, 40px header and readable 14–16px main text. Exact raster dimensions are illustrative; implementation must verify actual geometry, accessibility and reflow.
 
 The Sundial radar uses engraved paper-like rings and tapering delegation shadows. Angle shows current stage; radius shows time in stage. Only active work and retained blocked inputs appear. Reviews and completed changes stay outside the radar. The TUI shares this hierarchy and data, using terminal-friendly task lists and age indicators.
 
