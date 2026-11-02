@@ -1,0 +1,25 @@
+{
+  "observedAt": "2026-11-02T06:31:31.290757+00:00",
+  "paused": true,
+  "unchangedHistoricalRows": {
+    "requests": true,
+    "tasks": true,
+    "runs": true,
+    "reviews": true,
+    "lead_wakes": true
+  },
+  "counts": {
+    "projects": 1,
+    "requests": 1,
+    "tasks": 1,
+    "runs": 1,
+    "reviews": 1,
+    "lead_wakes": 1
+  },
+  "runId": "59bbbce4-a506-4b29-b4cf-4589446eac43",
+  "reviewId": "d148b1e7-8bb0-44cc-818d-9ff945a8568f",
+  "revision": "39576124ac6bd9d81ac0b1cfafb62c8d084c704a",
+  "decision": "accepted_local",
+  "beforeLastEvent": 38,
+  "afterLastEvent": 38
+}

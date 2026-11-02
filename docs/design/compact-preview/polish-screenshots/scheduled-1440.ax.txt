@@ -1,0 +1,6 @@
+Browser tab: 5, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/conversation".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 80
+~					81 text Plan only
++					110 text Override
+The focused UI element is 75 button (collapsed) Description: Next send settings: Codex GPT-5.3, High, Plan only, override, Help: Next send: Codex GPT-5.3 · High · Plan only · Override, Secondary Actions: Expand

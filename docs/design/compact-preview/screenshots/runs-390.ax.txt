@@ -1,0 +1,135 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/runs".
+1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/runs
+	2 container root
+		18 container
+			21 button (collapsed) Description: Open navigation, Secondary Actions: Expand
+				22 image
+			23 tab group Runs view
+				24 tab (selected, settable, boolean) List, Value: 1, ID: runsview-tab-list
+				25 tab (selectable, settable, boolean) Timeline, Value: 0, ID: runsview-tab-timeline
+			26 text Design preview
+		20 container main
+			27 heading Runs, Value: 1
+				28 text Runs
+			29 container Filter runs by status
+				30 checkbox All 9, Value: 1
+				31 checkbox Running 2, Value: 0
+				32 checkbox Waiting 1, Value: 0
+				33 checkbox Finished 6, Value: 0
+			34 container
+				35 text Search runs
+				36 search text field (settable) Search runs
+			37 container Description: List, ID: runsview-panel
+				38 table
+					39 row
+						40 cell
+							41 text Run
+						42 cell
+							43 text Status
+						44 cell
+							45 text Model
+						46 cell
+							47 text Attempt
+						48 cell
+							49 text Time
+					50 row
+						51 cell
+							52 button Records carousel respects Reduce Motion
+						53 cell
+							54 text Running
+						55 cell
+							56 text Codex GPT-5.3
+						57 cell
+							58 text Attempt  2  ·  R-8K4D
+						59 cell
+							60 text 11:46–now ·  14m
+					61 row
+						62 cell
+							63 button Venue detail map link
+						64 cell
+							65 text Running
+						66 cell
+							67 text Claude Opus 5.5
+						68 cell
+							69 text Attempt  1  ·  R-6H1C
+						70 cell
+							71 text 11:20–now ·  40m
+					72 row
+						73 cell
+							74 button Artist sort ignores articles
+						75 cell
+							76 text Failed
+						77 cell
+							78 text Codex GPT-5.3
+						79 cell
+							80 text Attempt  1  ·  R-9P5L
+						81 cell
+							82 text 11:08–11:32 ·  24m
+					83 row
+						84 cell
+							85 button Refresh media cache
+						86 cell
+							87 text Needs approval
+						88 cell
+							89 text Codex GPT-5.3
+						90 cell
+							91 text Attempt  1  ·  R-5N8P
+						92 cell
+							93 text 10:32–now ·  1h 28m
+					94 row
+						95 cell
+							96 button Tighten Collection grid spacing
+						97 cell
+							98 text Succeeded
+						99 cell
+							100 text Codex GPT-5.3
+						101 cell
+							102 text Attempt  1  ·  R-3B7T
+						103 cell
+							104 text 10:12–11:03 ·  51m
+					105 row
+						106 cell
+							107 button Records carousel respects Reduce Motion
+						108 cell
+							109 text Failed
+						110 cell
+							111 text Claude Opus 5.5
+						112 cell
+							113 text Attempt  1  ·  R-7Q2M
+						114 cell
+							115 text 10:05–10:58 ·  53m
+					116 row
+						117 cell
+							118 button Ticket stub export
+						119 cell
+							120 text Interrupted
+						121 cell
+							122 text Claude Opus 5.5
+						123 cell
+							124 text Attempt  1  ·  R-1D3E
+						125 cell
+							126 text 9:40–10:15 ·  35m
+					127 row
+						128 cell
+							129 button Venue search empty state
+						130 cell
+							131 text Succeeded
+						132 cell
+							133 text Claude Opus 5.5
+						134 cell
+							135 text Attempt  1  ·  R-4C2V
+						136 cell
+							137 text 9:20–10:38 ·  1h 18m
+					138 row
+						139 cell
+							140 button Share sheet button label
+						141 cell
+							142 text Succeeded
+						143 cell
+							144 text Codex GPT-5.3
+						145 cell
+							146 text Attempt  1  ·  R-2F9A
+						147 cell
+							148 text 8:50–9:31 ·  41m
+
+The focused UI element is 24 tab (selected, settable, boolean) List, Value: 1, ID: runsview-tab-list

@@ -1,0 +1,13 @@
+# Reviews overhaul
+
+User request: Reviews needs a total overhaul. Carry forward compact warm-paper styling, a clear top-level overview, a much larger review surface, one lead conversation, and Reviews separate from Radar.
+
+Chosen flow: compact review inbox at #/reviews; stable full-workspace desk at #/reviews/<review-id>. No persistent queue or default split. Preview, Changes, and Evidence separate the human product review from code and verification. Readable screenshots scroll at a useful width. Return to the inbox preserves filtering and focus. Previous/Next provides quick traversal without another sidebar.
+
+Domain boundary: a review pins its run, attempt, and revision. Current checks must match that revision; stale passes never certify the change. Missing source and malformed/empty/failing evidence block simulated merge. Optional missing preview stays an explicit limitation but does not block text-only work. Decision confirmation rechecks its opening source identity. Feedback drafts and local decision snapshots survive navigation/reload. No provider, GitHub, or real merge is connected.
+
+Owners: root App/data integration/browser QA/docs; reviews_ui staged Reviews.jsx + reviews.css; reviews_contract review-state.js + focused domain tests; reviews_claude read-only Cursor Claude plan consultation. Each owns nonoverlapping files. Root integrates atomically and reviews delegated output. Protected Sites runtime stays untouched.
+
+Verification: focused evidence/decision-state tests, production build, direct-link/unknown/missing-source paths, inbox→desk→Back focus and filters, mode/file/zoom persistence, feedback drafts/reload, local action outcomes, responsive bounds at 1440/1280/1024/768/390, same-size source/rendered comparisons and current console checks. QA writes stay on localhost, not user127 origin. No extra styling-value tests or dependencies.
+
+Completed: full inbox/desk implemented and integrated, nine review-state tests plus existing32 pass (41total), production build passes,25 nonempty responsive cases pass, full and focused same-size comparison boards inspected, source-change/missing/stale/newer-attempt harness browser checks pass. Focus fixes verified, independent final review has no P1/P2. User's original reviews/drafts/data preserved; QA actions onlylocalhost and memoryharness. All temporary tabs/harness files removed, viewport reset, original tab left on #/reviews/RV-24 at normal1445×1224. Four template hashes unchanged; docs/PNG/AX/bounds/whitespace checks pass. Source and report: docs/design/compact-preview/reviews-screenshots/ and apps/desktop/design-qa.md latest section. No external merge, dispatch, publication, or backend work.

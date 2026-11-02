@@ -1,0 +1,30 @@
+[package]
+name = "software-factory"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "software_factory"
+path = "src/lib.rs"
+
+[dependencies]
+axum = "0.8.9"
+chrono = { version = "0.4", features = ["serde"] }
+chrono-tz = "0.10"
+fs2 = "0.4"
+libc = "0.2"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+rusqlite = { version = "0.41.1", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tokio = { version = "1.54.1", features = ["full"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+
+[dev-dependencies]
+tempfile = "3"
+tower = { version = "0.5", features = ["util"] }
+
+[profile.dev]
+debug = 1

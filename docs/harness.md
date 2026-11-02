@@ -1,6 +1,8 @@
 # Persistent factory harness
 
-Status: proposed architecture, informed by provider documentation and the read-only probes below. This document distinguishes a design recommendation from implemented behavior.
+Status: broader harness design with a working local-alpha subset. The Rust/SQLite supervisor, authenticated Axum service, Codex app-server execution and Tauri client are implemented. The [runtime checkpoint](runtime/IMPLEMENTATION.md) and [bounded real integration trial](runtime/INTEGRATION-TRIAL.md) record observed results; the experiments and broader policies below remain design requirements unless that evidence says otherwise.
+
+Current scope is one project, one Codex lead and one worker. Eligible Requests get a bounded plan or waiting reason; steering and completed runs get bounded lead acknowledgments/summaries. The objective alone does not spawn unlimited new work. TUI, additional providers, daily spend reservation, external writes, recurring triage and always-on hosting remain later work. Browser preview activity is simulated and is not daemon evidence.
 
 ## The operating model
 
@@ -39,7 +41,7 @@ At a wakeup:
 
 Persist only these task states: `Backlog`, `Ready`, `Running`, `Review`, `Done` and `Blocked`. Verification is visible activity and an evidence gate while a task is running, rather than another board column. A failed or cancelled run retains its task for reassessment; record a clear blocked reason when input is missing. A factory can be paused independently of task state. Completing an agent turn alone does not complete a task.
 
-Terminal run states are `Succeeded`, `Failed`, `Interrupted`, `Cancelled` and `NeedsApproval`. A timeout is `Failed` with reason `timeout`; process loss and protocol failure have their own failure reasons. A durable user cancellation is `Cancelled`, even when the provider reports an interrupted turn. These outcomes describe execution; `Succeeded` still requires verification before the task reaches `Review`.
+Terminal run states are `Succeeded`, `Failed`, `Interrupted` and `Cancelled`. `NeedsApproval` is nonterminal waiting, with a durable scoped approval record. The current alpha also retains `Interrupting` and `RecoveryRequired`: an acknowledgment, timeout, process loss or forced process-group stop alone cannot prove every executor stopped. Uncertain control fences successors until reconciliation. The alpha commits `Succeeded` and its Review packet atomically after independent checks at the exact revision; provider completion alone cannot establish that state.
 
 ## Avoiding noise
 
@@ -69,6 +71,8 @@ Create external objects through an outbox with stable action keys. If creating a
 
 Enforce run deadlines, concurrency, attempt limits and daily factory allowance. Enforce token/cost limits when the provider reports enough information; label absent or estimated accounting honestly. Reserve budget before dispatch to avoid concurrent overspend. Never reset accounting by silently restarting a session.
 
+The implemented alpha enforces turn deadlines, one-worker concurrency, attempt and review-queue limits. Its output-token threshold is observed when the provider reports usage, not a hard prepaid cap; it has no daily spend reservation. Worktree writes and command networking use verified provider controls. Attempt-scoped command approvals are durable; agent command networking and integrations are narrowed to Deny. The legacy sandbox still permits host reads and does not isolate credentials.
+
 Use isolated worktrees for worker changes. Routine local implementation can proceed within configured access. Publishing, merging and production changes follow the factory's explicit agency settings. Do not infer permission merely from a task's priority.
 
 ## Verification and review
@@ -81,7 +85,7 @@ Review workers inspect an immutable diff and evidence in a fresh context. The hu
 
 ## Experiments
 
-These are acceptance experiments to run during implementation, not completed results.
+These are the original broader acceptance experiments. Deterministic runtime tests and native fake-provider checks now cover the local subset, including uncertain recovery, interruption and client independence; one real Codex trial verifies the coding/check/review cycle. Use the checkpoint and trial evidence for exact coverage rather than treating every row below as passed.
 
 | Experiment | Procedure | Pass condition |
 | --- | --- | --- |

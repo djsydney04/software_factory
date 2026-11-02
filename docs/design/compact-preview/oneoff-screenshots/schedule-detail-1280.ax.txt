@@ -1,0 +1,3 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/runs/request/REQ-0DFB4E56".
+There has been no change in the accessibility tree.
+The focused UI element is 174 heading One-off request, Value: 2

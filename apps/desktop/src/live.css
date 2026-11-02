@@ -1,0 +1,20 @@
+.live-app .live-connection { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 8px 16px; border-bottom: 1px solid var(--separator); background: var(--amber-bg, #f4ead9); font-size: 13px; }
+.live-registration { width: min(100%, 640px); margin: 0 auto; padding: 40px 28px; overflow: auto; }
+.live-registration form { display: grid; gap: 18px; margin-top: 24px; }
+.live-registration .btn { justify-self: start; }
+.live-registration textarea, .live-app .settings textarea { width: 100%; }
+.live-json { max-width: 100%; margin: 8px 0 20px; padding: 12px; overflow: auto; border: 1px solid var(--separator); border-radius: 4px; background: var(--surface, #fbfaf7); font-size: 12px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+.live-path { overflow-wrap: anywhere; }
+.live-app .request-facts dd { overflow-wrap: anywhere; }
+.live-app .rv-line-hunk { color: var(--muted); background: var(--surface, #efede6); }
+.live-app .rv-status-accepted { color: var(--sage); }
+.live-empty-thread { margin: auto 0 18px; }
+.live-app .st-claimed, .live-app .st-checking { color: var(--sage); }
+.live-app .st-recovery_required { color: var(--amber, #875c2c); }
+.live-app .graph .g-tasks:empty { min-height: 48px; }
+@media (max-width: 768px) {
+  .live-registration { padding: 24px 16px; }
+  .live-app .live-connection { padding: 8px 12px; }
+  .live-app .settings-form { min-width: 0; }
+  .live-app .topbar .goal { min-width: 0; }
+}

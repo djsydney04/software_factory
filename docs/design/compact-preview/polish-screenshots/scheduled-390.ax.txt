@@ -1,0 +1,3 @@
+Browser tab: 5, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/conversation".
+There has been no change in the accessibility tree.
+The focused UI element is 75 button (collapsed) Description: Next send settings: Codex GPT-5.3, High, Plan only, override, Help: Next send: Codex GPT-5.3 · High · Plan only · Override, Secondary Actions: Expand

@@ -1,0 +1,3 @@
+Browser tab: 7, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/scratchpad".
+There has been no change in the accessibility tree.
+The focused UI element is 34 button (expanded) Configure, Secondary Actions: Collapse

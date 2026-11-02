@@ -1,0 +1,31 @@
+{
+  "purpose": "Read-only design consultation for blank-document Scratchpad refinement",
+  "provider": "Cursor CLI",
+  "model_requested": "claude-opus-5-5-high",
+  "model_effective": "Claude Opus 5.5 300K High",
+  "session_id": "3adf2c53-573a-4d64-93b6-9bf33eae2acb",
+  "mode": "plan",
+  "sandbox": "enabled",
+  "exit_code": 0,
+  "result_subtype": "success",
+  "is_error": false,
+  "duration_ms": 28792,
+  "public_brief": "document-claude-brief.md",
+  "interaction_contract": "scratchpad-permissions-contract.md",
+  "side_effects": "No application, browser, or user data mutations by the consultant.",
+  "implementation_choices": [
+    "One continuous autosaved document",
+    "Review configuration and manual preview in Settings \u2192 Scratchpad",
+    "Exact source anchors fail closed after overlapping edits",
+    "Highlights require matching Request and latest linked succeeded Run",
+    "No live cron, provider dispatch, or fabricated success"
+  ],
+  "limits": "Consultation recommendations are separate from implementation verification. Private stream reasoning is not published.",
+  "consultation_source_scope": [
+    "apps/desktop/AGENTS.md",
+    "apps/desktop/src/Scratchpad.jsx",
+    "apps/desktop/src/scratchpad.js",
+    "apps/desktop/src/App.jsx",
+    "apps/desktop/src/styles.css"
+  ]
+}

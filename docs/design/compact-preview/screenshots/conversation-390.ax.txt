@@ -1,0 +1,41 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/conversation".
+1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/conversation
+	2 container root
+		18 container
+			21 button (collapsed) Description: Open navigation, Secondary Actions: Expand
+				22 image
+			19 text Make the Collection faster to browse Design preview
+		20 container main
+			23 heading Conversation with the Factory lead, Value: 1
+				24 text Conversation with the Factory lead
+			25 content list
+				26 container
+					27 text You ·  9:42 This week, focus on Collection. The grid feels loose and the carousel ignores Reduce Motion.
+				28 container
+					29 text Factory 9:44 Saved the goal “Make the Collection faster to browse” and split it into tasks. Codex is on the carousel; Claude is adding the map link on venue detail.
+					30 link Description: Open Progress, Value: 127.0.0.1:5173/#/progress
+				31 container
+					32 text Factory 10:50 Refreshing the media cache needs network access. Allow it for this run only?
+					33 button Allow once
+					34 button Skip task
+					35 link Description: Open run, Value: 127.0.0.1:5173/#/runs/R-5N8P
+				36 container
+					37 text Factory 11:05 Grid spacing is ready for review. Checks passed on a4f3c2e. I couldn't capture an accessibility-size screenshot, so that's listed as a limitation.
+					38 link Description: Tighten Collection grid spacing #24 · a4f3c2e Open in Reviews, Value: 127.0.0.1:5173/#/reviews
+			39 container
+				40 text Message to the Factory lead
+				41 text entry area (settable) Message to the Factory lead, ID: composer-input
+				42 checkbox Description: Attach RecordsCarousel.swift as context, Help: Attach RecordsCarousel.swift as context (no edit access), Value: 0
+					43 image
+				44 button (collapsed) Next run Codex GPT-5.3 · Medium · Ask first Default, Secondary Actions: Expand
+					45 text Next run
+					46 text Codex GPT-5.3
+					47 text  · 
+					48 text Medium
+					49 text  · 
+					50 text Ask first
+					51 text Default
+				52 button (disabled) Send to Factory lead (preview)
+					53 image
+
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/conversation

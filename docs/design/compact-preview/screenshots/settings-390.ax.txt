@@ -1,0 +1,56 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/settings".
+1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/settings
+	2 container root
+		18 container
+			21 button (collapsed) Description: Open navigation, Secondary Actions: Expand
+				22 image
+			23 text Make the Collection faster to browse Design preview
+		24 container main
+			25 heading Settings, Value: 1
+				26 text Settings
+			27 tab group Settings categories
+				28 tab (selectable, settable, boolean) General, Value: 0, ID: settings-tab-general
+				29 tab (selected, settable, boolean) Models & execution, Value: 1, ID: settings-tab-models
+				30 tab (selectable, settable, boolean) Files & context, Value: 0, ID: settings-tab-files
+			31 container Description: Models & execution, ID: settings-panel
+				32 container
+					33 text Project defaults  ·  Green Room  · apply to future runs only.
+				34 text Default model
+				35 pop up button (collapsed, settable) Description: Default model, Value: Codex GPT-5.3, ID: s-model, Secondary Actions: Expand
+					36 menu
+						37 (selected) Codex GPT-5.3
+						38 Claude Opus 5.5
+						39 (disabled) Gemini 3.1 — not connected
+				40 text Sample catalog. Gemini 3.1 isn't connected in this preview.
+				41 text Effort
+				42 pop up button (collapsed, settable) Description: Effort, Value: Medium, ID: s-effort, Secondary Actions: Expand
+					43 menu
+						44 Low
+						45 (selected) Medium
+						46 High
+						47 (disabled) Max — not on GPT-5.3
+				48 text Execution mode
+				49 pop up button (collapsed, settable) Description: Execution mode, Value: Ask first, ID: s-mode, Secondary Actions: Expand
+					50 menu
+						51 Auto
+						52 (selected) Ask first
+						53 Plan only
+				54 text Ask first pauses before network access or commands outside the worktree.
+				55 text Concurrent runs
+				56 pop up button (collapsed, settable) Concurrent runs, Value: 2, ID: s-conc, Secondary Actions: Expand
+					57 menu
+						58 1
+						59 (selected) 2
+						60 3
+						61 4
+				62 text Daily budget (USD)
+				63 stepper (settable, integer) Daily budget (USD), Value: 40, ID: s-budget
+				64 text Sample cap. The preview doesn't track spend.
+				65 container
+					66 text Next run resolves to  Codex GPT-5.3  · inherited from saved defaults .
+				67 container
+					68 text No changes
+					69 button (disabled) Cancel
+					70 button (disabled) Save defaults
+
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/settings

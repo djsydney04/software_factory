@@ -1,28 +1,30 @@
 # Acceptance and architecture review
 
-Status: independent design review, October 31, 2026. These are proposed checks, not completed results. This file defines a useful first release and the additional work needed to satisfy the full project goal.
+Status: independent design review from October 31, 2026, amended for the implemented local alpha. The active [goal](runtime/GOAL.md) narrows the first release to a native Tauri client, one repository and Codex lead/worker. The [runtime checkpoint](runtime/IMPLEMENTATION.md) and [integration trial](runtime/INTEGRATION-TRIAL.md) distinguish completed checks from the broader requirements below.
+
+Observed local evidence now includes a bounded real Codex worker, an exact-revision diff and independently observed check exit 0, local Review acceptance, and unchanged records after daemon restart. Native fake-provider exercises cover client closure during execution and observed interruption. These results establish the local slice; they do not certify TUI parity, every experiment below, signing/notarization, hosted continuity or external integration writes.
 
 ## Smallest useful release
 
-An awake-host alpha must complete one real cycle: a saved factory objective produces a justified task, an agent changes an isolated worktree, the supervisor verifies the change, and the human can inspect evidence from either client. Saved steering must change subsequent work. Closing either client must not stop the supervisor. A board populated with sample runs is a prototype, not this release.
+An awake-host alpha must complete one real cycle: a saved factory objective and eligible request produce a justified task, an agent changes an isolated worktree, the supervisor verifies the change, and the human can inspect evidence from the native client. Saved steering must reach subsequent lead context. Closing the client must not stop the supervisor. A board populated with sample runs is a prototype, not this release.
 
 The alpha can support one authenticated provider and one repository. It must show every other provider and integration as unavailable, unconfigured, untested, or supported according to observed evidence. A local alpha does not satisfy the full promise of working through a day while the user's laptop sleeps; that requires an always-on execution host.
 
 | Acceptance | Concrete observation |
 | --- | --- |
-| Durable objective and context | Create a factory, accepted decision and steering; restart the daemon; both clients show the same records and context revision. The next task context includes them. |
+| Durable objective and context | Create a project objective and steering; restart the daemon; the native client shows the same records and context revision. The next applicable turn context includes them. |
 | Real controller | A bounded planning turn chooses useful work with acceptance criteria, or records a reason to wait. Completing a task wakes it. It stops producing work at the review cap, budget limit or lack of justified work. |
 | Real worker | One authenticated provider edits a disposable fixture repository in a separate worktree. Record the provider session, observed terminal outcome, actual changed commit, and supervisor-observed check results. CLI installation or a model catalog alone does not pass. |
 | Honest task states | Agent completion moves a coding task to review only after required evidence exists. A failed check cannot appear as passed. Done requires accepted delivery, not a successful agent process. |
 | Durable steering | Submit steering during a run; show received/queued/applied distinctly. Restart before the next turn; verify that the subsequent context includes the new revision. A provider without live steering must display queued behavior. |
 | Human control | Pause prevents new dispatch. Interrupt targets the current run; verify that the provider process group terminates, or retain a visible unresolved interruption. Resume does not duplicate the attempt. |
-| Independent service | Close the GUI and TUI during a bounded run; observe completion in daemon records and reconnect from either client. Killing a terminal that launched the GUI must not silently kill the daemon. |
+| Independent service | Close the native GUI during a bounded run; observe the same running attempt in daemon records and reconnect without duplicate launch. The daemon lifetime is independent of the GUI. |
 | Restart recovery | Kill the daemon after a task claim and after a worker starts. Restart and reconcile the old process/session and worktree before another attempt. No two workers may write the same task worktree. |
 | One main conversation | Opening a factory shows one conversation with its lead agent. Send a message there to steer the factory; do not require choosing a worker. Surface a short current focus and useful result summaries. Worker logs, execution details and setup remain secondary. |
 | Progress without clutter | A separate Progress destination offers work graph, board and radar views. The graph shows ownership and actual dependencies. Sundial shows only Plan, Build, Check and Waiting; no change list, PR preview, diff or merge appears in monitoring. Its dimensions derive from observed stage events and age, with missing or stale evidence shown honestly. |
-| Dedicated review | Reviews has its own destination with a compact queue and dominant selected preview/diff, exact commit, observed checks, limitations and actions. Conversation may link to a result there without embedding the review workspace. |
-| Shared client behavior | In GUI and TUI, use the same Conversation, Progress and Reviews destinations to inspect the goal, work, decision summary and artifacts, then steer, pause or review. Changes from one client appear in the other. A disconnected client shows its stale state. Workers and integrations use progressive disclosure rather than permanent panels. |
-| Usable clients | Keyboard focus, small-window layout, empty state, long log lines and error states work. TUI restores terminal settings on normal exit and panic. Logs cannot inject terminal control sequences. |
+| Dedicated review | Reviews has its own destination: a compact inbox opens a full-width desk with separate Preview, Changes and Evidence modes, exact commit, observed checks, limitations and source-bound actions. No permanent queue or Split layout. Conversation may link to a result there without embedding the review workspace. |
+| Native client behavior | Conversation, Progress and Reviews expose the goal, work, decision summary and evidence, then steering, pause and local review. A disconnected client shows its stale state. Workers use progressive disclosure rather than permanent panels; TUI parity is deferred. |
+| Usable native client | Keyboard focus, small-window layout, empty state, long values and error states work. Inspect desktop and phone-width views. Terminal restoration and control-sequence handling belong to the future TUI milestone. |
 | Real desktop build | Produce and launch a macOS `.app` from the documented build command. It connects to the independent daemon and survives a daemon disconnect/reconnect. A browser preview alone does not pass. |
 | Local control boundary | Without the per-installation credential, read and mutation requests fail. Browser-origin requests cannot start runs, modify steering, or read project logs. The daemon listens only on the intended loopback address. |
 
@@ -38,6 +40,7 @@ These features may follow the alpha, but they remain part of the requested proje
 - A UI task produces a screenshot, demonstration or preview tied to its tested commit. Expired URLs, missing captures and stale commits are visible.
 - Cloudflare and Vercel observation returns actual deployment identifiers, URLs, commit association, state and check time. An API error is unknown, not healthy. Deployment writes require an implemented policy and explicit integration capability.
 - Codex, Claude, Cursor and Gemini each pass the documented adapter checks for authentication, terminal outcomes, cancellation and session continuation. API-backed agents include a working tool execution runtime; accepting an API key alone is insufficient.
+- A TUI shares the daemon's Conversation, Progress and Reviews semantics and supports the same records and controls. Terminal cleanup and safe log rendering need their own verification.
 - Scheduled work persists due times, deduplicates each occurrence, records missed-run policy and remains quiet for unchanged monitoring results.
 - An always-on host continues real work during a day with both local clients closed and the laptop unavailable. Reconnect and inspect the accumulated evidence. Remote transport has its own authenticated access design; do not expose the local service by binding it to every interface.
 - Proposed harness improvements are versioned, checked against reproducible fixtures and compared with a baseline. A model's claim that a new prompt is better is not an experiment result.
@@ -97,4 +100,4 @@ Keep an immutable action record before issuing the merge. After a network timeou
 5. **Persistent constraints versus chat history.** Steering acknowledgment means receipt until its revision is actually included in the next applicable turn. Verify application through resulting behavior and evidence; do not equate provider acceptance with compliance.
 6. **Continuous work versus continuous noise.** An unchanged state must not produce another planning call or duplicate task. A day away should end with bounded reviewable outcomes, spent budget and clear blockers.
 
-The checks here focus on correctness of the requested workflow. No implementation, real inference, distribution signing or broad security scan was performed as part of this design review.
+The original design review performed no implementation or inference. The later local-alpha implementation and bounded real inference are recorded in the linked runtime evidence. Distribution signing/notarization and a broad security scan have not been performed.

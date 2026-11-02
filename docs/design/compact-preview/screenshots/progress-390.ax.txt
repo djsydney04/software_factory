@@ -1,0 +1,63 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/progress".
+1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/progress
+	2 container root
+		18 container
+			21 button (collapsed) Description: Open navigation, Secondary Actions: Expand
+				22 image
+			23 tab group Progress view
+				24 tab (selectable, settable, boolean) Graph, Value: 0, ID: progview-tab-graph
+				25 tab (selectable, settable, boolean) Board, Value: 0, ID: progview-tab-board
+				26 tab (selected, settable, boolean) Radar, Value: 1, ID: progview-tab-radar
+			27 text Design preview
+		28 container Description: Radar, ID: progview-panel
+			29 heading Progress · radar, Value: 1
+				30 text Progress ·  radar
+			31 container Distance from centre = time in current stage (15m, 1h, 4h rings). Active work only · sample clock 12:00.
+				32 container
+					33 button Records carousel respects Reduce Motion, build, Codex, 14m in stage. Open run R-8K4D
+						34 text Carousel motion
+						35 text Codex · 14m
+					36 button Venue detail map link, check, Claude, 9m in stage. Open run R-6H1C
+						37 text Map link
+						38 text Claude · 9m
+					39 button Refresh media cache, waiting, Codex, 1h 10m in stage. Open run R-5N8P
+						40 text Media cache
+						41 text 1h 10m
+				42 container dial-caption
+					43 text Distance from centre = time in current stage (15m, 1h, 4h rings). Active work only · sample clock  12:00 .
+			44 container Active work
+				45 heading Working, Value: 2
+					46 text Working
+				47 content list
+					48 button Records carousel respects Reduce Motion Codex · build · 14m · R-8K4D
+						49 text Records carousel respects Reduce Motion
+						50 text Codex
+						51 text  · 
+						52 text build
+						53 text  · 
+						54 text 14m
+						55 text  · 
+						56 text R-8K4D
+					57 button Venue detail map link Claude · check · 9m · R-6H1C
+						58 text Venue detail map link
+						59 text Claude
+						60 text  · 
+						61 text check
+						62 text  · 
+						63 text 9m
+						64 text  · 
+						65 text R-6H1C
+				66 heading Needs you, Value: 2
+					67 text Needs you
+				68 content list
+					69 container
+						70 button Refresh media cache Waiting for network approval · 1h 10m
+							71 text Refresh media cache
+							72 text Waiting for 
+							73 text network approval
+							74 text  · 
+							75 text 1h 10m
+						76 button Allow once
+						77 button Skip task
+
+The focused UI element is 26 tab (selected, settable, boolean) Radar, Value: 1, ID: progview-tab-radar

@@ -1,0 +1,69 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/settings".
+1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/settings
+	2 container root
+		3 container Primary
+			4 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
+				5 menu
+					6 (selected) Green Room
+					7 (disabled) Other projects aren't in this preview
+			8 container Destinations
+				9 content list
+					10 link Description: Conversation, Value: 127.0.0.1:5173/#/conversation
+					11 link Description: Runs, Value: 127.0.0.1:5173/#/runs
+					12 link Description: Progress, Value: 127.0.0.1:5173/#/progress
+					13 link Description: Reviews 2 ready, Value: 127.0.0.1:5173/#/reviews
+			14 container Project utilities
+				15 content list
+					16 link Description: Files, Value: 127.0.0.1:5173/#/files
+					17 link Description: Settings, Value: 127.0.0.1:5173/#/settings
+		18 container
+			19 text Make the Collection faster to browse Now:  Records carousel respects Reduce Motion Running ·  2 agents Design preview
+		20 container main
+			21 heading Settings, Value: 1
+				22 text Settings
+			23 tab group Settings categories
+				24 tab (selectable, settable, boolean) General, Value: 0, ID: settings-tab-general
+				25 tab (selected, settable, boolean) Models & execution, Value: 1, ID: settings-tab-models
+				26 tab (selectable, settable, boolean) Files & context, Value: 0, ID: settings-tab-files
+			27 container Description: Models & execution, ID: settings-panel
+				28 container
+					29 text Project defaults  ·  Green Room  · apply to future runs only.
+				30 text Default model
+				31 pop up button (collapsed, settable) Description: Default model, Value: Codex GPT-5.3, ID: s-model, Secondary Actions: Expand
+					32 menu
+						33 (selected) Codex GPT-5.3
+						34 Claude Opus 5.5
+						35 (disabled) Gemini 3.1 — not connected
+				36 text Sample catalog. Gemini 3.1 isn't connected in this preview.
+				37 text Effort
+				38 pop up button (collapsed, settable) Description: Effort, Value: Medium, ID: s-effort, Secondary Actions: Expand
+					39 menu
+						40 Low
+						41 (selected) Medium
+						42 High
+						43 (disabled) Max — not on GPT-5.3
+				44 text Execution mode
+				45 pop up button (collapsed, settable) Description: Execution mode, Value: Ask first, ID: s-mode, Secondary Actions: Expand
+					46 menu
+						47 Auto
+						48 (selected) Ask first
+						49 Plan only
+				50 text Ask first pauses before network access or commands outside the worktree.
+				51 text Concurrent runs
+				52 pop up button (collapsed, settable) Concurrent runs, Value: 2, ID: s-conc, Secondary Actions: Expand
+					53 menu
+						54 1
+						55 (selected) 2
+						56 3
+						57 4
+				58 text Daily budget (USD)
+				59 stepper (settable, integer) Daily budget (USD), Value: 40, ID: s-budget
+				60 text Sample cap. The preview doesn't track spend.
+				61 container
+					62 text Next run resolves to  Codex GPT-5.3  · inherited from saved defaults .
+				63 container
+					64 text No changes
+					65 button (disabled) Cancel
+					66 button (disabled) Save defaults
+
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/settings

@@ -1,0 +1,1042 @@
+[
+  {
+    "font": [
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif",
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif"
+    ],
+    "marks": [
+      {
+        "bottom": 126,
+        "right": 577.859375,
+        "x": 294,
+        "y": 109
+      }
+    ],
+    "mirror": {
+      "bottom": 858,
+      "h": 772,
+      "right": 1170,
+      "w": 900,
+      "x": 270,
+      "y": 86
+    },
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 887,
+        "h": 20,
+        "right": 103.125,
+        "w": 79.125,
+        "x": 24,
+        "y": 867
+      },
+      {
+        "bottom": 892,
+        "h": 30,
+        "right": 1416,
+        "w": 143.84375,
+        "x": 1272.15625,
+        "y": 862
+      }
+    ],
+    "textarea": {
+      "bottom": 858,
+      "h": 772,
+      "right": 1170,
+      "w": 900,
+      "x": 270,
+      "y": 86
+    },
+    "view": "completion-fixture",
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "font": [
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif",
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif"
+    ],
+    "marks": [
+      {
+        "bottom": 126,
+        "right": 497.859375,
+        "x": 214,
+        "y": 109
+      }
+    ],
+    "mirror": {
+      "bottom": 858,
+      "h": 772,
+      "right": 1090,
+      "w": 900,
+      "x": 190,
+      "y": 86
+    },
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 887,
+        "h": 20,
+        "right": 103.125,
+        "w": 79.125,
+        "x": 24,
+        "y": 867
+      },
+      {
+        "bottom": 892,
+        "h": 30,
+        "right": 1256,
+        "w": 143.84375,
+        "x": 1112.15625,
+        "y": 862
+      }
+    ],
+    "textarea": {
+      "bottom": 858,
+      "h": 772,
+      "right": 1090,
+      "w": 900,
+      "x": 190,
+      "y": 86
+    },
+    "view": "completion-fixture",
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "font": [
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif",
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif"
+    ],
+    "marks": [
+      {
+        "bottom": 126,
+        "right": 369.859375,
+        "x": 86,
+        "y": 109
+      }
+    ],
+    "mirror": {
+      "bottom": 858,
+      "h": 772,
+      "right": 962,
+      "w": 900,
+      "x": 62,
+      "y": 86
+    },
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 887,
+        "h": 20,
+        "right": 103.125,
+        "w": 79.125,
+        "x": 24,
+        "y": 867
+      },
+      {
+        "bottom": 892,
+        "h": 30,
+        "right": 1000,
+        "w": 143.84375,
+        "x": 856.15625,
+        "y": 862
+      }
+    ],
+    "textarea": {
+      "bottom": 858,
+      "h": 772,
+      "right": 962,
+      "w": 900,
+      "x": 62,
+      "y": 86
+    },
+    "view": "completion-fixture",
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "font": [
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif",
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif"
+    ],
+    "marks": [
+      {
+        "bottom": 162,
+        "right": 295.859375,
+        "x": 12,
+        "y": 145
+      }
+    ],
+    "mirror": {
+      "bottom": 858,
+      "h": 732,
+      "right": 768,
+      "w": 768,
+      "x": 0,
+      "y": 126
+    },
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 887,
+        "h": 20,
+        "right": 91.125,
+        "w": 79.125,
+        "x": 12,
+        "y": 867
+      },
+      {
+        "bottom": 892,
+        "h": 30,
+        "right": 756,
+        "w": 143.84375,
+        "x": 612.15625,
+        "y": 862
+      }
+    ],
+    "textarea": {
+      "bottom": 858,
+      "h": 732,
+      "right": 768,
+      "w": 768,
+      "x": 0,
+      "y": 126
+    },
+    "view": "completion-fixture",
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "font": [
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif",
+      "14px / 24px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, sans-serif"
+    ],
+    "marks": [
+      {
+        "bottom": 190,
+        "right": 295.859375,
+        "x": 12,
+        "y": 173
+      }
+    ],
+    "mirror": {
+      "bottom": 802,
+      "h": 648,
+      "right": 390,
+      "w": 390,
+      "x": 0,
+      "y": 154
+    },
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 831,
+        "h": 20,
+        "right": 91.125,
+        "w": 79.125,
+        "x": 12,
+        "y": 811
+      },
+      {
+        "bottom": 836,
+        "h": 30,
+        "right": 378,
+        "w": 143.84375,
+        "x": 234.15625,
+        "y": 806
+      }
+    ],
+    "textarea": {
+      "bottom": 802,
+      "h": 648,
+      "right": 390,
+      "w": 390,
+      "x": 0,
+      "y": 154
+    },
+    "view": "completion-fixture",
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 868,
+        "h": 783,
+        "right": 1254,
+        "w": 900,
+        "x": 354,
+        "y": 85
+      },
+      {
+        "bottom": 900,
+        "h": 32,
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 868
+      }
+    ],
+    "view": "document",
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 868,
+        "h": 783,
+        "right": 1174,
+        "w": 900,
+        "x": 274,
+        "y": 85
+      },
+      {
+        "bottom": 900,
+        "h": 32,
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 868
+      }
+    ],
+    "view": "document",
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 868,
+        "h": 783,
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 85
+      },
+      {
+        "bottom": 900,
+        "h": 32,
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 868
+      }
+    ],
+    "view": "document",
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 868,
+        "h": 779,
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 89
+      },
+      {
+        "bottom": 900,
+        "h": 32,
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 868
+      }
+    ],
+    "view": "document",
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 812,
+        "h": 723,
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 89
+      },
+      {
+        "bottom": 844,
+        "h": 32,
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 812
+      }
+    ],
+    "view": "document",
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 120,
+        "h": 32,
+        "name": "General",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 88
+      },
+      {
+        "bottom": 154,
+        "h": 32,
+        "name": "Models & execution",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 122
+      },
+      {
+        "bottom": 188,
+        "h": 32,
+        "name": "Permissions",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 156
+      },
+      {
+        "bottom": 222,
+        "h": 32,
+        "name": "Files & context",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 190
+      },
+      {
+        "bottom": 256,
+        "h": 32,
+        "name": "Scratchpad",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 224
+      },
+      {
+        "bottom": 208,
+        "h": 30,
+        "name": "Review cadence",
+        "right": 593.5,
+        "w": 197.5,
+        "x": 396,
+        "y": 178
+      },
+      {
+        "bottom": 208,
+        "h": 30,
+        "name": "Review time",
+        "right": 743.75,
+        "w": 138.25,
+        "x": 605.5,
+        "y": 178
+      },
+      {
+        "bottom": 208,
+        "h": 30,
+        "name": "Review time zone",
+        "right": 1052,
+        "w": 296.25,
+        "x": 755.75,
+        "y": 178
+      },
+      {
+        "bottom": 242,
+        "h": 16,
+        "name": "INPUT",
+        "right": 409,
+        "w": 13,
+        "x": 396,
+        "y": 226
+      },
+      {
+        "bottom": 321,
+        "h": 28,
+        "name": "Save review plan",
+        "right": 521.53125,
+        "w": 125.53125,
+        "x": 396,
+        "y": 293
+      },
+      {
+        "bottom": 321,
+        "h": 28,
+        "name": "Cancel",
+        "right": 594.03125,
+        "w": 64.5,
+        "x": 529.53125,
+        "y": 293
+      },
+      {
+        "bottom": 574,
+        "h": 28,
+        "name": "Preview triage",
+        "right": 494.3125,
+        "w": 110.3125,
+        "x": 384,
+        "y": 546
+      },
+      {
+        "bottom": 644,
+        "h": 20,
+        "name": "Open Scratchpad →",
+        "right": 505.109375,
+        "w": 121.109375,
+        "x": 384,
+        "y": 624
+      }
+    ],
+    "scrollable": true,
+    "view": "scratchpad-settings",
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 120,
+        "h": 32,
+        "name": "General",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 88
+      },
+      {
+        "bottom": 154,
+        "h": 32,
+        "name": "Models & execution",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 122
+      },
+      {
+        "bottom": 188,
+        "h": 32,
+        "name": "Permissions",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 156
+      },
+      {
+        "bottom": 222,
+        "h": 32,
+        "name": "Files & context",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 190
+      },
+      {
+        "bottom": 256,
+        "h": 32,
+        "name": "Scratchpad",
+        "right": 360,
+        "w": 176,
+        "x": 184,
+        "y": 224
+      },
+      {
+        "bottom": 208,
+        "h": 30,
+        "name": "Review cadence",
+        "right": 593.5,
+        "w": 197.5,
+        "x": 396,
+        "y": 178
+      },
+      {
+        "bottom": 208,
+        "h": 30,
+        "name": "Review time",
+        "right": 743.75,
+        "w": 138.25,
+        "x": 605.5,
+        "y": 178
+      },
+      {
+        "bottom": 208,
+        "h": 30,
+        "name": "Review time zone",
+        "right": 1052,
+        "w": 296.25,
+        "x": 755.75,
+        "y": 178
+      },
+      {
+        "bottom": 242,
+        "h": 16,
+        "name": "INPUT",
+        "right": 409,
+        "w": 13,
+        "x": 396,
+        "y": 226
+      },
+      {
+        "bottom": 321,
+        "h": 28,
+        "name": "Save review plan",
+        "right": 521.53125,
+        "w": 125.53125,
+        "x": 396,
+        "y": 293
+      },
+      {
+        "bottom": 321,
+        "h": 28,
+        "name": "Cancel",
+        "right": 594.03125,
+        "w": 64.5,
+        "x": 529.53125,
+        "y": 293
+      },
+      {
+        "bottom": 574,
+        "h": 28,
+        "name": "Preview triage",
+        "right": 494.3125,
+        "w": 110.3125,
+        "x": 384,
+        "y": 546
+      },
+      {
+        "bottom": 644,
+        "h": 20,
+        "name": "Open Scratchpad →",
+        "right": 505.109375,
+        "w": 121.109375,
+        "x": 384,
+        "y": 624
+      }
+    ],
+    "scrollable": true,
+    "view": "scratchpad-settings",
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 120,
+        "h": 32,
+        "name": "General",
+        "right": 336,
+        "w": 152,
+        "x": 184,
+        "y": 88
+      },
+      {
+        "bottom": 154,
+        "h": 32,
+        "name": "Models & execution",
+        "right": 336,
+        "w": 152,
+        "x": 184,
+        "y": 122
+      },
+      {
+        "bottom": 188,
+        "h": 32,
+        "name": "Permissions",
+        "right": 336,
+        "w": 152,
+        "x": 184,
+        "y": 156
+      },
+      {
+        "bottom": 222,
+        "h": 32,
+        "name": "Files & context",
+        "right": 336,
+        "w": 152,
+        "x": 184,
+        "y": 190
+      },
+      {
+        "bottom": 256,
+        "h": 32,
+        "name": "Scratchpad",
+        "right": 336,
+        "w": 152,
+        "x": 184,
+        "y": 224
+      },
+      {
+        "bottom": 208,
+        "h": 30,
+        "name": "Review cadence",
+        "right": 559.5,
+        "w": 187.5,
+        "x": 372,
+        "y": 178
+      },
+      {
+        "bottom": 208,
+        "h": 30,
+        "name": "Review time",
+        "right": 702.75,
+        "w": 131.25,
+        "x": 571.5,
+        "y": 178
+      },
+      {
+        "bottom": 208,
+        "h": 30,
+        "name": "Review time zone",
+        "right": 996,
+        "w": 281.25,
+        "x": 714.75,
+        "y": 178
+      },
+      {
+        "bottom": 242,
+        "h": 16,
+        "name": "INPUT",
+        "right": 385,
+        "w": 13,
+        "x": 372,
+        "y": 226
+      },
+      {
+        "bottom": 321,
+        "h": 28,
+        "name": "Save review plan",
+        "right": 497.53125,
+        "w": 125.53125,
+        "x": 372,
+        "y": 293
+      },
+      {
+        "bottom": 321,
+        "h": 28,
+        "name": "Cancel",
+        "right": 570.03125,
+        "w": 64.5,
+        "x": 505.53125,
+        "y": 293
+      },
+      {
+        "bottom": 574,
+        "h": 28,
+        "name": "Preview triage",
+        "right": 470.3125,
+        "w": 110.3125,
+        "x": 360,
+        "y": 546
+      },
+      {
+        "bottom": 644,
+        "h": 20,
+        "name": "Open Scratchpad →",
+        "right": 481.109375,
+        "w": 121.109375,
+        "x": 360,
+        "y": 624
+      }
+    ],
+    "scrollable": true,
+    "view": "scratchpad-settings",
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 116,
+        "h": 32,
+        "name": "General",
+        "right": 82.171875,
+        "w": 70.171875,
+        "x": 12,
+        "y": 84
+      },
+      {
+        "bottom": 116,
+        "h": 32,
+        "name": "Models & execution",
+        "right": 231,
+        "w": 146.828125,
+        "x": 84.171875,
+        "y": 84
+      },
+      {
+        "bottom": 116,
+        "h": 32,
+        "name": "Permissions",
+        "right": 330.890625,
+        "w": 97.890625,
+        "x": 233,
+        "y": 84
+      },
+      {
+        "bottom": 116,
+        "h": 32,
+        "name": "Files & context",
+        "right": 448.21875,
+        "w": 115.328125,
+        "x": 332.890625,
+        "y": 84
+      },
+      {
+        "bottom": 116,
+        "h": 32,
+        "name": "Scratchpad",
+        "right": 546.25,
+        "w": 96.03125,
+        "x": 450.21875,
+        "y": 84
+      },
+      {
+        "bottom": 276,
+        "h": 30,
+        "name": "Review cadence",
+        "right": 378,
+        "w": 354,
+        "x": 24,
+        "y": 246
+      },
+      {
+        "bottom": 276,
+        "h": 30,
+        "name": "Review time",
+        "right": 744,
+        "w": 354,
+        "x": 390,
+        "y": 246
+      },
+      {
+        "bottom": 344,
+        "h": 30,
+        "name": "Review time zone",
+        "right": 744,
+        "w": 720,
+        "x": 24,
+        "y": 314
+      },
+      {
+        "bottom": 378,
+        "h": 16,
+        "name": "INPUT",
+        "right": 37,
+        "w": 13,
+        "x": 24,
+        "y": 362
+      },
+      {
+        "bottom": 457,
+        "h": 28,
+        "name": "Save review plan",
+        "right": 149.53125,
+        "w": 125.53125,
+        "x": 24,
+        "y": 429
+      },
+      {
+        "bottom": 457,
+        "h": 28,
+        "name": "Cancel",
+        "right": 222.03125,
+        "w": 64.5,
+        "x": 157.53125,
+        "y": 429
+      },
+      {
+        "bottom": 710,
+        "h": 28,
+        "name": "Preview triage",
+        "right": 122.3125,
+        "w": 110.3125,
+        "x": 12,
+        "y": 682
+      },
+      {
+        "bottom": 780,
+        "h": 20,
+        "name": "Open Scratchpad →",
+        "right": 133.109375,
+        "w": 121.109375,
+        "x": 12,
+        "y": 760
+      }
+    ],
+    "scrollable": true,
+    "view": "scratchpad-settings",
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 116,
+        "h": 32,
+        "name": "General",
+        "right": 82.171875,
+        "w": 70.171875,
+        "x": 12,
+        "y": 84
+      },
+      {
+        "bottom": 116,
+        "h": 32,
+        "name": "Models & execution",
+        "right": 231,
+        "w": 146.828125,
+        "x": 84.171875,
+        "y": 84
+      },
+      {
+        "bottom": 116,
+        "h": 32,
+        "name": "Permissions",
+        "right": 330.890625,
+        "w": 97.890625,
+        "x": 233,
+        "y": 84
+      },
+      {
+        "bottom": 150,
+        "h": 32,
+        "name": "Files & context",
+        "right": 127.328125,
+        "w": 115.328125,
+        "x": 12,
+        "y": 118
+      },
+      {
+        "bottom": 150,
+        "h": 32,
+        "name": "Scratchpad",
+        "right": 225.359375,
+        "w": 96.03125,
+        "x": 129.328125,
+        "y": 118
+      },
+      {
+        "bottom": 310,
+        "h": 30,
+        "name": "Review cadence",
+        "right": 181.5,
+        "w": 157.5,
+        "x": 24,
+        "y": 280
+      },
+      {
+        "bottom": 310,
+        "h": 30,
+        "name": "Review time",
+        "right": 351,
+        "w": 157.5,
+        "x": 193.5,
+        "y": 280
+      },
+      {
+        "bottom": 378,
+        "h": 30,
+        "name": "Review time zone",
+        "right": 351,
+        "w": 327,
+        "x": 24,
+        "y": 348
+      },
+      {
+        "bottom": 412,
+        "h": 16,
+        "name": "INPUT",
+        "right": 37,
+        "w": 13,
+        "x": 24,
+        "y": 396
+      },
+      {
+        "bottom": 491,
+        "h": 28,
+        "name": "Save review plan",
+        "right": 149.53125,
+        "w": 125.53125,
+        "x": 24,
+        "y": 463
+      },
+      {
+        "bottom": 491,
+        "h": 28,
+        "name": "Cancel",
+        "right": 222.03125,
+        "w": 64.5,
+        "x": 157.53125,
+        "y": 463
+      },
+      {
+        "bottom": 804,
+        "h": 28,
+        "name": "Preview triage",
+        "right": 122.3125,
+        "w": 110.3125,
+        "x": 12,
+        "y": 776
+      },
+      {
+        "bottom": 874,
+        "h": 20,
+        "name": "Open Scratchpad →",
+        "right": 133.109375,
+        "w": 121.109375,
+        "x": 12,
+        "y": 854
+      }
+    ],
+    "scrollable": true,
+    "view": "scratchpad-settings",
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  }
+]

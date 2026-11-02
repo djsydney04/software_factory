@@ -1,0 +1,4 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/runs/request/REQ-0DFB4E56".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 112
+The focused UI element is 119 heading One-off request, Value: 2

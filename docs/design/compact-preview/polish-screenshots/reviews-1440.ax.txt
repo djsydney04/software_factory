@@ -1,0 +1,209 @@
+Browser tab: 5, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/reviews".
+1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/reviews
+	2 container root
+		94 container Primary
+			95 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
+				96 menu
+					97 (selected) Green Room
+					98 (disabled) Other projects aren't in this preview
+			99 container Destinations
+				100 content list
+					101 link Description: Conversation, Value: localhost:5173/#/conversation
+					102 link Description: Runs, Value: localhost:5173/#/runs
+					103 link Description: Progress, Value: localhost:5173/#/progress
+					104 link Description: Reviews 2 ready, Value: localhost:5173/#/reviews
+			105 container Project utilities
+				106 content list
+					107 link Description: Files, Value: localhost:5173/#/files
+					108 link Description: Settings, Value: localhost:5173/#/settings
+		18 container
+			19 text Make the Collection faster to browse Now:  Records carousel respects Reduce Motion Running ·  2 agents Design preview
+		20 container main
+			109 heading Reviews, Value: 1
+				139 text Reviews
+			110 container Review queue
+				111 container
+					112 heading Ready, Value: 2
+						140 text Ready
+					113 content list
+						114 button Tighten Collection grid spacing #24 · Codex · checks passed
+							141 text Tighten Collection grid spacing
+							142 text #
+							143 text 24
+							144 text  · 
+							145 text Codex
+							146 text  · 
+							147 text checks passed
+						115 button Venue search empty state #23 · Claude · checks passed
+							148 text Venue search empty state
+							149 text #
+							150 text 23
+							151 text  · 
+							152 text Claude
+							153 text  · 
+							154 text checks passed
+				116 container
+					117 heading Changes requested, Value: 2
+						155 text Changes requested
+					118 content list
+						119 button Share sheet button label #22 · Codex · changes requested
+							156 text Share sheet button label
+							157 text #
+							158 text 22
+							159 text  · 
+							160 text Codex
+							161 text  · 
+							162 text changes requested
+				120 button (collapsed) Merged · 3, Secondary Actions: Expand
+					163 text Merged · 
+					164 text 3
+			121 container Tighten Collection grid spacing #24
+				122 container
+					123 heading Tighten Collection grid spacing #24, Value: 2, ID: review-title
+						165 text Tighten Collection grid spacing # 24
+					166 text Reduces grid card gutters from 20 to 12 points and aligns show counts to the artist name baseline.
+					124 tab group Review layout
+						125 tab (selected, settable, boolean) Split, Value: 1, ID: rvmode-tab-split
+						126 tab (selectable, settable, boolean) Preview, Value: 0, ID: rvmode-tab-preview
+						127 tab (selectable, settable, boolean) Diff, Value: 0, ID: rvmode-tab-diff
+					167 text a4f3c2e  ·
+					128 button Run R-3B7T
+						168 text Run 
+						169 text R-3B7T
+				129 container Description: Split, ID: rvmode-panel
+					170 container
+						171 image Green Room Collection screen with a two-column artist grid
+						172 text Sample screenshot ·  a4f3c2e  ·  R-3B7T
+					173 text src/Collection/ArtistRecordCard.swift + 18 − 11
+					174 container
+						175 text File
+						176 pop up button (collapsed, settable) File, Value: ArtistRecordCard.swift, Secondary Actions: Expand
+							177 menu
+								178 (selected) ArtistRecordCard.swift
+								179 CollectionGrid.swift
+								180 CollectionGridSnapshotTests.swift
+					181 text 3 files
+					182 container Diff of src/Collection/ArtistRecordCard.swift
+						183 table
+							184 row
+								185 cell
+									186 text import SwiftUI
+							187 row
+								188 cell
+									189 text struct ArtistRecordCard: View {
+							190 row
+								191 cell
+									192 text     let artist: Artist
+							193 row
+								194 cell
+									195 text     let showCount: Int
+							196 row
+								197 cell
+									198 text     var body: some View {
+							199 row
+								200 cell
+									201 text         VStack(alignment: .leading, spacing: 12) {
+							202 row
+								203 cell
+									204 text             HStack(spacing: 12) {
+							205 row
+								206 cell
+									207 text                 AlbumArtView(artist: artist)
+							208 row
+								209 cell
+									210 text                 RecordView(artist: artist)
+							211 row
+								212 cell
+									213 text             }
+							214 row
+								215 cell
+									216 text Removed:             .padding(.horizontal, 20)
+							217 row
+								218 cell
+									219 text Added:             .padding(.horizontal, 12)
+							220 row
+								221 cell
+									222 text             VStack(alignment: .leading, spacing: 4) {
+							223 row
+								224 cell
+									225 text                 Text(artist.name)
+							226 row
+								227 cell
+									228 text                     .font(.system(size: 16, weight: .medium))
+							229 row
+								230 cell
+									231 text Added:                     .alignmentGuide(.firstTextBaseline) { d in
+							232 row
+								233 cell
+									234 text Added:                         d[.firstTextBaseline]
+							235 row
+								236 cell
+									237 text Added:                     }
+							238 row
+								239 cell
+									240 text                 Text("\(showCount) show\(showCount == 1 ? "" : "s")")
+							241 row
+								242 cell
+									243 text                     .font(.system(size: 13))
+							244 row
+								245 cell
+									246 text                     .foregroundStyle(.secondary)
+							247 row
+								248 cell
+									249 text             }
+							250 row
+								251 cell
+									252 text         }
+							253 row
+								254 cell
+									255 text     }
+							256 row
+								257 cell
+									258 text }
+							259 row
+								260 cell
+									261 text struct CollectionGrid: View {
+							262 row
+								263 cell
+									264 text     let artists: [Artist]
+							265 row
+								266 cell
+									267 text     var body: some View {
+							268 row
+								269 cell
+									270 text         LazyVGrid(
+							271 row
+								272 cell
+									273 text Removed:             columns: [GridItem(.flexible())],
+							274 row
+								275 cell
+									276 text Removed:             spacing: 20
+							277 row
+								278 cell
+									279 text Added:             columns: [GridItem(.flexible()), GridItem(.flexible())],
+							280 row
+								281 cell
+									282 text Added:             spacing: 12
+							283 row
+								284 cell
+									285 text         ) {
+							286 row
+								287 cell
+									288 text             ForEach(artists) { ArtistRecordCard(artist: $0, showCount: $0.shows) }
+							289 row
+								290 cell
+									291 text         }
+							292 row
+								293 cell
+									294 text     }
+							295 row
+								296 cell
+									297 text }
+				134 container
+					298 text 6  checks passed on a4f3c2e
+					135 button Details
+					136 button 1 limitation
+					137 button Request changes
+					138 button Merge preview
+
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/reviews

@@ -1,0 +1,3 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/conversation".
+There has been no change in the accessibility tree.
+The focused UI element is 33 pop up button Permissions, Help: Next-send permissions · Green Room project defaults

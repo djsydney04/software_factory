@@ -1,0 +1,138 @@
+{
+  "observedAt": "2026-11-02T06:30:27.470738+00:00",
+  "provider": "Codex app-server 0.159.3",
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "projectId": "da851f34-1c8e-4fe7-82a4-2d2200beec28",
+  "requestId": "9fafec80-97e2-49ee-8180-4427d128dbec",
+  "taskId": "6d0a3967-a148-4065-abbf-70e4c89f5966",
+  "runId": "59bbbce4-a506-4b29-b4cf-4589446eac43",
+  "reviewId": "d148b1e7-8bb0-44cc-818d-9ff945a8568f",
+  "leadWakeId": "8ef90b12-b54c-4dc5-838c-0023e8d582c5",
+  "planningTurnId": "01a19af2-4791-7530-b64b-0db492fb8098",
+  "workerThreadId": "01a19af2-9e48-7d10-811a-31a101732e37",
+  "workerTurnId": "01a19af2-9ee2-7771-b316-5c00c3ccb5b4",
+  "leadResultTurnId": "01a19af3-247b-7cd0-88e5-1ded5c6c2d44",
+  "status": "succeeded",
+  "baseSha": "65b9475bab006db94901ce21445cbaefa109f2e2",
+  "testedRevision": "39576124ac6bd9d81ac0b1cfafb62c8d084c704a",
+  "head": "39576124ac6bd9d81ac0b1cfafb62c8d084c704a",
+  "worktreeClean": true,
+  "changedFiles": [
+    "value.txt"
+  ],
+  "valueInWorktree": "ready\n",
+  "valueInParent": "pending\n",
+  "checkSha256": "d39f3a427d4e57e5aa18cf83359b3ed7c013cd7e51b74d4fe66072e301a469e3",
+  "checks": [
+    {
+      "name": "/usr/bin/python3 check.py",
+      "program": "/usr/bin/python3",
+      "args": [
+        "check.py"
+      ],
+      "cwd": ".",
+      "revision": "39576124ac6bd9d81ac0b1cfafb62c8d084c704a",
+      "exitCode": 0,
+      "timedOut": false,
+      "output": "value.txt is ready\npython3: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead\npython3: error: couldn't create cache file '/tmp/xcrun_db-0k9hkD3R' (errno=Operation not permitted)\n2026-11-01 22:29:43.817 xcodebuild[89840:58658692]  DVTFilePathFSEvents: Failed to start fs event stream.\n2026-11-01 22:29:43.945 xcodebuild[89840:58658690] [MT] DVTDeveloperPaths: Failed to get length of DARWIN_USER_CACHE_DIR from confstr(3), error = Error Domain=NSPOSIXErrorDomain Code=5 \"Input/output error\". Using NSCachesDirectory instead.\npython3: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead\npython3: error: couldn't create cache file '/tmp/xcrun_db-Y1tHkvA0' (errno=Operation not permitted)\n2026-11-01 22:29:44.435 xcodebuild[89860:58658805]  DVTFilePathFSEvents: Failed to start fs event stream.\n2026-11-01 22:29:44.568 xcodebuild[89860:58658804] [MT] DVTDeveloperPaths: Failed to get length of DARWIN_USER_CACHE_DIR from confstr(3), error = Error Domain=NSPOSIXErrorDomain Code=5 \"Input/output error\". Using NSCachesDirectory instead.\n",
+      "startedAt": "2026-11-02T06:29:43.571Z",
+      "finishedAt": "2026-11-02T06:29:45.866Z"
+    }
+  ],
+  "requestedSettings": {
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "access": "worktree",
+    "permissions": {
+      "commands": "ask",
+      "network": "deny",
+      "integrations": "deny"
+    },
+    "maxTurnSeconds": 120,
+    "maxOutputTokens": 4000,
+    "maxAttempts": 1,
+    "reviewQueueCap": 1
+  },
+  "effectiveSettings": {
+    "model": "gpt-6.1-sol",
+    "effort": "low",
+    "access": "worktree",
+    "permissions": {
+      "commands": "ask",
+      "network": "deny",
+      "integrations": "deny"
+    },
+    "maxTurnSeconds": 120,
+    "maxOutputTokens": 4000,
+    "maxAttempts": 1,
+    "reviewQueueCap": 1
+  },
+  "executionAuthorization": {
+    "settings": {
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "access": "worktree",
+      "permissions": {
+        "commands": "allow",
+        "network": "deny",
+        "integrations": "deny"
+      },
+      "maxTurnSeconds": 120,
+      "maxOutputTokens": 4000,
+      "maxAttempts": 1,
+      "reviewQueueCap": 1
+    },
+    "approvalIds": [
+      "efa79a7f-e8b6-4410-a7e1-a38b384d56da"
+    ],
+    "limitations": [
+      "Agent command networking and integrations are disabled for this local alpha attempt.",
+      "The legacy provider sandbox permits host reads; a worktree does not isolate credentials.",
+      "Output usage is checked when reported; it is not a prepaid cost cap.",
+      "No rendered application preview was captured; inspect Changes and Evidence."
+    ],
+    "authorizedAt": "2026-11-02T06:29:11.110Z"
+  },
+  "leadResult": {
+    "status": "completed",
+    "summary": "Supervisor verification passed for revision `39576124`: `check.py` exited 0 without timing out and reported `value.txt is ready`. The reported change is limited to `value.txt`.\n\nAwaiting local review; no further work is authorized.",
+    "reason": "Waiting for the next eligible request or new steering; no additional work was started."
+  },
+  "usageEvents": [
+    {
+      "outputTokens": 115,
+      "totalTokens": 10821,
+      "type": "usage"
+    },
+    {
+      "outputTokens": 74,
+      "totalTokens": 13636,
+      "type": "usage"
+    },
+    {
+      "outputTokens": 173,
+      "totalTokens": 16269,
+      "type": "usage"
+    },
+    {
+      "outputTokens": 47,
+      "totalTokens": 17512,
+      "type": "usage"
+    }
+  ],
+  "diff": "diff --git a/value.txt b/value.txt\nindex 8a43550..395527d 100644\n--- a/value.txt\n+++ b/value.txt\n@@ -1 +1 @@\n-pending\n+ready\n",
+  "limitations": [
+    "Agent command networking and integrations are disabled for this local alpha attempt.",
+    "The legacy provider sandbox permits host reads; a worktree does not isolate credentials.",
+    "Output usage is checked when reported; it is not a prepaid cost cap.",
+    "No rendered application preview was captured; inspect Changes and Evidence."
+  ],
+  "counts": {
+    "requests": 1,
+    "tasks": 1,
+    "runs": 1,
+    "reviews": 1,
+    "lead_wakes": 1
+  }
+}

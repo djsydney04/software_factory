@@ -1,0 +1,10 @@
+{
+  "provider": "Cursor CLI",
+  "model": "Claude Opus 5.5 300K High",
+  "session_id": "ae2f78d9-346f-473e-8a4f-a7d8a1f4c7c2",
+  "model_requested": "claude-opus-5-5-high",
+  "mode": "plan",
+  "result": "success",
+  "duration_seconds": 27,
+  "raw_private_reasoning_included": false
+}

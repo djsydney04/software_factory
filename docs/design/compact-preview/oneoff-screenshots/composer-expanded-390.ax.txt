@@ -1,0 +1,3 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/conversation".
+There has been no change in the accessibility tree.
+The focused UI element is 96 pop up button (collapsed, settable) Description: Model, Value: Use project default (Claude Opus 5.5), Secondary Actions: Expand

@@ -1,0 +1,12 @@
+{
+  "provider": "Cursor CLI",
+  "model": "Claude Opus 5.5 300K High",
+  "model_requested": "claude-opus-5-5-high",
+  "session_id": "5fba86e2-5eeb-4a5a-8ec4-191d290c58c5",
+  "terminal_result": "success",
+  "duration_seconds": 1282,
+  "auto_review": true,
+  "sandbox": "enabled",
+  "parent_review_fixes": "Context capture, ignore globs, history persistence, focus/ARIA, review footer placement, compact unique IDs",
+  "raw_private_reasoning_included": false
+}

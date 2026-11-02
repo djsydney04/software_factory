@@ -1,0 +1,16 @@
+[package]
+name = "software-factory-desktop"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[build-dependencies]
+tauri-build = { version = "=2.7.4", features = [] }
+
+[dependencies]
+serde_json = "1"
+software-factory = { path = "../../.." }
+tauri = { version = "=2.12.5", features = [] }
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]

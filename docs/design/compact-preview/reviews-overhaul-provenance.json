@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-01",
+  "scope": "Read-only Reviews redesign consultation through Cursor CLI; local implementation decisions recorded separately.",
+  "model_requested": "claude-opus-5-5-high",
+  "model_effective": "Claude Opus 5.5 300K High",
+  "mode": "plan",
+  "sandbox": "enabled",
+  "session_id": "91653ad4-5f3f-4e6b-9778-16b866b69ccf",
+  "exit_code": 0,
+  "result_subtype": "success",
+  "is_error": false,
+  "duration_ms": 197440,
+  "public_plan_source": "createPlanToolCall.args.plan; summarized in reviews-overhaul-brief.md. Private reasoning is not published.",
+  "evidence_inspected": [
+    "apps/desktop/AGENTS.md",
+    "apps/desktop/src/Reviews.jsx",
+    "apps/desktop/src/styles.css",
+    "apps/desktop/src/data.js",
+    "apps/desktop/src/App.jsx",
+    "apps/desktop/src/Runs.jsx",
+    "apps/desktop/src/ui.jsx",
+    "docs/design/compact-preview/polish-screenshots/reviews-1440.png",
+    "docs/design/compact-preview/polish-screenshots/reviews-390.png"
+  ],
+  "evidence_limit": "Consultation used prior labeled preview captures and source inspection. Its layout budgets were calculated suggestions, not browser measurements. The current before screenshot arrived after its initial lookup.",
+  "accepted": [
+    "Shape A: compact inbox followed by a full-width review desk with stable review routes.",
+    "Separate Preview, Changes, and Evidence modes; remove the persistent queue and Split view.",
+    "Recoverable per-review feedback drafts and persisted local decisions.",
+    "Exact revision-bound evidence, explicit stale and missing states, and source validation at confirmation."
+  ],
+  "owner_decisions": [
+    "Keep inbox compact with status filter, search, and rows rather than six metadata columns.",
+    "Readable-width screenshot uses vertical scrolling; 100% means native source pixels with internal panning, not inferred 3x device-point scaling.",
+    "Previous and Next traverse all known reviews; do not automatically skip or advance after a decision.",
+    "Use only existing labeled screenshot sources; do not invent before imagery or a live preview.",
+    "A merge simulation requires Ready state, unchanged pinned source, a succeeded latest task attempt, and all well-formed current checks passing. Optional missing imagery alone does not block text-only review.",
+    "Keep all review actions browser-local; no GitHub call, provider dispatch, or repository mutation."
+  ],
+  "related_documents": [
+    "reviews-overhaul-brief.md",
+    "reviews-interaction-contract.md",
+    "../../../apps/desktop/design-qa.md"
+  ]
+}

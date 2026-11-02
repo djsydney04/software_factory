@@ -1,0 +1,5 @@
+Shell: sidebar (project switcher + destinations)  /  top bar (goal · current focus · factory state)
+├── Conversation   talk to the one lead agent             (no child views)
+├── Progress       watch the work                          Graph | Board | Radar  → selected task detail
+├── Reviews        decide on changes                       change list → selected change: Split | Preview | Diff → checks, limitations
+└── Settings       utility; pinned to the bottom of the sidebar, not a peer destination

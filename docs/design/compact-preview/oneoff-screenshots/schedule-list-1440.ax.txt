@@ -1,0 +1,48 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/runs/schedule".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 194-196, 203, 206, 213, 216, 223, 226, 233, 236
++		238 container Primary
++			239 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
++				240 menu
++					241 (selected) Green Room
++					242 (disabled) Other projects aren't in this preview
++			243 container Destinations
++				244 content list
++					245 link Description: Conversation, Value: localhost:5173/#/conversation
++					246 link Description: Runs, Value: localhost:5173/#/runs
++					247 link Description: Progress, Value: localhost:5173/#/progress
++					248 link Description: Reviews 2 ready, Value: localhost:5173/#/reviews
++			249 container Project utilities
++				250 content list
++					251 link Description: Files, Value: localhost:5173/#/files
++					252 link Description: Settings, Value: localhost:5173/#/settings
++			253 text Make the Collection faster to browse Now:  Records carousel respects Reduce Motion
++			254 text Running ·  2 agents Design preview
++					255 row
++						256 cell
++							257 text Request
++						258 cell
++							259 text When
++						260 cell
++							261 text Status
++						262 cell
++							263 text Model
++						264 cell
++							265 text Created
++						266 cell
++							267 text Codex GPT-5.3
++						268 cell
++							269 text Nov 1, 6:34 PM GMT-8
++						270 cell
++							271 text Claude Opus 5.5
++						272 cell
++							273 text Nov 1, 6:33 PM GMT-8
++						274 cell
++							275 text Codex GPT-5.3
++						276 cell
++							277 text Nov 1, 6:33 PM GMT-8
++						278 cell
++							279 text Claude Opus 5.5
++						280 cell
++							281 text Nov 1, 6:32 PM GMT-8
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/runs/schedule

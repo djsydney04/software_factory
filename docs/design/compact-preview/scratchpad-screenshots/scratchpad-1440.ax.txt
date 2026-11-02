@@ -1,0 +1,55 @@
+Browser tab: 6, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/scratchpad".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 80-156
++			173 container Capture a note
++				174 text New Scratchpad note
++				175 text entry area (settable) New Scratchpad note, ID: scratch-input
++				176 text ⌘/Ctrl + Enter to save
++				177 button (disabled) Add note
++			178 container Review schedule
++				179 text Review plan
++				180 text Every day at 09:00 · America/Los_Angeles
++				181 button (collapsed) Configure, Secondary Actions: Expand
++				182 text Runtime disconnected. Preview triage turns each inbox note into a saved request; no agent or cron runs.
++				183 button (disabled) Preview triage
++				184 container
++					185 text Last preview  11/1/2026, 7:14:20 PM
++			186 text 1 request saved for the Factory lead. Notes remain linked below.
++			187 container Saved notes
++				188 heading Notes, Value: 2
++					189 text Notes
++				190 container Filter Scratchpad notes
++					191 checkbox Inbox 0, Value: 0
++					192 checkbox Sent 3, Value: 0
++					193 checkbox Archived 0, Value: 0
++					194 checkbox All 3, Value: 1
++				195 content list
++					196 container
++						197 text Explore a larger redesign later.
++						198 text Sent to lead
++						199 text  · 
++						200 text Nov 1
++						201 text  · v
++						202 text 1
++						203 link Description: View request, Value: localhost:5173/#/runs/request/REQ-SP-D4C81470-1
++						204 button Archive
++					205 container
++						206 text Investigate slow album artwork.
+Keep the first change small.
++						207 text Sent to lead
++						208 text  · 
++						209 text Nov 1
++						210 text  · v
++						211 text 1
++						212 link Description: View request, Value: localhost:5173/#/runs/request/REQ-SP-5A44FEC4-1
++						213 button Archive
++					214 container
++						215 text Make the Collection filter bar easier to scan and test at large text sizes.
++						216 text Sent to lead
++						217 text  · 
++						218 text Nov 1
++						219 text  · v
++						220 text 2
++						221 link Description: View request, Value: localhost:5173/#/runs/request/REQ-SP-C74B362D-2
++						222 button Archive
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/scratchpad

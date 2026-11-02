@@ -1,0 +1,3 @@
+Browser tab: 14, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/settings/permissions".
+There has been no change in the accessibility tree.
+The focused UI element is 13 tab (selected, settable, boolean) Permissions, Value: 1, ID: settings-tab-permissions

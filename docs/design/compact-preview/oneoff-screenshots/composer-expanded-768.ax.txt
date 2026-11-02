@@ -1,0 +1,7 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/conversation".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 3-17, 72
++			123 button (collapsed) Description: Open navigation, Secondary Actions: Expand
++				124 image
+~			19 text Make the Collection faster to browse Design preview
+The focused UI element is 96 pop up button (collapsed, settable) Description: Model, Value: Use project default (Claude Opus 5.5), Secondary Actions: Expand

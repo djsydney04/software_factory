@@ -1,0 +1,22 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/conversation".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 3-4
++		47 container Primary
++			48 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
++				49 menu
++					50 (selected) Green Room
++					51 (disabled) Other projects aren't in this preview
++			52 container Destinations
++				53 content list
++					54 link Description: Conversation, Value: 127.0.0.1:5173/#/conversation
++					55 link Description: Scratchpad, Value: 127.0.0.1:5173/#/scratchpad
++					56 link Description: Runs, Value: 127.0.0.1:5173/#/runs
++					57 link Description: Progress, Value: 127.0.0.1:5173/#/progress
++					58 link Description: Reviews 2 ready, Value: 127.0.0.1:5173/#/reviews
++			59 container Project utilities
++				60 content list
++					61 link Description: Files, Value: 127.0.0.1:5173/#/files
++					62 link Description: Settings, Value: 127.0.0.1:5173/#/settings
+~			5 text Make the Collection faster to browse Now:  Records carousel respects Reduce Motion Running ·  2 agents Design preview
++					63 text Next send
+The focused UI element is 33 pop up button Permissions, Help: Next-send permissions · Green Room project defaults

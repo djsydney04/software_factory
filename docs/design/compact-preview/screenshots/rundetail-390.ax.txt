@@ -1,0 +1,48 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/runs/R-8K4D".
+1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/runs/R-8K4D
+	2 container root
+		18 container
+			21 button (collapsed) Description: Open navigation, Secondary Actions: Expand
+				22 image
+			23 text Make the Collection faster to browse Design preview
+		20 container main
+			24 container
+				25 button Runs
+				26 heading Records carousel respects Reduce Motion, Value: 1
+					27 text Records carousel respects Reduce Motion
+				28 text R-8K4D Running History
+				29 pop up button (collapsed, settable) History, Value: Attempt 2 · R-8K4D · Running, Secondary Actions: Expand
+					30 menu
+						31 Attempt 1 · R-7Q2M · Failed
+						32 (selected) Attempt 2 · R-8K4D · Running
+				33 button Interrupt
+				34 text Attempt  2  ·  Codex GPT-5.3  · started  11:46  · updated 11:59  · revision d27b4f8  · retry of  R-7Q2M
+			35 tab group Run detail
+				36 tab (selected, settable, boolean) Activity, Value: 1, ID: runtab-tab-activity
+				37 tab (selectable, settable, boolean) Files 1, Value: 0, ID: runtab-tab-files
+				38 tab (selectable, settable, boolean) Checks 2, Value: 0, ID: runtab-tab-checks
+				39 tab (selectable, settable, boolean) Artifacts 1, Value: 0, ID: runtab-tab-artifacts
+				40 tab (selectable, settable, boolean) Settings, Value: 0, ID: runtab-tab-settings
+			41 container Description: Activity, ID: runtab-panel
+				42 content list
+					43 container
+						44 text 11:46 Started from Attempt 1's failing UI test. Reading the carousel timer.
+						45 button (collapsed) 2 tool calls, Secondary Actions: Expand
+							46 text 2
+							47 text  tool 
+							48 text calls
+					49 container
+						50 text 11:53 Gated auto-advance on accessibilityReduceMotion and kept manual swipes.
+						51 button (collapsed) 1 tool call, Secondary Actions: Expand
+							52 text 1
+							53 text  tool 
+							54 text call
+					55 container
+						56 text 11:58 Running UI tests on d27b4f8.
+						57 button (collapsed) 1 tool call, Secondary Actions: Expand
+							58 text 1
+							59 text  tool 
+							60 text call
+				61 text Progress summaries and tool evidence. Private model reasoning isn't shown.
+
+The focused UI element is 26 heading Records carousel respects Reduce Motion, Value: 1

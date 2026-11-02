@@ -1,0 +1,167 @@
+Browser tab: 5, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/reviews".
+1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/reviews
+	2 container root
+		18 container
+			21 button (collapsed) Description: Open navigation, Secondary Actions: Expand
+				22 image
+			19 text Make the Collection faster to browse Design preview
+		20 container main
+			23 heading Reviews, Value: 1
+				47 text Reviews
+			24 container Review queue
+				25 container
+					48 text Review
+					26 pop up button (collapsed, settable) Review, Value: #24 Tighten Collection grid spacing · ready, Secondary Actions: Expand
+						27 menu
+							28 (selected) #24 Tighten Collection grid spacing · ready
+							49 #23 Venue search empty state · ready
+							50 #22 Share sheet button label · changes requested
+			29 container Tighten Collection grid spacing #24
+				30 container
+					31 heading Tighten Collection grid spacing #24, Value: 2, ID: review-title
+						51 text Tighten Collection grid spacing # 24
+					52 text Reduces grid card gutters from 20 to 12 points and aligns show counts to the artist name baseline.
+					32 tab group Review layout
+						33 tab (selected, settable, boolean) Split, Value: 1, ID: rvmode-tab-split
+						34 tab (selectable, settable, boolean) Preview, Value: 0, ID: rvmode-tab-preview
+						35 tab (selectable, settable, boolean) Diff, Value: 0, ID: rvmode-tab-diff
+					53 text a4f3c2e  ·
+					36 button Run R-3B7T
+						54 text Run 
+						55 text R-3B7T
+				37 container Description: Split, ID: rvmode-panel
+					56 container
+						57 image Green Room Collection screen with a two-column artist grid
+						58 text Sample screenshot ·  a4f3c2e  ·  R-3B7T
+					59 text src/Collection/ArtistRecordCard.swift
+					60 container
+						61 text File
+						62 pop up button (collapsed, settable) File, Value: ArtistRecordCard.swift, Secondary Actions: Expand
+							63 menu
+								64 (selected) ArtistRecordCard.swift
+								65 CollectionGrid.swift
+								66 CollectionGridSnapshotTests.swift
+					67 container Diff of src/Collection/ArtistRecordCard.swift
+						68 table
+							69 row
+								70 cell
+									71 text import SwiftUI
+							72 row
+								73 cell
+									74 text struct ArtistRecordCard: View {
+							75 row
+								76 cell
+									77 text     let artist: Artist
+							78 row
+								79 cell
+									80 text     let showCount: Int
+							81 row
+								82 cell
+									83 text     var body: some View {
+							84 row
+								85 cell
+									86 text         VStack(alignment: .leading, spacing: 12) {
+							87 row
+								88 cell
+									89 text             HStack(spacing: 12) {
+							90 row
+								91 cell
+									92 text                 AlbumArtView(artist: artist)
+							93 row
+								94 cell
+									95 text                 RecordView(artist: artist)
+							96 row
+								97 cell
+									98 text             }
+							99 row
+								100 cell
+									101 text Removed:             .padding(.horizontal, 20)
+							102 row
+								103 cell
+									104 text Added:             .padding(.horizontal, 12)
+							105 row
+								106 cell
+									107 text             VStack(alignment: .leading, spacing: 4) {
+							108 row
+								109 cell
+									110 text                 Text(artist.name)
+							111 row
+								112 cell
+									113 text                     .font(.system(size: 16, weight: .medium))
+							114 row
+								115 cell
+									116 text Added:                     .alignmentGuide(.firstTextBaseline) { d in
+							117 row
+								118 cell
+									119 text Added:                         d[.firstTextBaseline]
+							120 row
+								121 cell
+									122 text Added:                     }
+							123 row
+								124 cell
+									125 text                 Text("\(showCount) show\(showCount == 1 ? "" : "s")")
+							126 row
+								127 cell
+									128 text                     .font(.system(size: 13))
+							129 row
+								130 cell
+									131 text                     .foregroundStyle(.secondary)
+							132 row
+								133 cell
+									134 text             }
+							135 row
+								136 cell
+									137 text         }
+							138 row
+								139 cell
+									140 text     }
+							141 row
+								142 cell
+									143 text }
+							144 row
+								145 cell
+									146 text struct CollectionGrid: View {
+							147 row
+								148 cell
+									149 text     let artists: [Artist]
+							150 row
+								151 cell
+									152 text     var body: some View {
+							153 row
+								154 cell
+									155 text         LazyVGrid(
+							156 row
+								157 cell
+									158 text Removed:             columns: [GridItem(.flexible())],
+							159 row
+								160 cell
+									161 text Removed:             spacing: 20
+							162 row
+								163 cell
+									164 text Added:             columns: [GridItem(.flexible()), GridItem(.flexible())],
+							165 row
+								166 cell
+									167 text Added:             spacing: 12
+							168 row
+								169 cell
+									170 text         ) {
+							171 row
+								172 cell
+									173 text             ForEach(artists) { ArtistRecordCard(artist: $0, showCount: $0.shows) }
+							174 row
+								175 cell
+									176 text         }
+							177 row
+								178 cell
+									179 text     }
+							180 row
+								181 cell
+									182 text }
+				42 container
+					183 text 6  checks passed on a4f3c2e
+					43 button Details
+					44 button 1 limitation
+					45 button Request changes
+					46 button Merge preview
+
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/reviews

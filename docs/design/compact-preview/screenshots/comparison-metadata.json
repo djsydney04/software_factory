@@ -1,0 +1,47 @@
+{
+  "conversation": {
+    "source_pixels": [
+      1586,
+      992
+    ],
+    "implementation_pixels": [
+      1440,
+      900
+    ],
+    "css_viewport": [
+      1440,
+      900
+    ],
+    "device_scale_factor": 1
+  },
+  "radar": {
+    "source_pixels": [
+      1586,
+      992
+    ],
+    "implementation_pixels": [
+      1440,
+      900
+    ],
+    "css_viewport": [
+      1440,
+      900
+    ],
+    "device_scale_factor": 1
+  },
+  "reviews": {
+    "source_pixels": [
+      1586,
+      992
+    ],
+    "implementation_pixels": [
+      1440,
+      900
+    ],
+    "css_viewport": [
+      1440,
+      900
+    ],
+    "device_scale_factor": 1
+  }
+}

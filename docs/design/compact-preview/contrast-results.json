@@ -1,0 +1,516 @@
+{
+  "pass": true,
+  "pairs": [
+    {
+      "name": "primary on canvas",
+      "ratio": 14.5617,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "primary on sidebar",
+      "ratio": 13.3527,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "primary on raised",
+      "ratio": 15.6164,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "primary on inset",
+      "ratio": 12.9839,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "primary on hover",
+      "ratio": 12.747,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "primary on selected",
+      "ratio": 12.0616,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "primary on diff_add",
+      "ratio": 13.3673,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "primary on diff_remove",
+      "ratio": 12.6184,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "secondary on canvas",
+      "ratio": 6.2764,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "secondary on sidebar",
+      "ratio": 5.7553,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "secondary on raised",
+      "ratio": 6.731,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "secondary on inset",
+      "ratio": 5.5963,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "secondary on hover",
+      "ratio": 5.4942,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "secondary on selected",
+      "ratio": 5.1988,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "secondary on diff_add",
+      "ratio": 5.7616,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "secondary on diff_remove",
+      "ratio": 5.4388,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on canvas",
+      "ratio": 5.6233,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on sidebar",
+      "ratio": 5.1564,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on raised",
+      "ratio": 6.0306,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on inset",
+      "ratio": 5.014,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on hover",
+      "ratio": 4.9225,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on selected",
+      "ratio": 4.6579,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on diff_add",
+      "ratio": 5.1621,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on diff_remove",
+      "ratio": 4.8729,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "success on canvas",
+      "ratio": 5.7633,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "success on sidebar",
+      "ratio": 5.2848,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "success on raised",
+      "ratio": 6.1808,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "success on inset",
+      "ratio": 5.1388,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "success on hover",
+      "ratio": 5.0451,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "success on selected",
+      "ratio": 4.7738,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "success on diff_add",
+      "ratio": 5.2906,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "success on diff_remove",
+      "ratio": 4.9942,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "warning on canvas",
+      "ratio": 5.7866,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "warning on sidebar",
+      "ratio": 5.3061,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "warning on raised",
+      "ratio": 6.2057,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "warning on inset",
+      "ratio": 5.1596,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "warning on hover",
+      "ratio": 5.0654,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "warning on selected",
+      "ratio": 4.7931,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "warning on diff_add",
+      "ratio": 5.312,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "warning on diff_remove",
+      "ratio": 5.0144,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "danger on canvas",
+      "ratio": 5.7233,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "danger on sidebar",
+      "ratio": 5.2481,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "danger on raised",
+      "ratio": 6.1379,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "danger on inset",
+      "ratio": 5.1032,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "danger on hover",
+      "ratio": 5.0101,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "danger on selected",
+      "ratio": 4.7407,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "danger on diff_add",
+      "ratio": 5.2539,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "danger on diff_remove",
+      "ratio": 4.9595,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "info on canvas",
+      "ratio": 5.5913,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "info on sidebar",
+      "ratio": 5.127,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "info on raised",
+      "ratio": 5.9962,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "info on inset",
+      "ratio": 4.9854,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "info on hover",
+      "ratio": 4.8945,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "info on selected",
+      "ratio": 4.6313,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "info on diff_add",
+      "ratio": 5.1327,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "info on diff_remove",
+      "ratio": 4.8451,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "boundary on canvas",
+      "ratio": 3.8908,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "boundary on sidebar",
+      "ratio": 3.5677,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "boundary on raised",
+      "ratio": 4.1726,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "boundary on inset",
+      "ratio": 3.4692,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "boundary on hover",
+      "ratio": 3.4059,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "boundary on selected",
+      "ratio": 3.2228,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "boundary on diff_add",
+      "ratio": 3.5716,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "boundary on diff_remove",
+      "ratio": 3.3715,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "focus on canvas",
+      "ratio": 14.5617,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "focus on sidebar",
+      "ratio": 13.3527,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "focus on raised",
+      "ratio": 15.6164,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "focus on inset",
+      "ratio": 12.9839,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "focus on hover",
+      "ratio": 12.747,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "focus on selected",
+      "ratio": 12.0616,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "focus on diff_add",
+      "ratio": 13.3673,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "focus on diff_remove",
+      "ratio": 12.6184,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "primary action label",
+      "ratio": 11.487,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "sage indicator on canvas",
+      "ratio": 5.7633,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "sage indicator on sidebar",
+      "ratio": 5.2848,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "sage indicator on raised",
+      "ratio": 6.1808,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "sage indicator on inset",
+      "ratio": 5.1388,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "sage indicator on hover",
+      "ratio": 5.0451,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "sage indicator on selected",
+      "ratio": 4.7738,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "amber indicator on canvas",
+      "ratio": 5.7866,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "amber indicator on sidebar",
+      "ratio": 5.3061,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "amber indicator on raised",
+      "ratio": 6.2057,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "amber indicator on inset",
+      "ratio": 5.1596,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "amber indicator on hover",
+      "ratio": 5.0654,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "amber indicator on selected",
+      "ratio": 4.7931,
+      "minimum": 3,
+      "pass": true
+    }
+  ],
+  "limit": "Opaque declared pairs only; not a rendered accessibility audit. Threshold comparison uses unrounded values."
+}

@@ -1,0 +1,1092 @@
+[
+  {
+    "view": "expanded",
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 301,
+        "name": "composer",
+        "right": 1214,
+        "w": 820,
+        "x": 394,
+        "y": 583
+      },
+      {
+        "bottom": 620,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 479.265625,
+        "w": 70.265625,
+        "x": 409,
+        "y": 594
+      },
+      {
+        "bottom": 620,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 544,
+        "w": 64.734375,
+        "x": 479.265625,
+        "y": 594
+      },
+      {
+        "bottom": 622,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 717.9375,
+        "w": 121,
+        "x": 596.9375,
+        "y": 592
+      },
+      {
+        "bottom": 622,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 934.9375,
+        "w": 207,
+        "x": 727.9375,
+        "y": 592
+      },
+      {
+        "bottom": 710,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 1213,
+        "w": 818,
+        "x": 395,
+        "y": 650
+      },
+      {
+        "bottom": 797,
+        "h": 30,
+        "name": "Model",
+        "right": 666.328125,
+        "w": 259.328125,
+        "x": 407,
+        "y": 767
+      },
+      {
+        "bottom": 797,
+        "h": 30,
+        "name": "Effort",
+        "right": 933.65625,
+        "w": 259.328125,
+        "x": 674.328125,
+        "y": 767
+      },
+      {
+        "bottom": 797,
+        "h": 30,
+        "name": "Mode",
+        "right": 1201,
+        "w": 259.34375,
+        "x": 941.65625,
+        "y": 767
+      },
+      {
+        "bottom": 831,
+        "h": 28,
+        "name": "btn ghost sm",
+        "right": 1201,
+        "w": 140.109375,
+        "x": 1060.890625,
+        "y": 803
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 431,
+        "w": 28,
+        "x": 403,
+        "y": 845
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 799.25,
+        "w": 360.25,
+        "x": 439,
+        "y": 845
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 1205,
+        "w": 32,
+        "x": 1173,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "view": "expanded",
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 301,
+        "name": "composer",
+        "right": 1134,
+        "w": 820,
+        "x": 314,
+        "y": 583
+      },
+      {
+        "bottom": 620,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 399.265625,
+        "w": 70.265625,
+        "x": 329,
+        "y": 594
+      },
+      {
+        "bottom": 620,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 464,
+        "w": 64.734375,
+        "x": 399.265625,
+        "y": 594
+      },
+      {
+        "bottom": 622,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 637.9375,
+        "w": 121,
+        "x": 516.9375,
+        "y": 592
+      },
+      {
+        "bottom": 622,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 854.9375,
+        "w": 207,
+        "x": 647.9375,
+        "y": 592
+      },
+      {
+        "bottom": 710,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 1133,
+        "w": 818,
+        "x": 315,
+        "y": 650
+      },
+      {
+        "bottom": 797,
+        "h": 30,
+        "name": "Model",
+        "right": 586.328125,
+        "w": 259.328125,
+        "x": 327,
+        "y": 767
+      },
+      {
+        "bottom": 797,
+        "h": 30,
+        "name": "Effort",
+        "right": 853.65625,
+        "w": 259.328125,
+        "x": 594.328125,
+        "y": 767
+      },
+      {
+        "bottom": 797,
+        "h": 30,
+        "name": "Mode",
+        "right": 1121,
+        "w": 259.34375,
+        "x": 861.65625,
+        "y": 767
+      },
+      {
+        "bottom": 831,
+        "h": 28,
+        "name": "btn ghost sm",
+        "right": 1121,
+        "w": 140.109375,
+        "x": 980.890625,
+        "y": 803
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 351,
+        "w": 28,
+        "x": 323,
+        "y": 845
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 719.25,
+        "w": 360.25,
+        "x": 359,
+        "y": 845
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 1125,
+        "w": 32,
+        "x": 1093,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "view": "expanded",
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 301,
+        "name": "composer",
+        "right": 1006,
+        "w": 820,
+        "x": 186,
+        "y": 583
+      },
+      {
+        "bottom": 620,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 271.265625,
+        "w": 70.265625,
+        "x": 201,
+        "y": 594
+      },
+      {
+        "bottom": 620,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 336,
+        "w": 64.734375,
+        "x": 271.265625,
+        "y": 594
+      },
+      {
+        "bottom": 622,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 509.9375,
+        "w": 121,
+        "x": 388.9375,
+        "y": 592
+      },
+      {
+        "bottom": 622,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 726.9375,
+        "w": 207,
+        "x": 519.9375,
+        "y": 592
+      },
+      {
+        "bottom": 710,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 1005,
+        "w": 818,
+        "x": 187,
+        "y": 650
+      },
+      {
+        "bottom": 797,
+        "h": 30,
+        "name": "Model",
+        "right": 458.328125,
+        "w": 259.328125,
+        "x": 199,
+        "y": 767
+      },
+      {
+        "bottom": 797,
+        "h": 30,
+        "name": "Effort",
+        "right": 725.65625,
+        "w": 259.328125,
+        "x": 466.328125,
+        "y": 767
+      },
+      {
+        "bottom": 797,
+        "h": 30,
+        "name": "Mode",
+        "right": 993,
+        "w": 259.34375,
+        "x": 733.65625,
+        "y": 767
+      },
+      {
+        "bottom": 831,
+        "h": 28,
+        "name": "btn ghost sm",
+        "right": 993,
+        "w": 140.109375,
+        "x": 852.890625,
+        "y": 803
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 223,
+        "w": 28,
+        "x": 195,
+        "y": 845
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 591.25,
+        "w": 360.25,
+        "x": 231,
+        "y": 845
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 997,
+        "w": 32,
+        "x": 965,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "view": "expanded",
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 888,
+        "h": 417,
+        "name": "composer",
+        "right": 756,
+        "w": 744,
+        "x": 12,
+        "y": 471
+      },
+      {
+        "bottom": 508,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 97.265625,
+        "w": 70.265625,
+        "x": 27,
+        "y": 482
+      },
+      {
+        "bottom": 508,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 162,
+        "w": 64.734375,
+        "x": 97.265625,
+        "y": 482
+      },
+      {
+        "bottom": 510,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 335.9375,
+        "w": 121,
+        "x": 214.9375,
+        "y": 480
+      },
+      {
+        "bottom": 510,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 552.9375,
+        "w": 207,
+        "x": 345.9375,
+        "y": 480
+      },
+      {
+        "bottom": 598,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 755,
+        "w": 742,
+        "x": 13,
+        "y": 538
+      },
+      {
+        "bottom": 685,
+        "h": 30,
+        "name": "Model",
+        "right": 743,
+        "w": 718,
+        "x": 25,
+        "y": 655
+      },
+      {
+        "bottom": 743,
+        "h": 30,
+        "name": "Effort",
+        "right": 743,
+        "w": 718,
+        "x": 25,
+        "y": 713
+      },
+      {
+        "bottom": 801,
+        "h": 30,
+        "name": "Mode",
+        "right": 743,
+        "w": 718,
+        "x": 25,
+        "y": 771
+      },
+      {
+        "bottom": 835,
+        "h": 28,
+        "name": "btn ghost sm",
+        "right": 743,
+        "w": 140.109375,
+        "x": 602.890625,
+        "y": 807
+      },
+      {
+        "bottom": 877,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 49,
+        "w": 28,
+        "x": 21,
+        "y": 849
+      },
+      {
+        "bottom": 877,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 707,
+        "w": 650,
+        "x": 57,
+        "y": 849
+      },
+      {
+        "bottom": 879,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 747,
+        "w": 32,
+        "x": 715,
+        "y": 847
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "view": "expanded",
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 832,
+        "h": 525,
+        "name": "composer",
+        "right": 378,
+        "w": 366,
+        "x": 12,
+        "y": 307
+      },
+      {
+        "bottom": 344,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 97.265625,
+        "w": 70.265625,
+        "x": 27,
+        "y": 318
+      },
+      {
+        "bottom": 344,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 162,
+        "w": 64.734375,
+        "x": 97.265625,
+        "y": 318
+      },
+      {
+        "bottom": 346,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 335.9375,
+        "w": 121,
+        "x": 214.9375,
+        "y": 316
+      },
+      {
+        "bottom": 382,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 232,
+        "w": 207,
+        "x": 25,
+        "y": 352
+      },
+      {
+        "bottom": 490,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 377,
+        "w": 364,
+        "x": 13,
+        "y": 430
+      },
+      {
+        "bottom": 577,
+        "h": 30,
+        "name": "Model",
+        "right": 365,
+        "w": 340,
+        "x": 25,
+        "y": 547
+      },
+      {
+        "bottom": 635,
+        "h": 30,
+        "name": "Effort",
+        "right": 365,
+        "w": 340,
+        "x": 25,
+        "y": 605
+      },
+      {
+        "bottom": 693,
+        "h": 30,
+        "name": "Mode",
+        "right": 365,
+        "w": 340,
+        "x": 25,
+        "y": 663
+      },
+      {
+        "bottom": 779,
+        "h": 28,
+        "name": "btn ghost sm",
+        "right": 165.109375,
+        "w": 140.109375,
+        "x": 25,
+        "y": 751
+      },
+      {
+        "bottom": 821,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 49,
+        "w": 28,
+        "x": 21,
+        "y": 793
+      },
+      {
+        "bottom": 821,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 329,
+        "w": 272,
+        "x": 57,
+        "y": 793
+      },
+      {
+        "bottom": 823,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 369,
+        "w": 32,
+        "x": 337,
+        "y": 791
+      }
+    ],
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "view": "scheduled",
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 832,
+        "h": 228,
+        "name": "composer",
+        "right": 378,
+        "w": 366,
+        "x": 12,
+        "y": 604
+      },
+      {
+        "bottom": 641,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 97.265625,
+        "w": 70.265625,
+        "x": 27,
+        "y": 615
+      },
+      {
+        "bottom": 641,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 162,
+        "w": 64.734375,
+        "x": 97.265625,
+        "y": 615
+      },
+      {
+        "bottom": 643,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 335.9375,
+        "w": 121,
+        "x": 214.9375,
+        "y": 613
+      },
+      {
+        "bottom": 679,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 232,
+        "w": 207,
+        "x": 25,
+        "y": 649
+      },
+      {
+        "bottom": 787,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 377,
+        "w": 364,
+        "x": 13,
+        "y": 727
+      },
+      {
+        "bottom": 821,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 49,
+        "w": 28,
+        "x": 21,
+        "y": 793
+      },
+      {
+        "bottom": 821,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 329,
+        "w": 272,
+        "x": 57,
+        "y": 793
+      },
+      {
+        "bottom": 823,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 369,
+        "w": 32,
+        "x": 337,
+        "y": 791
+      }
+    ],
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "view": "scheduled",
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 888,
+        "h": 172,
+        "name": "composer",
+        "right": 756,
+        "w": 744,
+        "x": 12,
+        "y": 716
+      },
+      {
+        "bottom": 753,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 97.265625,
+        "w": 70.265625,
+        "x": 27,
+        "y": 727
+      },
+      {
+        "bottom": 753,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 162,
+        "w": 64.734375,
+        "x": 97.265625,
+        "y": 727
+      },
+      {
+        "bottom": 755,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 335.9375,
+        "w": 121,
+        "x": 214.9375,
+        "y": 725
+      },
+      {
+        "bottom": 755,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 552.9375,
+        "w": 207,
+        "x": 345.9375,
+        "y": 725
+      },
+      {
+        "bottom": 843,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 755,
+        "w": 742,
+        "x": 13,
+        "y": 783
+      },
+      {
+        "bottom": 877,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 49,
+        "w": 28,
+        "x": 21,
+        "y": 849
+      },
+      {
+        "bottom": 877,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 707,
+        "w": 650,
+        "x": 57,
+        "y": 849
+      },
+      {
+        "bottom": 879,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 747,
+        "w": 32,
+        "x": 715,
+        "y": 847
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "view": "scheduled",
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 172,
+        "name": "composer",
+        "right": 1006,
+        "w": 820,
+        "x": 186,
+        "y": 712
+      },
+      {
+        "bottom": 749,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 271.265625,
+        "w": 70.265625,
+        "x": 201,
+        "y": 723
+      },
+      {
+        "bottom": 749,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 336,
+        "w": 64.734375,
+        "x": 271.265625,
+        "y": 723
+      },
+      {
+        "bottom": 751,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 509.9375,
+        "w": 121,
+        "x": 388.9375,
+        "y": 721
+      },
+      {
+        "bottom": 751,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 726.9375,
+        "w": 207,
+        "x": 519.9375,
+        "y": 721
+      },
+      {
+        "bottom": 839,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 1005,
+        "w": 818,
+        "x": 187,
+        "y": 779
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 223,
+        "w": 28,
+        "x": 195,
+        "y": 845
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 591.25,
+        "w": 360.25,
+        "x": 231,
+        "y": 845
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 997,
+        "w": 32,
+        "x": 965,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "view": "scheduled",
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 172,
+        "name": "composer",
+        "right": 1134,
+        "w": 820,
+        "x": 314,
+        "y": 712
+      },
+      {
+        "bottom": 749,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 399.265625,
+        "w": 70.265625,
+        "x": 329,
+        "y": 723
+      },
+      {
+        "bottom": 749,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 464,
+        "w": 64.734375,
+        "x": 399.265625,
+        "y": 723
+      },
+      {
+        "bottom": 751,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 637.9375,
+        "w": 121,
+        "x": 516.9375,
+        "y": 721
+      },
+      {
+        "bottom": 751,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 854.9375,
+        "w": 207,
+        "x": 647.9375,
+        "y": 721
+      },
+      {
+        "bottom": 839,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 1133,
+        "w": 818,
+        "x": 315,
+        "y": 779
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 351,
+        "w": 28,
+        "x": 323,
+        "y": 845
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 719.25,
+        "w": 360.25,
+        "x": 359,
+        "y": 845
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 1125,
+        "w": 32,
+        "x": 1093,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "view": "scheduled",
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 172,
+        "name": "composer",
+        "right": 1214,
+        "w": 820,
+        "x": 394,
+        "y": 712
+      },
+      {
+        "bottom": 749,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 479.265625,
+        "w": 70.265625,
+        "x": 409,
+        "y": 723
+      },
+      {
+        "bottom": 749,
+        "h": 26,
+        "name": "BUTTON",
+        "right": 544,
+        "w": 64.734375,
+        "x": 479.265625,
+        "y": 723
+      },
+      {
+        "bottom": 751,
+        "h": 30,
+        "name": "When to schedule",
+        "right": 717.9375,
+        "w": 121,
+        "x": 596.9375,
+        "y": 721
+      },
+      {
+        "bottom": 751,
+        "h": 30,
+        "name": "Scheduled local date and time",
+        "right": 934.9375,
+        "w": 207,
+        "x": 727.9375,
+        "y": 721
+      },
+      {
+        "bottom": 839,
+        "h": 60,
+        "name": "TEXTAREA",
+        "right": 1213,
+        "w": 818,
+        "x": 395,
+        "y": 779
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Attach RecordsCarousel.swift as context",
+        "right": 431,
+        "w": 28,
+        "x": 403,
+        "y": 845
+      },
+      {
+        "bottom": 873,
+        "h": 28,
+        "name": "Next send settings: Codex GPT-5.3, High, Plan only, override",
+        "right": 799.25,
+        "w": 360.25,
+        "x": 439,
+        "y": 845
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "Submit one-off to Factory lead (preview)",
+        "right": 1205,
+        "w": 32,
+        "x": 1173,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  }
+]

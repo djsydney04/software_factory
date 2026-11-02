@@ -1,0 +1,3 @@
+Browser tab: 10, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/reviews/RV-24".
+There has been no change in the accessibility tree.
+The focused UI element is 41 tab (selected, settable, boolean) Preview, Value: 1, ID: rv-RV-24-tab-preview

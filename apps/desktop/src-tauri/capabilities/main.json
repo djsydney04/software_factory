@@ -1,0 +1,12 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Only the trusted Factory window may read daemon records and submit typed daemon commands.",
+  "windows": ["main"],
+  "permissions": [
+    "allow-factory-snapshot",
+    "allow-factory-events",
+    "allow-factory-command",
+    "allow-factory-capabilities"
+  ]
+}

@@ -1,0 +1,22 @@
+Browser tab: 8, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/scratchpad".
+1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/scratchpad
+	2 container root
+		19 container
+			26 button (collapsed) Description: Open navigation, Secondary Actions: Expand
+				27 image
+			20 text Make the Collection faster to browse Design preview
+		21 container Scratchpad
+			22 heading Scratchpad, Value: 1, ID: scratchpad-title
+				23 text Scratchpad
+			24 text entry area (settable) Description: Scratchpad document, Value: Make the Collection filter bar easier to scan and test at large text sizes.
+
+Investigate slow album artwork.
+Keep the first change small.
+
+Explore a larger redesign later.
+
+Check keyboard navigation in the Collection.
+Keep the first pass small.
+			25 text Saved locally
+
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/scratchpad

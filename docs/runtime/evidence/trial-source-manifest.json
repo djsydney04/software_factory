@@ -1,0 +1,277 @@
+{
+  "observedAt": "2026-11-02T06:33:13.844478+00:00",
+  "baseCommit": "4c8938e90f5f10e8d275c7a0fa64ce03f41cf7e4",
+  "note": "Uncommitted source implementation exercised by the native trial; base commit alone omits it. Source was unchanged between trial and this hash inventory. Documentation and evidence are inventoried separately by the portable handoff manifest.",
+  "files": [
+    {
+      "path": "Cargo.lock",
+      "bytes": 44329,
+      "sha256": "2cb9dd93fb26ac42e895e8fcd247b1d8f36c123da83e024a97803946054d5770"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 712,
+      "sha256": "79b9dac50e9b0570ffb24bb1eebe40c6de048fa9f58dd5824bb8c2ff078e8f17"
+    },
+    {
+      "path": "apps/desktop/package.json",
+      "bytes": 478,
+      "sha256": "f1c6023eecb6504ef598ad3dd82131d63e1152bbeed9732de18dafa9d00d7e89"
+    },
+    {
+      "path": "apps/desktop/pnpm-lock.yaml",
+      "bytes": 36761,
+      "sha256": "1259ad25df6214d73ffab88703ae8a2d1cdd6aa632a8ca8d40f37bce4ae84c66"
+    },
+    {
+      "path": "apps/desktop/src/App.jsx",
+      "bytes": 57569,
+      "sha256": "698315da5c480cfe86d87ab3e3c477797c08023356b0952fb73644dafad9db8a"
+    },
+    {
+      "path": "apps/desktop/src/LiveApp.jsx",
+      "bytes": 28923,
+      "sha256": "c623a31fedabfa5428e6bc32fbe47fbefcb1fbe981586a10089eeae3e9a4a2eb"
+    },
+    {
+      "path": "apps/desktop/src/Permissions.jsx",
+      "bytes": 1526,
+      "sha256": "628e857421309c650377082cbe871b6049c28a083255065336931e0d424f1824"
+    },
+    {
+      "path": "apps/desktop/src/Progress.jsx",
+      "bytes": 14747,
+      "sha256": "bd036a9bc8c243e317bbfd01940378f807a4275e59b5ac5002985ff636f341c4"
+    },
+    {
+      "path": "apps/desktop/src/Reviews.jsx",
+      "bytes": 25885,
+      "sha256": "d3a6e699dae06042d1457758649f896f04578b7553786d18e6c1985683c91a3f"
+    },
+    {
+      "path": "apps/desktop/src/Runs.jsx",
+      "bytes": 26447,
+      "sha256": "7cd511b30192f3cc8a94d8ffaf2f40b6cc6abfa26a5a2069a62ea97743166907"
+    },
+    {
+      "path": "apps/desktop/src/Schedule.jsx",
+      "bytes": 13419,
+      "sha256": "3278889ef11845bf10d7ecbd4e9dbdcbdd98db3c2d101bf3073c61c185a4e6d7"
+    },
+    {
+      "path": "apps/desktop/src/Scratchpad.jsx",
+      "bytes": 8554,
+      "sha256": "46eaf7c585cee68943ef0f25b3d0420f093515b3aab4bd2554c29d3276349eeb"
+    },
+    {
+      "path": "apps/desktop/src/data.js",
+      "bytes": 28162,
+      "sha256": "95dd278d735774f3033a01acb3da84c778dc1fca456ab531508d19da032e3c6f"
+    },
+    {
+      "path": "apps/desktop/src/live-state.js",
+      "bytes": 11682,
+      "sha256": "86cfaae7a9a6f1147a524c1e939b132d382da9c8155772bb29a53b54d7dea047"
+    },
+    {
+      "path": "apps/desktop/src/live.css",
+      "bytes": 1437,
+      "sha256": "81c686c0e6822f60ad6d22faf09fae456f4b386aaca4e1c0d01a0a39a09e31d2"
+    },
+    {
+      "path": "apps/desktop/src/main.jsx",
+      "bytes": 421,
+      "sha256": "f17e49b28b2559fd8a2495fbf8bf0eb0207f84880a13aa99f6e9d611a7b3ae8b"
+    },
+    {
+      "path": "apps/desktop/src/permissions.js",
+      "bytes": 1498,
+      "sha256": "2e5e5deea63f20d23de15e2fa7816704690ca0a721943f25364fb20cc38b1436"
+    },
+    {
+      "path": "apps/desktop/src/review-state.js",
+      "bytes": 8311,
+      "sha256": "5006630b14c227beabcc1676c3a840650fa8866b5a6390baec484a8276311918"
+    },
+    {
+      "path": "apps/desktop/src/reviews.css",
+      "bytes": 13896,
+      "sha256": "2d9b4b367b7e127e1132a6c77dbd4d8d5e25cfca8bb62d5823c7ef09d59f0697"
+    },
+    {
+      "path": "apps/desktop/src/scheduling.js",
+      "bytes": 6218,
+      "sha256": "e0c14fee7968b4fdac1f5a13b6d5467e54278ac35e5e1a3c20ea33960b2b13a7"
+    },
+    {
+      "path": "apps/desktop/src/scratchpad.js",
+      "bytes": 13922,
+      "sha256": "e822b1e506f842e85c9c550c462ed7dcd73cce02b190f02a4ee6ea409c570000"
+    },
+    {
+      "path": "apps/desktop/src/styles.css",
+      "bytes": 51875,
+      "sha256": "ba556eb38acaf521c4959f95aa4e0a87b9ac0b93f34bb35d310e97292d7e6816"
+    },
+    {
+      "path": "apps/desktop/src/ui.jsx",
+      "bytes": 6402,
+      "sha256": "8be7a9b05ae102a168c268ee8c7f8695da124c1ad5b8bf202d3332726fbfc6cf"
+    },
+    {
+      "path": "apps/desktop/src-tauri/Cargo.lock",
+      "bytes": 118753,
+      "sha256": "71e2f98328730f6f2242c292598aa0f7b28851c5628a2d062b6d96640d6c06e7"
+    },
+    {
+      "path": "apps/desktop/src-tauri/Cargo.toml",
+      "bytes": 346,
+      "sha256": "c7f2f98be4522d23fe95d640ba0999458e9ecdf9547d8648f5e9fbf54d529bec"
+    },
+    {
+      "path": "apps/desktop/src-tauri/build.rs",
+      "bytes": 354,
+      "sha256": "da8461dea5073f971857d1576f317913c0430b1d667f265f360bcbcf8af9aa0f"
+    },
+    {
+      "path": "apps/desktop/src-tauri/capabilities/main.json",
+      "bytes": 355,
+      "sha256": "09408d83fb14dddee03b784168ebb7c890ae03b6250839483aaadc16a4d22417"
+    },
+    {
+      "path": "apps/desktop/src-tauri/src/main.rs",
+      "bytes": 3928,
+      "sha256": "f4b3d12aa5bf8eaedb90368a2ade568574a8e9b6d50f57d3fd621cf139f1630c"
+    },
+    {
+      "path": "apps/desktop/src-tauri/tauri.conf.json",
+      "bytes": 1240,
+      "sha256": "31ea9f83f9844ecb3d49dff0501b398ca4d05ecbbd7d58870baa124c30408648"
+    },
+    {
+      "path": "apps/desktop/tests/live.test.mjs",
+      "bytes": 9584,
+      "sha256": "00eee467b09389399c7fca7ebd0d611367bc6fa7d4e1fde677d27cedf04628b2"
+    },
+    {
+      "path": "apps/desktop/tests/oneoff.test.mjs",
+      "bytes": 5879,
+      "sha256": "dbdf40847666711b9047bed62247cc127700fe7db053aa9b02ef6e4907808762"
+    },
+    {
+      "path": "apps/desktop/tests/permissions.test.mjs",
+      "bytes": 2838,
+      "sha256": "f5aacebea15c71b91fcdd6c6909c495f928287c514776119f6cf9d410f60af84"
+    },
+    {
+      "path": "apps/desktop/tests/reviews.test.mjs",
+      "bytes": 8474,
+      "sha256": "0fed0be5aeb03fe184f03e4e3ecdc3f7843093dff82071cc0395734c5b1d388f"
+    },
+    {
+      "path": "apps/desktop/tests/scratchpad-document.test.mjs",
+      "bytes": 20473,
+      "sha256": "5fae9a390f01ea75a5447bbaff4718ba2479ed6db843bb348991f80771fff887"
+    },
+    {
+      "path": "apps/desktop/tests/scratchpad.test.mjs",
+      "bytes": 6598,
+      "sha256": "bd83c49349a78834edfe1222e35d33bdaa8855493b8a32eb1a3ce5988d6be548"
+    },
+    {
+      "path": "apps/desktop/tests/sites-worker.test.mjs",
+      "bytes": 2219,
+      "sha256": "96af7b48906c6460c793356d7b6952f7d5026dbf5a502bec0d9297ff04201c26"
+    },
+    {
+      "path": "apps/desktop/tests/state.test.mjs",
+      "bytes": 2891,
+      "sha256": "8b26cf21999dbdef5f0404b0c43f532499edc097a0d384be81da46b5185bd17d"
+    },
+    {
+      "path": "src/bin/factoryd.rs",
+      "bytes": 3109,
+      "sha256": "a589e7e4831ebd1dfe7afd004f7115ef411d358ca051fc3aca2497ea52c7f0b4"
+    },
+    {
+      "path": "src/client.rs",
+      "bytes": 4859,
+      "sha256": "e012bc02cb82dcf763ba526be43acea3ab05de52c941cb3248202c3d2f8d2924"
+    },
+    {
+      "path": "src/lead.rs",
+      "bytes": 10813,
+      "sha256": "653e9c591da558e1dbde07b140676c434060d836a8187268e86a5ab805ab993e"
+    },
+    {
+      "path": "src/lib.rs",
+      "bytes": 130,
+      "sha256": "8aca3f662a77307b8fe210ad6c4d34515fad632ddfaa96aa057ca8e206dedd84"
+    },
+    {
+      "path": "src/model.rs",
+      "bytes": 13165,
+      "sha256": "9b2e52aab5aba413b25f8bd0de775e6ecb30876443518e18ae0fa13c29b3b8d8"
+    },
+    {
+      "path": "src/provider.rs",
+      "bytes": 46630,
+      "sha256": "62dba5290155e96e2d2d29e011761f482c095819d0ddfaab1ca2d0f1d77dc853"
+    },
+    {
+      "path": "src/runtime.rs",
+      "bytes": 32730,
+      "sha256": "b38962c0b07f54dd6ef3e4c18d73b72e35e686d18a61195101fc92e815ba26d3"
+    },
+    {
+      "path": "src/service.rs",
+      "bytes": 15600,
+      "sha256": "4da6014e113bf8c375a55ade6f22b4c625ffadc8a749f9a6e86d2bf57800ff01"
+    },
+    {
+      "path": "src/store.rs",
+      "bytes": 76585,
+      "sha256": "8e38e205a2cef69281e8905f7b59e244207932f1a8ce17c77f953cbe822977be"
+    },
+    {
+      "path": "src/worktree.rs",
+      "bytes": 19925,
+      "sha256": "2cc64ed7359a1fd149e3ab349e1497cad06922319d6983d10e99b791f20b26d1"
+    },
+    {
+      "path": "tests/fixtures/provider_fake.py",
+      "bytes": 10864,
+      "sha256": "b606126e1078cca66ddc930b15e83d7e6610ed583a40ee59f9311ee6b49db34a"
+    },
+    {
+      "path": "tests/lead.rs",
+      "bytes": 21161,
+      "sha256": "ba9d23dea1b13e6c104df17f8a3afd9a329df3ecb291bd3c055166f360e98e6b"
+    },
+    {
+      "path": "tests/provider.rs",
+      "bytes": 20709,
+      "sha256": "c4fd4d356db40f8a49a04959033a8d59ba53e54f4d415b4d6456d7af4e32c1b1"
+    },
+    {
+      "path": "tests/runtime.rs",
+      "bytes": 22116,
+      "sha256": "952c04bdabd064ade43c2b2b4ac50ae7e5d4cc3d728fd0c940c88dd636a22043"
+    },
+    {
+      "path": "tests/service.rs",
+      "bytes": 6538,
+      "sha256": "0c317185d6896fd8eaf8f73b1256906d181d3a7e19c34edfba26c2f4ecdb14b3"
+    },
+    {
+      "path": "tests/store.rs",
+      "bytes": 25412,
+      "sha256": "cf615378fdd8d1b8f39849fd419b006e49c48f7a94b930b925794f141780c281"
+    },
+    {
+      "path": "tests/worktree.rs",
+      "bytes": 16111,
+      "sha256": "ccf42d9ae7918a0adc2565222330b20ab8452844bde73e6617270e84036770f4"
+    }
+  ]
+}

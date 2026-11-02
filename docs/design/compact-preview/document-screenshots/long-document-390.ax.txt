@@ -1,0 +1,3 @@
+Browser tab: 9, Title: "localhost:5173/document-proof.html", URL: "http://localhost:5173/document-proof.html".
+There has been no change in the accessibility tree.
+The focused UI element is 9 button Long document fixture

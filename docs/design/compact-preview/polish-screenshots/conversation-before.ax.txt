@@ -1,0 +1,65 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/conversation".
+0 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/conversation
+	1 container root
+		2 container Primary
+			3 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
+				4 menu
+					5 (selected) Green Room
+					6 (disabled) Other projects aren't in this preview
+			7 container Destinations
+				8 content list
+					9 link Description: Conversation, Value: 127.0.0.1:5173/#/conversation
+					10 link Description: Runs, Value: 127.0.0.1:5173/#/runs
+					11 link Description: Progress, Value: 127.0.0.1:5173/#/progress
+					12 link Description: Reviews 2 ready, Value: 127.0.0.1:5173/#/reviews
+			13 container Project utilities
+				14 content list
+					15 link Description: Files, Value: 127.0.0.1:5173/#/files
+					16 link Description: Settings, Value: 127.0.0.1:5173/#/settings
+		17 container
+			18 text Make the Collection faster to browse Now:  Records carousel respects Reduce Motion Running ·  2 agents Design preview
+		19 container main
+			20 heading Conversation with the Factory lead, Value: 1
+				21 text Conversation with the Factory lead
+			22 content list
+				23 container
+					24 text You ·  9:42 This week, focus on Collection. The grid feels loose and the carousel ignores Reduce Motion.
+				25 container
+					26 text Factory 9:44 Saved the goal “Make the Collection faster to browse” and split it into tasks. Codex is on the carousel; Claude is adding the map link on venue detail.
+					27 link Description: Open Progress, Value: 127.0.0.1:5173/#/progress
+				28 container
+					29 text Factory 10:50 Refreshing the media cache needs network access. Allow it for this run only?
+					30 button Allow once
+					31 button Skip task
+					32 link Description: Open run, Value: 127.0.0.1:5173/#/runs/R-5N8P
+				33 container
+					34 text Factory 11:05 Grid spacing is ready for review. Checks passed on a4f3c2e. I couldn't capture an accessibility-size screenshot, so that's listed as a limitation.
+					35 link Description: Tighten Collection grid spacing #24 · a4f3c2e Open in Reviews, Value: 127.0.0.1:5173/#/reviews
+			36 container
+				37 text One-off task for the Factory lead
+				38 text entry area (settable) One-off task for the Factory lead, ID: composer-input
+				39 container Message type
+					40 checkbox Message, Value: 0
+					41 checkbox One-off, Value: 1
+				42 text When
+				43 pop up button (collapsed, settable) Description: When to schedule, Value: Lead decides, Secondary Actions: Expand
+					44 menu
+						45 (selected) Lead decides
+						46 Next available
+						47 Schedule at…
+				48 text The lead plans where this fits with ongoing project work.
+				49 checkbox Description: Attach RecordsCarousel.swift as context, Help: Attach RecordsCarousel.swift as context (no edit access), Value: 0
+					50 image
+				51 button (collapsed) Next send Codex GPT-5.3 · Medium · Ask first Default, Secondary Actions: Expand
+					52 text Next send
+					53 text Codex GPT-5.3
+					54 text  · 
+					55 text Medium
+					56 text  · 
+					57 text Ask first
+					58 text Default
+				59 text ⌘/Ctrl + Enter
+				60 button (disabled) Send to Factory lead (preview)
+					61 image
+
+The focused UI element is 41 checkbox One-off, Value: 1

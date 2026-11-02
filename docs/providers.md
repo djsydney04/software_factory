@@ -1,12 +1,14 @@
 # Provider integration
 
-Status: verified documentation and local protocol probes, October 31, 2026. Only Codex and Cursor binaries were present locally. These are integration contracts, not claims that all adapters are implemented.
+Status: Codex app-server adapter implemented and exercised in the native local alpha. Deterministic transport/control tests preceded one bounded real Codex fixture trial using `gpt-6.1-sol` at low effort: the supervisor observed `/usr/bin/python3 check.py` exit 0 at revision `39576124ac6bd9d81ac0b1cfafb62c8d084c704a`, and the local Review survived daemon restart. See the [runtime checkpoint](runtime/IMPLEMENTATION.md) and [trial record](runtime/INTEGRATION-TRIAL.md). The October 31 metadata probes and broader provider contracts below remain useful history; Claude, Cursor and Gemini factory adapters are not implemented.
+
+The alpha captures immutable requested/effective settings and separate execution authorization. It queues steering for the lead, performs independent checks with sandboxed `command/exec`, and disables native goal continuation, integrations and agent command networking. Installed legacy controls restrict writes/network, not host reads. Output usage is an observed stop threshold, not a hard prepaid token/cost cap. Unsupported restrictions fail closed; uncertain turn or stop outcomes remain `recovery_required` and fence successors.
 
 ## Common boundary
 
 Keep the supervisor independent of provider-specific transports. Each adapter receives a working directory, bounded task prompt, optional model/effort, optional saved session ID, permission policy and deadline. It emits normalized activity plus the original provider method/event for diagnostics.
 
-Persist provider IDs immediately. Use the supervisor's terminal run states: `Succeeded`, `Failed`, `Interrupted`, `Cancelled` and `NeedsApproval`. A timeout becomes `Failed` with reason `timeout`. An explicit durable user cancellation becomes `Cancelled`, even if the provider ends with an interrupted turn. A process exiting or a stream ending does not establish successful completion. Verification remains an evidence gate before a task moves from `Running` to `Review`.
+Persist provider IDs immediately. Use the supervisor's terminal run states: `Succeeded`, `Failed`, `Interrupted` and `Cancelled`. `NeedsApproval` is nonterminal waiting with a durable scoped approval record. If waiting must end, observe the executor's stopped terminal outcome and retain the unresolved approval separately. A timeout or interrupt with uncertain control remains `RecoveryRequired`, rather than claiming a stopped executor. A process exiting or a stream ending does not establish successful completion. Verification remains an evidence gate before a task moves from `Running` to `Review`; the alpha commits verified success and the Review together.
 
 Capabilities must be explicit: resume, live steering, approval callbacks, structured final output, usage reporting and sandboxing. If live steering is unavailable, save input for the next bounded turn and show that state. Do not silently claim equivalent behavior.
 
@@ -38,7 +40,7 @@ The first two messages must be sequenced around the successful initialization re
 
 For simpler finite jobs, `codex exec --json` emits JSONL activity, `--output-schema` requests a schema-shaped final answer, and `codex exec resume <SESSION_ID>` continues an existing session. Saved CLI authentication is reused by default. Use exec when interactive control is unnecessary; app-server provides the richer lifecycle the factory needs. [Official non-interactive documentation](https://learn.chatgpt.com/docs/non-interactive-mode)
 
-Local probes: `codex-cli 0.159.3`; handshake succeeded; `model/list` returned eight entries; `thread/goal/get` recognized the method and returned the expected missing-thread error. No inference was performed. The CLI exposes workspace-write sandboxing and schema generation. Its generated stable schema confirms `thread/start` and `thread/resume` accept `sandbox` and `approvalPolicy`; `turn/start` accepts `effort`; `turn/steer` requires `expectedTurnId`. Text input's `text_elements` field is optional. Runtime permissions and version checks remain necessary when invoking an actual task.
+October 31 metadata probes: `codex-cli 0.159.3`; handshake succeeded; `model/list` returned eight entries; `thread/goal/get` recognized the method and returned the expected missing-thread error. Those probes performed no inference. The CLI exposes workspace-write sandboxing and schema generation. Its generated stable schema confirms `thread/start` and `thread/resume` accept `sandbox` and `approvalPolicy`; `turn/start` accepts `effort`; `turn/steer` requires `expectedTurnId`. Text input's `text_elements` field is optional. Runtime permissions and version checks remain necessary when invoking an actual task.
 
 ## Native goals: verified persistence and remaining uncertainty
 
@@ -71,9 +73,9 @@ Official guidance describes goals as thread-scoped completion contracts. Continu
 
 Design inference: native goals can help complete one bounded task; they cannot replace factory-wide prioritization, cross-provider task assignment, review queues, recurring deployment observations or global budget enforcement. Keep one factory supervisor in charge of those decisions. Do not run both an assumed native continuation loop and an independent task continuation loop until ownership is demonstrated. The first adapter should execute explicit bounded turns and retain goal persistence as a capability rather than silently enabling autonomy.
 
-## Minimal Rust adapter proposal
+## Minimal Rust adapter design
 
-Keep the first implementation in `providers.rs`; no generic plugin framework is required. A concrete `CodexSession` owns the child process, stdin/stdout readers, pending RPC IDs and bounded stderr diagnostics.
+The implemented adapter lives in `src/provider.rs`; no generic plugin framework is required. A concrete `CodexSession` owns the child process, stdin/stdout readers, pending RPC IDs and bounded framing; stderr is drained and discarded. The sketch below preserves the original sequencing idea rather than the exact current signature.
 
 Use two steps so the supervisor can persist the provider thread before inference:
 
@@ -83,15 +85,15 @@ store.save_provider_thread(run_id, session.thread_id())?;
 let outcome = session.run(prompt, controls, on_event).await?;
 ```
 
-This is a proposed interface, not implemented code. `config` carries the working directory, optional model/effort, optional existing thread ID, permission policy and deadline. `controls` receives steering messages with durable IDs or an interrupt request. The fallible `on_event` sink persists a returned turn ID before acknowledging it to clients. Do not retry a turn start after losing its response without reconciling the saved thread.
+Current `CodexOptions` carries the executable, working directory, settings, optional existing thread ID and planner mode; `run` additionally receives an output schema, controls and a fallible event sink. Controls support interruption, while product steering queues for the lead. The sink persists a returned turn ID before acknowledging it to clients. Do not retry a turn start after losing its response without reconciling the saved thread.
 
-The adapter initializes once, starts/resumes the thread, then concurrently reads protocol messages, controls and its deadline. Match responses by RPC ID, since notifications can arrive between responses. Pass through unknown notification methods as diagnostics. A malformed required response, unexpected EOF or missing terminal turn is `Failed`, never `Succeeded`.
+The adapter initializes once, starts/resumes the thread, then concurrently reads protocol messages, controls and its deadline. Match responses by RPC ID, since notifications can arrive between responses. Pass through unknown notification methods as diagnostics. A malformed required response, unexpected EOF or missing terminal turn never establishes success. After inference may have begun, the alpha preserves uncertain control as `RecoveryRequired` rather than pretending the executor stopped.
 
 Steering acknowledgments identify the accepted input; the supervisor retains its own applied/evidence state. Stop using native `turn/interrupt`, allow a short grace period, then terminate and reap the owned process group if necessary. Preserve the supervisor's stop reason so cancellation, timeout and provider interruption remain distinct.
 
-Start with workspace-write sandboxing and a no-interactive-approval policy for unattended tasks. If a request still requires a person, emit its context, interrupt, and return `NeedsApproval` rather than waiting indefinitely or granting extra permissions. Add interactive approval responses only when the client can present and record them.
+Choose demonstrated sandbox/approval controls from the project's effective permission ceilings; workspace writes require authorized worktree access. If a request needs a person, persist its scope and enter nonterminal `NeedsApproval` while the adapter retains ownership. If interactive resolution is unavailable or a waiting deadline expires, interrupt and observe a stopped terminal outcome, retaining the unresolved approval/blocker separately. Never grant extra permissions or leave the protocol reader blocked indefinitely. Add interactive approval responses only when the client can present and durably record them.
 
-Provider outcome and supervisor outcome remain separate: raw Codex `completed` maps to `Succeeded`, `failed` to `Failed`, and `interrupted` to `Interrupted` unless a recorded cancellation/timeout/approval reason overrides it. The supervisor then performs task verification.
+Provider outcome and supervisor outcome remain separate: raw Codex `completed` maps to `Succeeded`, `failed` to `Failed`, and `interrupted` to `Interrupted` unless a recorded cancellation/timeout overrides it. Unresolved approval remains a separate blocker, not a terminal success or an excuse to duplicate execution. The supervisor then performs task verification.
 
 ## Claude
 

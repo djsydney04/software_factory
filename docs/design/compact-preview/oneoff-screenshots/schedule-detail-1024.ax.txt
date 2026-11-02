@@ -1,0 +1,95 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/runs/request/REQ-0DFB4E56".
+1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/runs/request/REQ-0DFB4E56
+	2 container root
+		97 container Primary
+			98 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
+				99 menu
+					100 (selected) Green Room
+					101 (disabled) Other projects aren't in this preview
+			102 container Destinations
+				103 content list
+					104 link Description: Conversation, Value: localhost:5173/#/conversation
+					105 link Description: Runs, Value: localhost:5173/#/runs
+					106 link Description: Progress, Value: localhost:5173/#/progress
+					107 link Description: Reviews 2 ready, Value: localhost:5173/#/reviews
+			108 container Project utilities
+				109 content list
+					110 link Description: Files, Value: localhost:5173/#/files
+					111 link Description: Settings, Value: localhost:5173/#/settings
+		18 container
+			112 text Make the Collection faster to browse
+			93 tab group Runs view
+				94 tab (selectable, settable, boolean) List, Value: 0, ID: runsview-tab-list
+				95 tab (selectable, settable, boolean) Timeline, Value: 0, ID: runsview-tab-timeline
+				96 tab (selected, settable, boolean) Schedule 3, Value: 1, ID: runsview-tab-schedule
+			113 text Running ·  2 agents Design preview
+		114 container Description: Schedule 3, ID: runsview-panel
+			115 container Selected one-off request
+				116 container
+					117 button Schedule
+					118 text REQ-0DFB4E56
+				119 heading One-off request, Value: 2
+					120 text One-off request
+				121 text Prepare a morning summary of completed work and open reviews.
+				122 definition list
+					123 container Status
+						124 text Status
+					125 text Scheduled
+					126 container Owner
+						127 text Owner
+					128 text Factory lead
+					129 container When
+						130 text When
+					131 container
+						132 text Nov 1, 2027, 9:00 AM GMT-7  ·  America/Los_Angeles
+					133 container Policy
+						134 text Policy
+					135 text Earliest start, subject to current work and dependencies.
+				136 button Reschedule…
+				137 button Cancel request
+				138 container
+					139 heading Requested settings, Value: 3
+						140 text Requested settings
+					141 text Captured at send · read only
+					142 text Nov 1, 2026, 6:34 PM GMT-8
+					143 definition list
+						144 container Model
+							145 text Model
+						146 container
+							147 text Codex GPT-5.3 Next-send override
+						148 container Effort
+							149 text Effort
+						150 container
+							151 text High Next-send override
+						152 container Mode
+							153 text Mode
+						154 container
+							155 text Ask first Project default at send
+						156 container Agent edits
+							157 text Agent edits
+						158 text Worktree edits
+						159 container Budget
+							160 text Budget
+						161 text $40 project limit
+						162 container Concurrency
+							163 text Concurrency
+						164 text 2
+					165 heading Context at send, Value: 3
+						166 text Context at send
+					167 text Inputs and permissions remain as captured when project defaults change.
+					168 content list
+						169 text README.md
+						170 text AGENTS.md
+						171 text .factory/config.toml
+						172 text src/Collection/CollectionGrid.swift
+						173 text src/Collection/ArtistRecordCard.swift
+						174 text src/Collection/RecordsCarousel.swift
+						175 text src/Venue/VenueDetailView.swift
+						176 text src/Media/MediaCache.swift
+					177 button (collapsed) Context configuration, Secondary Actions: Expand
+						178 text Context configuration
+				179 link Description: Open conversation, Value: localhost:5173/#/conversation
+				180 container
+					181 text Design preview · request  saved locally , nothing starts.
+
+The focused UI element is 119 heading One-off request, Value: 2

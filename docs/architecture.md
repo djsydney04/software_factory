@@ -1,6 +1,10 @@
 # Software Factory architecture
 
-Status: proposed v1 architecture, 31 October 2026. This document describes the intended contract; it does not certify that every capability is implemented.
+Status: broader v1 architecture proposed October 31, 2026; local-alpha implementation added November 1. The Rust/SQLite core, authenticated Axum daemon, Codex app-server adapter, managed attempt worktrees and thin Tauri client now exist. One bounded real fixture run produced a verified local Review; its records survived daemon restart. See the [runtime checkpoint](runtime/IMPLEMENTATION.md) and [integration trial](runtime/INTEGRATION-TRIAL.md). The browser-only React/Vite app remains a separate design preview with fixtures.
+
+The active [local-alpha goal](runtime/GOAL.md) narrows this older design: one project, one Codex lead, one worker and local review decisions. TUI, additional providers, GitHub/merge/deployment actions, recurring triage and hosted continuity remain later work. Tables and signatures labeled proposed below describe the broader design, not the current wire contract.
+
+For current implementation sequencing and amendments from later UI decisions, read the [agent build plan](handoff/BUILD-PLAN.md). It adds Request/source provenance and permission snapshots to this older inventory, treats approvals as nonterminal waiting, and narrows the first usable local cycle before TUI/provider expansion.
 
 Software Factory keeps a project objective alive, turns justified work into small tasks, runs agents, and assembles evidence for human review. A Rust daemon owns execution and durable state. A terminal client and desktop client present the same factory, tasks, runs, steering, and review actions.
 
@@ -14,26 +18,22 @@ Software Factory keeps a project objective alive, turns justified work into smal
 | Ratatui terminal client | Keyboard-first monitoring and steering. |
 | Tauri desktop shell | Rust desktop integration around a lightweight web interface. |
 | Codex app-server first | Use native persistent threads, streamed events, steering, and interruption; use headless CLI adapters for other providers. |
-| One Git worktree per coding task | Separate branches and files without provisioning a cloud runtime. |
+| One Git worktree per coding attempt | Separate files and revision evidence without provisioning a cloud runtime. |
 | Human merge gate | Make the final code and production decision deliberate and easy to review. |
 
 The daemon can run on an awake local machine or an always-on remote host. Closing the GUI should not stop it. A sleeping or powered-off laptop cannot continue local work; remote execution is a separate deployment requirement.
 
 ## Client experience
 
-Both clients expose a workspace overview across projects. Each project owns its own Conversation, Progress and Reviews destinations; navigation and actions make the selected project explicit. Conversation is the primary surface, with one human-facing main agent that owns the goal, accepts steering, and explains current decisions. Worker agents report through it; they do not create competing chat inboxes.
+Both clients use the same simple structure: Conversation, Progress and Reviews. Conversation is the primary surface, with one human-facing main agent that owns the goal, accepts steering, and explains current decisions. Worker agents report through it; they do not create competing chat inboxes.
 
 Progress is a separate surface for inspecting work through graph, board, or radar views. These are alternate projections of the same tasks and runs, not independent workflows. Start with a quiet overview and reveal worker activity, dependencies, logs, provider details, and evidence when a person selects an item. The current Sundial radar shows only planning, building, checking and waiting work; changes, PR previews, diffs and merge actions belong exclusively to Reviews. Reviews gives the selected change most of its workspace. Keep operational metadata out of the main conversation until it helps a decision. Final layout and visual treatment remain subject to the user's refined visual selection.
 
-Radar geometry must derive stage and stage-entry time from actual run/check/approval events, rather than generic task update times. Preserve stage angle and age radius during label/collision layout. Waiting marks may retain a static delegation arm without implying a running process or a live lease; heartbeat styling applies only to observed active runs. Missing and disconnected state must be explicit. See the [current design](design/soft-charcoal/README.md).
-
-Model selection has explicit scope: a workspace default initializes new projects; a project default applies to new worker runs without a task override; a lead selector applies from the next conversation turn; and a task override applies to its next run. Existing runs retain their recorded provider, model and effort. Populate choices from observed capabilities rather than treating mockup examples as available models.
-
-Runs are inspectable within the owning project’s Progress view. Task/run links and selected radar work resolve to the same run identifier. A detail view exposes the effective provider/model/effort, attempt history, tool activity, changes, checks and artifacts. Historical attempts retain their own evidence. Steer and interrupt target the selected active run; retry requires a terminal retryable outcome and no other active run for that task. Next-run model overrides never rewrite active-run metadata. Review and merge actions remain in Reviews.
+Radar geometry must derive stage and stage-entry time from actual run/check/approval events, rather than generic task update times. Preserve stage angle and age radius during label/collision layout. Waiting marks may retain a static delegation arm without implying a running process or a live lease; heartbeat styling applies only to observed active runs. Missing and disconnected state must be explicit. See the [current design](design/compact-preview/README.md).
 
 ## Modules and ownership
 
-`model` holds serializable types shared by the clients and daemon. `store` owns SQLite migrations and transactional updates. `scheduler` claims tasks and recovers interrupted runs. `provider` starts, resumes, observes, and interrupts agents. `server` exposes snapshots, events, and commands. `tui` renders the shared state. The desktop frontend consumes that same contract through Tauri.
+Current modules are `model` for shared types, `store` for SQLite migrations and transactional updates, `runtime` for scheduling and execution, `lead` for bounded lead wakeups, `provider` for Codex transport and controls, `worktree` for managed Git attempts, `service` for authenticated HTTP, and `client` for the native Rust bridge. `src/bin/factoryd.rs` owns the independent daemon. The desktop frontend consumes this contract through Tauri; no TUI is implemented yet.
 
 One source of truth is enough: ordinary SQL state plus an append-only events table. Update state and its event in the same transaction. Avoid implementing a second, independent event-sourcing system.
 
@@ -57,7 +57,7 @@ Use strings for opaque IDs and RFC 3339 UTC timestamps at the API boundary. Pers
 Start with these enums:
 
 - `TaskStatus`: `backlog`, `ready`, `running`, `review`, `done`, `blocked`.
-- `RunStatus`: `queued`, `running`, then terminal `succeeded`, `failed`, `interrupted`, `cancelled`, or `needs_approval`. Rust variant names are `Queued`, `Running`, `Succeeded`, `Failed`, `Interrupted`, `Cancelled`, and `NeedsApproval`.
+- `RunStatus`: `queued`, `running`, nonterminal `needs_approval`, and an observed stopping state such as `interrupting`; terminal outcomes are `succeeded`, `failed`, `interrupted`, or `cancelled`. Durable approval records and acknowledged stop must remain distinct from local UI intent. Final Rust types are implementation work.
 - `Provider`: `codex`, `claude`, `cursor`, `gemini`.
 - `Reasoning`: `low`, `medium`, `high`; an adapter must report when a requested setting is unsupported.
 - `SteeringMode`: `queue`, `now`.
@@ -78,7 +78,7 @@ Normal task flow is `backlog → ready → running → review → done`. A run c
 
 Verification is run activity and an evidence gate while the task remains Running; it is not another board column. Completing an agent process is insufficient for Review. The runtime checks its terminal outcome, then records relevant verification evidence. A review bundle contains the proposed change, test results, screenshots or demo when appropriate, preview URL when available, and unresolved limitations. Bind evidence to the tested commit SHA. A changed PR head makes old verification visibly stale.
 
-Run outcomes describe execution, separately from task progress. A timeout is `failed` with reason `timeout`. An explicit durable user cancellation is `cancelled`, even when the provider reports an interrupted turn. A permission request that cannot be resolved within the run becomes `needs_approval`; retain the task and surface its blocking reason. A `succeeded` run still needs verification before its task reaches Review.
+Run outcomes describe execution, separately from task progress. A pending permission request pauses the attempt in nonterminal `needs_approval` until durable resolution or an explicit stop; retain the task and surface its blocking reason. A provider-completed turn still needs independent verification. In the alpha, verified run success and its Review packet commit together; uncertain timeout or interruption remains `recovery_required` and fences successors.
 
 Done means an accepted result: merged PR for coding work, or an explicitly accepted research or operational result. Preserve this distinction so the board does not confuse generated code with delivered software.
 
@@ -90,13 +90,15 @@ Begin with one planner and a small configurable worker cap. Prioritize human ste
 
 Claim the next task in an immediate SQLite transaction, checking the factory is active and the concurrency budget is available. Enforce one active run per task with a database constraint. Store the run lease before launching a process; heartbeat while it runs. A lease grants ownership of bookkeeping, not permission to duplicate an uncertain external side effect.
 
-On restart, reconcile leases, child processes, provider sessions, and worktree state. Mark unknown outcomes interrupted. Re-read GitHub or deployment state before retrying a push, PR creation, or merge. Use an idempotency key for each automation occurrence and each external action that supports one. Bound automatic retries and record the reason for stopping.
+On restart, reconcile ownership, child processes, provider sessions, and worktree state. The alpha preserves uncertain outcomes as `recovery_required` and fences successor execution; process loss alone does not prove interruption. Before future external writes, re-read GitHub or deployment state and use an idempotency key for each supported action or automation occurrence. Bound retries and record the reason for stopping.
 
 ## Steering and context
 
 Commit steering before acknowledging it to the client. Increment the context revision. Include the objective, applicable steering, acceptance criteria, relevant decisions and evidence, prior run summary, and repository instructions in the next run's context packet. Keep the packet bounded and link to deeper material instead of copying entire histories.
 
 Queue is the default during an active run. Immediate steering uses the provider's supported steering operation; otherwise interrupt and resume at a safe boundary. Display received, queued, and acknowledged states separately. Accepted input does not prove the agent has acted on it.
+
+In the current alpha, new steering queues for the sole lead's next bounded turn; it does not bypass the lead into an active worker. The lead plans one task from an eligible Request or records a waiting reason. Completion wakes a bounded read-only lead summary; the daemon does not generate an unlimited stream of new tasks from the objective alone.
 
 Memory belongs to the factory and survives individual provider sessions. Keep observations and verified lessons distinct. Every claimed lesson should cite a run, test, incident, or human decision. Do not automatically turn model speculation into permanent policy. Improvements to the harness should be versioned, evaluated against fixtures, and reviewed like other changes.
 
@@ -122,6 +124,8 @@ Avoid holding a `rusqlite::Connection` across an async wait. Use a short-lived c
 
 ## Proposed API
 
+The implemented API uses authenticated `GET /v1/snapshot`, `GET /v1/events`, `GET /v1/capabilities` and `POST /v1/commands`, plus readiness-only `GET /health`. Commands carry a persisted `commandId`; the Tauri bridge keeps the rotating daemon credential outside JavaScript. The older `/api` paths below are historical proposals and must not be used as current examples.
+
 | Endpoint | Purpose |
 | --- | --- |
 | `GET /api/snapshot?factory_id=…` | Current view with the latest event sequence. |
@@ -137,7 +141,7 @@ Bind the local daemon to loopback and require a per-installation token for proje
 
 ## Provider and integration boundaries
 
-Build Codex integration on app-server first: persist its thread/turn identifiers and normalize its protocol events. A read-only local capability probe completed initialization and protocol metadata requests; it did not perform inference. Claude, Cursor, and Gemini use headless CLI adapters with their own success parsing, resume, interruption, and authentication checks. A generic API chat completion is not an agent harness; API-backed execution needs a supported agent SDK/runtime or an explicit tool loop. See [providers.md](providers.md) for the current transport contract and probe limits.
+The implemented Codex integration uses app-server, persists thread/turn identifiers and normalizes protocol events. Earlier metadata-only probes are now supplemented by the bounded real trial linked above. Claude, Cursor, and Gemini remain proposed headless CLI adapters with their own required success parsing, resume, interruption, and authentication checks. A generic API chat completion is not an agent harness; API-backed execution needs a supported agent SDK/runtime or an explicit tool loop. See [providers.md](providers.md) for transport details and limits.
 
 CLI and MCP access should be scoped per factory. Reuse provider-native MCP configuration initially. A worktree separates edits; it does not isolate dependencies, ports, databases, credentials, or network access. Move execution into containers or remote sandboxes when that boundary is needed.
 
@@ -145,8 +149,14 @@ GitHub supplies PR state and review actions. Cloudflare and Vercel observation s
 
 ## Delivery boundary
 
-The first complete slice is one factory, a persistent objective, queued tasks, the Codex app-server integration, revisioned steering, daemon recovery, shared terminal/desktop Conversation and Progress surfaces, and a review bundle. The UI should identify seeded examples and unavailable connections clearly. Graph, board, and radar reuse the shared task/run state; worker details remain progressively disclosed.
+The implemented first local slice is one project, a persistent objective, eligible requests and planned tasks, Codex app-server execution, revisioned steering, daemon recovery, native Conversation/Progress/Reviews surfaces, and a local review packet. Terminal-client parity remains later work. The UI identifies seeded examples and unavailable connections clearly. Graph, board, and radar reuse the shared task/run state; worker details remain progressively disclosed.
 
 Later increments: additional tested providers, GitHub review/merge, preview capture, deployment observation, recurring automations, always-on remote workers, container isolation, and evaluated harness improvements. These are subsequent capabilities unless the implementation and its verification actually land.
 
 Verify scheduling and recovery with a fake provider before spending model tokens: concurrent claims, daemon restart after claim, truncated provider output, steering during a run, retry exhaustion, automation deduplication, and review queue saturation. Then exercise a real bounded provider task. Record actual outcomes separately from planned experiments.
+
+## Additional workspace proposals
+
+The [Soft Charcoal exploration](design/soft-charcoal/README.md) proposes a workspace overview across projects, project-scoped destinations and explicit model scopes: workspace defaults for new projects, project defaults for new worker runs, lead choices for the next conversation turn, and task overrides for the next attempt. Existing attempts keep their captured provider/model/effort. That broader multi-project hierarchy remains a proposal; the implemented alpha has one project per data directory and the current compact UI.
+
+The exploration's run drilldown uses stable task/run identities for tool activity, changes, checks and artifacts, while review/merge actions stay in Reviews. Preserve historical attempt evidence and never rewrite active-run metadata when choosing future settings. The alpha's actual supported run controls and limitations are documented in getting started.

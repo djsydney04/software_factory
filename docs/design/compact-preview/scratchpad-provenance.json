@@ -1,0 +1,12 @@
+{
+  "provider": "Cursor CLI",
+  "requested_model": "claude-opus-5-5-high",
+  "effective_model": "Claude Opus 5.5 300K High",
+  "session_id": "e837c204-653d-47bd-9efd-89f07e1004f2",
+  "mode": "plan",
+  "result": "success",
+  "duration_ms": 47101,
+  "role": "Bounded design consultation; implementation and verification by Codex",
+  "public_plan": "scratchpad-claude-brief.md",
+  "raw_private_reasoning_included": false
+}

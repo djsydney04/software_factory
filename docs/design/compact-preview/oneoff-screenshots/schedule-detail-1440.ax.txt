@@ -1,0 +1,150 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/runs/request/REQ-0DFB4E56".
+1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/runs/request/REQ-0DFB4E56
+	2 container root
+		97 container Primary
+			98 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
+				99 menu
+					100 (selected) Green Room
+					101 (disabled) Other projects aren't in this preview
+			102 container Destinations
+				103 content list
+					104 link Description: Conversation, Value: localhost:5173/#/conversation
+					105 link Description: Runs, Value: localhost:5173/#/runs
+					106 link Description: Progress, Value: localhost:5173/#/progress
+					107 link Description: Reviews 2 ready, Value: localhost:5173/#/reviews
+			108 container Project utilities
+				109 content list
+					110 link Description: Files, Value: localhost:5173/#/files
+					111 link Description: Settings, Value: localhost:5173/#/settings
+		18 container
+			112 text Make the Collection faster to browse Now:  Records carousel respects Reduce Motion
+			93 tab group Runs view
+				94 tab (selectable, settable, boolean) List, Value: 0, ID: runsview-tab-list
+				95 tab (selectable, settable, boolean) Timeline, Value: 0, ID: runsview-tab-timeline
+				96 tab (selected, settable, boolean) Schedule 3, Value: 1, ID: runsview-tab-schedule
+			113 text Running ·  2 agents Design preview
+		114 container main
+			115 heading Schedule, Value: 1
+				116 text Schedule
+			117 container Filter one-off requests
+				118 checkbox All 4, Value: 1
+				119 checkbox Waiting 3, Value: 0
+				120 checkbox Due 0, Value: 0
+				121 checkbox Cancelled 1, Value: 0
+			122 container
+				123 text Search requests
+				124 search text field (settable) Search requests
+			125 button New one-off
+			126 container Description: Schedule 3, ID: runsview-panel
+				127 text One-off requests for the Factory lead. Execution attempts appear in List and Timeline.
+				128 table
+					129 row
+						130 cell
+							131 text Request
+						132 cell
+							133 text When
+						134 cell
+							135 text Status
+					136 row
+						137 cell
+							138 button Prepare a morning summary of completed work and open reviews.
+							139 text REQ-0DFB4E56
+						140 cell
+							141 text Nov 1, 2027, 9:00 AM GMT-7
+						142 cell
+							143 text Scheduled
+					144 row
+						145 cell
+							146 button Investigate the slower Collection load and propose a small fix.
+							147 text REQ-12EBD44E
+						148 cell
+							149 text Lead decides
+						150 cell
+							151 text Awaiting plan
+					152 row
+						153 cell
+							154 button Run the accessibility pass after current work.
+							155 text REQ-475C37BC
+						156 cell
+							157 text Next available
+						158 cell
+							159 text Queued request
+					160 row
+						161 cell
+							162 button Check the compact run views and report spacing issues.
+							163 text REQ-CF8AAAD0
+						164 cell
+							165 text Next available
+						166 cell
+							167 text Cancelled
+				168 container
+					169 text Design preview: requests are  saved locally ; nothing starts. The lead will orchestrate work when connected.
+				170 container Selected one-off request
+					171 container
+						172 button Schedule
+						173 text REQ-0DFB4E56
+					174 heading One-off request, Value: 2
+						175 text One-off request
+					176 text Prepare a morning summary of completed work and open reviews.
+					177 definition list
+						178 container Status
+							179 text Status
+						180 text Scheduled
+						181 container Owner
+							182 text Owner
+						183 text Factory lead
+						184 container When
+							185 text When
+						186 container
+							187 text Nov 1, 2027, 9:00 AM GMT-7  ·  America/Los_Angeles
+						188 container Policy
+							189 text Policy
+						190 text Earliest start, subject to current work and dependencies.
+					191 button Reschedule…
+					192 button Cancel request
+					193 container
+						194 heading Requested settings, Value: 3
+							195 text Requested settings
+						196 text Captured at send · read only
+						197 text Nov 1, 2026, 6:34 PM GMT-8
+						198 definition list
+							199 container Model
+								200 text Model
+							201 container
+								202 text Codex GPT-5.3 Next-send override
+							203 container Effort
+								204 text Effort
+							205 container
+								206 text High Next-send override
+							207 container Mode
+								208 text Mode
+							209 container
+								210 text Ask first Project default at send
+							211 container Agent edits
+								212 text Agent edits
+							213 text Worktree edits
+							214 container Budget
+								215 text Budget
+							216 text $40 project limit
+							217 container Concurrency
+								218 text Concurrency
+							219 text 2
+						220 heading Context at send, Value: 3
+							221 text Context at send
+						222 text Inputs and permissions remain as captured when project defaults change.
+						223 content list
+							224 text README.md
+							225 text AGENTS.md
+							226 text .factory/config.toml
+							227 text src/Collection/CollectionGrid.swift
+							228 text src/Collection/ArtistRecordCard.swift
+							229 text src/Collection/RecordsCarousel.swift
+							230 text src/Venue/VenueDetailView.swift
+							231 text src/Media/MediaCache.swift
+						232 button (collapsed) Context configuration, Secondary Actions: Expand
+							233 text Context configuration
+					234 link Description: Open conversation, Value: localhost:5173/#/conversation
+					235 container
+						236 text Design preview · request  saved locally , nothing starts.
+
+The focused UI element is 174 heading One-off request, Value: 2

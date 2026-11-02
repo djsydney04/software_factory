@@ -1,0 +1,127 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/runs/request/REQ-CF8AAAD0".
+0 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/runs/request/REQ-CF8AAAD0
+	1 container root
+		2 container Primary
+			3 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
+				4 menu
+					5 (selected) Green Room
+					6 (disabled) Other projects aren't in this preview
+			7 container Destinations
+				8 content list
+					9 link Description: Conversation, Value: localhost:5173/#/conversation
+					10 link Description: Runs, Value: localhost:5173/#/runs
+					11 link Description: Progress, Value: localhost:5173/#/progress
+					12 link Description: Reviews 2 ready, Value: localhost:5173/#/reviews
+			13 container Project utilities
+				14 content list
+					15 link Description: Files, Value: localhost:5173/#/files
+					16 link Description: Settings, Value: localhost:5173/#/settings
+		17 container
+			18 text Make the Collection faster to browse Now:  Records carousel respects Reduce Motion
+			20 tab group Runs view
+				21 tab (selectable, settable, boolean) List, Value: 0, ID: runsview-tab-list
+				22 tab (selectable, settable, boolean) Timeline, Value: 0, ID: runsview-tab-timeline
+				23 tab (selected, settable, boolean) Schedule 1, Value: 1, ID: runsview-tab-schedule
+			24 text Running ·  2 agents Design preview
+		19 container main
+			25 heading Schedule, Value: 1
+				48 text Schedule
+			26 container Filter one-off requests
+				27 checkbox All 1, Value: 1
+				28 checkbox Waiting 1, Value: 0
+				29 checkbox Due 0, Value: 0
+				30 checkbox Cancelled 0, Value: 0
+			31 container
+				49 text Search requests
+				32 search text field (settable) Search requests
+			33 button New one-off
+			34 container Description: Schedule 1, ID: runsview-panel
+				50 text One-off requests for the Factory lead. Execution attempts appear in List and Timeline.
+				35 table
+					51 row
+						52 cell
+							53 text Request
+						54 cell
+							55 text When
+						56 cell
+							57 text Status
+					36 row
+						37 cell
+							38 button Check the compact run views and report spacing issues.
+							58 text REQ-CF8AAAD0
+						59 cell
+							60 text Dec 1, 2027, 9:30 AM GMT-8
+						61 cell
+							62 text Scheduled
+				63 container
+					64 text Design preview: requests are  saved locally ; nothing starts. The lead will orchestrate work when connected.
+				39 container Selected one-off request
+					65 container
+						66 button Schedule
+						67 text REQ-CF8AAAD0
+					41 heading One-off request, Value: 2
+						68 text One-off request
+					69 text Check the compact run views and report spacing issues.
+					70 definition list
+						71 container Status
+							72 text Status
+						73 text Scheduled
+						74 container Owner
+							75 text Owner
+						76 text Factory lead
+						77 container When
+							78 text When
+						79 container
+							80 text Dec 1, 2027, 9:30 AM GMT-8  ·  America/Los_Angeles
+						81 container Policy
+							82 text Policy
+						83 text Earliest start, subject to current work and dependencies.
+					42 button Reschedule…
+					43 button Cancel request
+					84 container
+						85 heading Requested settings, Value: 3
+							86 text Requested settings
+						87 text Captured at send · read only
+						88 text Nov 1, 2026, 6:32 PM GMT-8
+						89 definition list
+							90 container Model
+								91 text Model
+							92 container
+								93 text Claude Opus 5.5 Next-send override
+							94 container Effort
+								95 text Effort
+							96 container
+								97 text High Next-send override
+							98 container Mode
+								99 text Mode
+							100 container
+								101 text Plan only Next-send override
+							102 container Agent edits
+								103 text Agent edits
+							104 text Worktree edits
+							105 container Budget
+								106 text Budget
+							107 text $40 project limit
+							108 container Concurrency
+								109 text Concurrency
+							110 text 2
+						111 heading Context at send, Value: 3
+							112 text Context at send
+						113 text Inputs and permissions remain as captured when project defaults change.
+						114 content list
+							115 text README.md
+							116 text AGENTS.md
+							117 text .factory/config.toml
+							118 text src/Collection/CollectionGrid.swift
+							119 text src/Collection/ArtistRecordCard.swift
+							120 container
+								121 text src/Collection/RecordsCarousel.swift  · attached
+							122 text src/Venue/VenueDetailView.swift
+							123 text src/Media/MediaCache.swift
+						124 button (collapsed) Context configuration, Secondary Actions: Expand
+							125 text Context configuration
+					47 link Description: Open conversation, Value: localhost:5173/#/conversation
+					126 container
+						127 text Design preview · request  saved locally , nothing starts.
+
+The focused UI element is 41 heading One-off request, Value: 2

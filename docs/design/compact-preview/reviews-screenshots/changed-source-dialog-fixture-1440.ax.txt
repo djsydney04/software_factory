@@ -1,0 +1,18 @@
+Browser tab: 11, Title: "Reviews · QA fixture", URL: "http://localhost:5173/reviews-proof.html".
+0 AXWebArea Reviews · QA fixture, URL: localhost:5173/reviews-proof.html
+	1 container Simulate merge of #24?
+		2 container
+			3 heading Simulate merge of #24?, Value: 2, ID: rv-merge-title
+				4 text Simulate merge of #24?
+			5 button Close
+				6 image
+		7 text This records a local preview decision. Nothing is merged and no GitHub call is made.
+		8 container
+			9 text Run  R-3B7T  · Attempt  1  ·  a4f3c2e
+		10 text Current checks and this exact source are checked again when you confirm.
+		14 text The linked run, attempt, revision, or task is unavailable or has changed.
+		11 container
+			12 button Cancel
+			13 button Record simulated merge
+
+The focused UI element is 13 button Record simulated merge

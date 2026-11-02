@@ -1,0 +1,26 @@
+Browser tab: 9, Title: "localhost:5173/document-proof.html", URL: "http://localhost:5173/document-proof.html".
+1 AXWebArea localhost:5173/document-proof.html
+	2 container root
+		3 container
+			4 text Component QA fixture · example completion evidence
+			5 container Unsubmitted passages
+				6 text Unsubmitted passages:  0
+			7 button Normal fixture
+			8 button Repeated text fixture
+			9 button Long document fixture
+		10 container Scratchpad
+			11 heading Scratchpad, Value: 1, ID: scratchpad-title
+				12 text Scratchpad
+			13 text entry area (settable) Description: Scratchpad document, Value: Make the Collection filter bar easier to scan.
+
+Check keyboard navigation and focus in the Collection. This still needs work.
+
+Keep exploring ideas here.
+			14 container
+				15 container scratchpad-document-status
+					16 text Saved locally .  1 passage completed  by the agent, highlighted green.
+				17 button (collapsed) 1 completed by agent, Secondary Actions: Expand
+					18 text 1
+					19 text  completed by agent
+
+The focused UI element is 7 button Normal fixture

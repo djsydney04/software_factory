@@ -1,0 +1,364 @@
+{
+  "status": "Recommended declarations, not measurements of rendered UI",
+  "shell": {
+    "sidebar_width": 168,
+    "header_height": 40,
+    "workspace_padding_per_side": 16,
+    "region_seam": 1,
+    "inspector_width": 288,
+    "inspector_collapses_at_or_below": 1024,
+    "sidebar_collapses_at_or_below": 768
+  },
+  "typography": {
+    "body_size": 14,
+    "body_line_height": 21,
+    "metadata_size": 13,
+    "metadata_line_height": 18,
+    "chrome_max_heading_size": 16,
+    "family": "system sans; monospace for code/identifiers"
+  },
+  "density": {
+    "navigation_row_height": 32,
+    "data_row_height": 40,
+    "control_height": 28,
+    "touch_control_height": 36,
+    "control_radius": 6,
+    "panel_radius": 10,
+    "spacing_unit": 4
+  },
+  "views": {
+    "Conversation": {
+      "desktop_secondary": 288,
+      "secondary_role": "Optional selected-worker inspector",
+      "content": "One main-agent conversation; model and effort controls beside composer; no parallel chat inboxes."
+    },
+    "Runs": {
+      "desktop_secondary": 0,
+      "secondary_role": "Run selection opens RunDetail",
+      "content": "Rows for task, outcome, provider/model, updated time, and next action; filters above the rows."
+    },
+    "RunDetail": {
+      "desktop_secondary": 288,
+      "secondary_role": "Optional run metadata/configuration inspector",
+      "content": "Selected run timeline with Activity, Changes, and Artifacts tabs; resume/stop state is explicit."
+    },
+    "Progress": {
+      "desktop_secondary": 288,
+      "secondary_role": "Optional selected-task inspector",
+      "content": "Graph, board, and radar project the same tasks/runs. Board pans on desktop; mobile selects one lane."
+    },
+    "Reviews": {
+      "desktop_secondary": 224,
+      "secondary_role": "Review queue",
+      "content": "Queue selection and review evidence; preview/diff split on wide screens, tabs on narrow screens."
+    },
+    "Files": {
+      "desktop_secondary": 224,
+      "secondary_role": "File tree",
+      "content": "Repository files and .factory settings files. Editor keeps a deliberately scrollable code region."
+    },
+    "Settings": {
+      "desktop_secondary": 160,
+      "secondary_role": "Settings section navigation",
+      "content": "Factory goal, provider/model defaults, reasoning/agency, integrations, and file-backed configuration."
+    }
+  },
+  "cases": [
+    {
+      "view": "Conversation",
+      "viewport_width": 1440,
+      "file": "layouts/Conversation-1440.json",
+      "navigation": "168px sidebar",
+      "secondary": "Optional selected-worker inspector",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Conversation",
+      "viewport_width": 1280,
+      "file": "layouts/Conversation-1280.json",
+      "navigation": "168px sidebar",
+      "secondary": "Optional selected-worker inspector",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Conversation",
+      "viewport_width": 1024,
+      "file": "layouts/Conversation-1024.json",
+      "navigation": "168px sidebar",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Conversation",
+      "viewport_width": 768,
+      "file": "layouts/Conversation-768.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Conversation",
+      "viewport_width": 390,
+      "file": "layouts/Conversation-390.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 320
+    },
+    {
+      "view": "Runs",
+      "viewport_width": 1440,
+      "file": "layouts/Runs-1440.json",
+      "navigation": "168px sidebar",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Runs",
+      "viewport_width": 1280,
+      "file": "layouts/Runs-1280.json",
+      "navigation": "168px sidebar",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Runs",
+      "viewport_width": 1024,
+      "file": "layouts/Runs-1024.json",
+      "navigation": "168px sidebar",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Runs",
+      "viewport_width": 768,
+      "file": "layouts/Runs-768.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Runs",
+      "viewport_width": 390,
+      "file": "layouts/Runs-390.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 320
+    },
+    {
+      "view": "RunDetail",
+      "viewport_width": 1440,
+      "file": "layouts/RunDetail-1440.json",
+      "navigation": "168px sidebar",
+      "secondary": "Optional run metadata/configuration inspector",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "RunDetail",
+      "viewport_width": 1280,
+      "file": "layouts/RunDetail-1280.json",
+      "navigation": "168px sidebar",
+      "secondary": "Optional run metadata/configuration inspector",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "RunDetail",
+      "viewport_width": 1024,
+      "file": "layouts/RunDetail-1024.json",
+      "navigation": "168px sidebar",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "RunDetail",
+      "viewport_width": 768,
+      "file": "layouts/RunDetail-768.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "RunDetail",
+      "viewport_width": 390,
+      "file": "layouts/RunDetail-390.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 320
+    },
+    {
+      "view": "Progress",
+      "viewport_width": 1440,
+      "file": "layouts/Progress-1440.json",
+      "navigation": "168px sidebar",
+      "secondary": "Optional selected-task inspector",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Progress",
+      "viewport_width": 1280,
+      "file": "layouts/Progress-1280.json",
+      "navigation": "168px sidebar",
+      "secondary": "Optional selected-task inspector",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Progress",
+      "viewport_width": 1024,
+      "file": "layouts/Progress-1024.json",
+      "navigation": "168px sidebar",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Progress",
+      "viewport_width": 768,
+      "file": "layouts/Progress-768.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Progress",
+      "viewport_width": 390,
+      "file": "layouts/Progress-390.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 320
+    },
+    {
+      "view": "Reviews",
+      "viewport_width": 1440,
+      "file": "layouts/Reviews-1440.json",
+      "navigation": "168px sidebar",
+      "secondary": "Review queue",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Reviews",
+      "viewport_width": 1280,
+      "file": "layouts/Reviews-1280.json",
+      "navigation": "168px sidebar",
+      "secondary": "Review queue",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Reviews",
+      "viewport_width": 1024,
+      "file": "layouts/Reviews-1024.json",
+      "navigation": "168px sidebar",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Reviews",
+      "viewport_width": 768,
+      "file": "layouts/Reviews-768.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Reviews",
+      "viewport_width": 390,
+      "file": "layouts/Reviews-390.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 320
+    },
+    {
+      "view": "Files",
+      "viewport_width": 1440,
+      "file": "layouts/Files-1440.json",
+      "navigation": "168px sidebar",
+      "secondary": "File tree",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Files",
+      "viewport_width": 1280,
+      "file": "layouts/Files-1280.json",
+      "navigation": "168px sidebar",
+      "secondary": "File tree",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Files",
+      "viewport_width": 1024,
+      "file": "layouts/Files-1024.json",
+      "navigation": "168px sidebar",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Files",
+      "viewport_width": 768,
+      "file": "layouts/Files-768.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Files",
+      "viewport_width": 390,
+      "file": "layouts/Files-390.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 320
+    },
+    {
+      "view": "Settings",
+      "viewport_width": 1440,
+      "file": "layouts/Settings-1440.json",
+      "navigation": "168px sidebar",
+      "secondary": "Settings section navigation",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Settings",
+      "viewport_width": 1280,
+      "file": "layouts/Settings-1280.json",
+      "navigation": "168px sidebar",
+      "secondary": "Settings section navigation",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Settings",
+      "viewport_width": 1024,
+      "file": "layouts/Settings-1024.json",
+      "navigation": "168px sidebar",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Settings",
+      "viewport_width": 768,
+      "file": "layouts/Settings-768.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 560
+    },
+    {
+      "view": "Settings",
+      "viewport_width": 390,
+      "file": "layouts/Settings-390.json",
+      "navigation": "drawer",
+      "secondary": "closed; open as drawer or separate view",
+      "main_content_minimum": 320
+    }
+  ],
+  "responsive_rules": [
+    "At <=1024px, close the inspector and secondary file/review/settings navigation; use a drawer or route that preserves selection.",
+    "At <=768px, collapse the global sidebar to a labelled navigation drawer. Preserve page scope and back navigation.",
+    "At 390px, use one 320px-minimum work surface inside 16px padding; run metadata stacks and settings labels appear above controls.",
+    "At <=1024px, review preview and diff are tabs. Do not squeeze them into side-by-side slivers.",
+    "At 768px, hide updated-time column from Runs and preserve it in RunDetail; at 390px render runs as stacked rows.",
+    "Progress graph/radar use the available main width; pan a graph intentionally instead of shrinking node text. Desktop board has deliberate horizontal scrolling; mobile selects one lane.",
+    "Model and reasoning controls wrap within the composer at narrow widths; never reduce body or metadata size to fit.",
+    "Header truncates only the long task name; state/action remain visible and full name is available by focus or selection."
+  ],
+  "limits": [
+    "Checker measures declared horizontal arithmetic and opaque color pairs only.",
+    "Header height, target dimensions, vertical composition, line wrapping, zoom/reflow, focus, keyboard behavior, and actual computed styles need rendered checks.",
+    "Decorative separators/rings may use subtle tokens; meaningful control boundaries, state graphics and graph edges use boundary/status tokens.",
+    "No connection, task completion, model availability or configuration persistence is proven by these declarations."
+  ]
+}

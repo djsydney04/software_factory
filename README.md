@@ -1,27 +1,28 @@
 # Software Factory
 
-A quiet place to steer persistent software-building agents.
+A compact local workspace for steering one lead agent, monitoring delegated work, and reviewing exact-revision changes.
 
-One main agent holds a project's goal, delegates bounded work, verifies results and brings back reviewable changes. A Rust service owns persistent state; terminal and desktop clients share its conversation and progress views.
+The local alpha now has a Rust/SQLite core, independent authenticated `factoryd` daemon, Codex app-server integration, isolated Git worktrees, supervisor-observed checks, and a Tauri desktop client over the approved React interface. One project and one bounded worker are supported. The [runtime checkpoint](docs/runtime/IMPLEMENTATION.md) records verification and acceptance status; implementation and metadata probes alone do not establish a successful real workflow.
 
-Status: architecture and visual design, not yet a runnable application. The repository was empty at the start of this project. Claude through the Cursor CLI produced the current redesign: Conversation, Progress and Reviews are separate destinations, and the latest Soft Charcoal pass preserves the workspace overview, project-scoped tabs and model pickers while softening the dark surfaces and adding run details. The visual direction is awaiting selection before implementation.
+Start with [START-HERE](START-HERE.md), then follow [getting started](docs/getting-started.md) to build and launch the native app. Use existing supported Codex authentication. The daemon owns execution on an awake host; closing the client does not stop it. Model turns use the configured account and can incur usage.
 
-- [Getting started and implementation milestones](docs/getting-started.md)
-- [Architecture and shared contract](docs/architecture.md)
-- [Harness, recovery and experiments](docs/harness.md)
-- [Provider protocols and verified local probes](docs/providers.md)
-- [Release acceptance](docs/acceptance.md)
-- [Research and sources](docs/research.md)
-- [Revised visual direction](docs/design/README.md)
+In native mode, register a repository and objective, save a supported model and project permissions, then send steering or a **One-off** from the bottom of Conversation. Requests remain intent until the lead plans a Task and the supervisor starts a Run. Inspect active work in Graph, Board or Sundial, and open the separate Reviews desk for actual diff, checks, source SHA and local feedback. Command approval is scoped to an attempt and its checks. Network and integrations are disabled for alpha execution.
 
-The intended stack is Rust, SQLite, Axum, Ratatui and Tauri. Codex app-server is the first execution integration. Other providers and deployment connections must report observed capability rather than simulated activity.
+The browser-only Vite app remains a [design preview](docs/design/compact-preview/README.md), with fixture activity and browser-local simulations. It needs no provider credentials and cannot run agents. The native app never falls back to those fixtures. Scratchpad remains a blank client-local document with its configurable morning plan in Settings; recurring agent triage is later work.
 
-## Current design proposal
+The alpha does not push, create or merge PRs, deploy, or install recurring jobs. Additional providers, TUI parity and hosted continuity are later milestones. Legacy provider sandbox controls restrict writes and networking but permit host reads; worktrees are not credential isolation. Output-token limits are observed thresholds rather than hard prepaid spend caps.
 
-[Workspace overview](docs/design/soft-charcoal/overview.png) · [Conversation](docs/design/soft-charcoal/conversation.png) · [Progress / Sundial radar](docs/design/soft-charcoal/progress.png) · [Reviews](docs/design/soft-charcoal/reviews.png) · [Run detail](docs/design/soft-charcoal/run-detail.png)
+- [Active goal](docs/runtime/GOAL.md), [agent prompt](docs/handoff/AGENT-PROMPT.md), and [build plan](docs/handoff/BUILD-PLAN.md)
+- [All mocks, references and current screens](docs/handoff/DESIGN-INDEX.md)
+- [Native bridge and service boundary](apps/desktop/src-tauri/README.md)
+- [Architecture](docs/architecture.md), [harness](docs/harness.md), [providers](docs/providers.md), and [broader acceptance](docs/acceptance.md)
 
-![Software Factory workspace design proposal](docs/design/soft-charcoal/overview.png)
+The full supplied source snapshot contains uncommitted and untracked files absent from its recorded Git base. Use the complete handoff when continuing the project.
 
-## Reusable design skills
+![Software Factory frontend design preview](docs/design/compact-preview/agent-flow-screenshots/conversation-user-desktop.png)
 
-The [UI/UX design suite](design-skills/README.md) provides seven focused skills plus checks for contrast, layout budgets and interaction handoffs. Start with `ui-ux-designer`; the soft-charcoal operating style is an optional project profile.
+## Additional design resources
+
+The remote history also includes [Soft Charcoal](docs/design/soft-charcoal/README.md), [Charcoal Desk](docs/design/charcoal-desk/README.md) and [Operating Desk](docs/design/operating-desk/README.md) visual explorations. They remain available for comparison; the implemented native alpha follows the current compact-preview contracts.
+
+The [reusable UI/UX design suite](design-skills/README.md) provides seven focused skills plus checks for contrast, layout budgets and interaction handoffs. Its optional soft-charcoal profile does not replace the approved application design.

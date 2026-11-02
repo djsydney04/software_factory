@@ -1,0 +1,3 @@
+Browser tab: 5, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/conversation".
+There has been no change in the accessibility tree.
+The focused UI element is 81 button (collapsed) Description: Next send settings: Claude Opus 5.5, Max, Plan only, override, Help: Next send: Claude Opus 5.5 · Max · Plan only · Override, Secondary Actions: Expand

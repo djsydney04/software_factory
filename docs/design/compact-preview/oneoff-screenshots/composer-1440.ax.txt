@@ -1,0 +1,21 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/conversation".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 123-124
++		91 container Primary
++			92 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
++				93 menu
++					94 (selected) Green Room
++					95 (disabled) Other projects aren't in this preview
++			96 container Destinations
++				97 content list
++					98 link Description: Conversation, Value: localhost:5173/#/conversation
++					99 link Description: Runs, Value: localhost:5173/#/runs
++					100 link Description: Progress, Value: localhost:5173/#/progress
++					101 link Description: Reviews 2 ready, Value: localhost:5173/#/reviews
++			102 container Project utilities
++				103 content list
++					104 link Description: Files, Value: localhost:5173/#/files
++					105 link Description: Settings, Value: localhost:5173/#/settings
+~			19 text Make the Collection faster to browse Now:  Records carousel respects Reduce Motion Running ·  2 agents Design preview
++				106 text ⌘/Ctrl + Enter
+The focused UI element is 64 button (collapsed) Next send Codex GPT-5.3 · High · Ask first Override, Secondary Actions: Expand

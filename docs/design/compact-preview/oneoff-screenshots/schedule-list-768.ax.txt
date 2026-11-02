@@ -1,0 +1,15 @@
+Browser tab: 3, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/runs/schedule".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 238-252, 255-281
++			254 button (collapsed) Description: Open navigation, Secondary Actions: Expand
++				255 image
++			256 text Design preview
++							257 text When
++							258 text Status
++							259 text When
++							260 text Status
++							261 text When
++							262 text Status
++							263 text When
++							264 text Status
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/runs/schedule

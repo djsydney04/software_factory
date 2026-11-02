@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "projects": [
+    {
+      "id": "283f5003-69a5-4c3b-a2a8-cfca283b1a17",
+      "name": "Factory Fixture",
+      "objective": "Keep the fixture useful with small, verified improvements.",
+      "paused": true
+    }
+  ],
+  "runIds": [
+    "e685ce75-c210-4efa-8f39-f275cd99f37b",
+    "38fc37c3-b9b1-48ff-8796-4d062823dc5d"
+  ],
+  "reviewIds": [
+    "3821f0f4-26a2-41b2-a5c4-dd288a5e37fe"
+  ]
+}

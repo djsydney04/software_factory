@@ -1,0 +1,16 @@
+Browser tab: 10, Title: "Software Factory · Design preview", URL: "http://localhost:5173/#/reviews/RV-24".
+1 AXWebArea Software Factory · Design preview, URL: localhost:5173/#/reviews/RV-24
+	2 container Request changes on #24
+		3 container
+			4 heading Request changes on #24, Value: 2, ID: rv-changes-title
+				5 text Request changes on #24
+			6 button Close
+				7 image
+		8 container
+			9 text Attempt  1  ·  a4f3c2e What should change?
+			10 text entry area (settable) What should change?, Value: Check the grid at large text sizes before merging., ID: rv-change-text
+			11 text Draft saved locally, including when you cancel.  Recording posts no comment and dispatches no agent.
+			12 button Cancel
+			13 button Record request
+
+The focused UI element is 6 button Close

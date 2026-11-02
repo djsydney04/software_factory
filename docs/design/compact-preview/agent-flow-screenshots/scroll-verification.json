@@ -1,0 +1,33 @@
+{
+  "initial": {
+    "gap": 0,
+    "top": 3543
+  },
+  "followedUpdate": {
+    "gap": 0,
+    "latestCount": 0,
+    "top": 3621
+  },
+  "readingBefore": {
+    "gap": 1440,
+    "top": 2181
+  },
+  "readingAfter": {
+    "gap": 1554,
+    "latestCount": 1,
+    "top": 2181
+  },
+  "returnedLatest": {
+    "gap": 0,
+    "latestCount": 0,
+    "top": 3699
+  },
+  "ownSend": {
+    "draft": "",
+    "focus": "composer-input",
+    "gap": 0,
+    "latestCount": 0,
+    "receipt": "Message saved locally · not sent to a provider."
+  },
+  "passed": true
+}

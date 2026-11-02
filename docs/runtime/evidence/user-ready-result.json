@@ -1,0 +1,13 @@
+{
+  "observedAt": "2026-11-02T06:36:11.563547+00:00",
+  "nativeView": "Start a local project",
+  "daemonStateDirectory": "~/Library/Application Support/SoftwareFactory",
+  "counts": {
+    "projects": 0,
+    "requests": 0,
+    "runs": 0,
+    "reviews": 0
+  },
+  "trialState": "separately preserved and paused; trial daemon stopped",
+  "note": "Metadata available; no inference or project registration started in default user state."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "label": "Send icon on sage",
+    "foreground": "#fffdf9",
+    "background": "#476849",
+    "contrast": 6.18,
+    "minimum": 3,
+    "pass": true
+  },
+  {
+    "label": "Selected marker on selected surface",
+    "foreground": "#476849",
+    "background": "#e5e0d6",
+    "contrast": 4.77,
+    "minimum": 3,
+    "pass": true
+  },
+  {
+    "label": "Factory/review icon on raised",
+    "foreground": "#476849",
+    "background": "#fffdf9",
+    "contrast": 6.18,
+    "minimum": 3,
+    "pass": true
+  },
+  {
+    "label": "Approval marker on raised",
+    "foreground": "#86551d",
+    "background": "#fffdf9",
+    "contrast": 6.21,
+    "minimum": 3,
+    "pass": true
+  },
+  {
+    "label": "Mode text on raised",
+    "foreground": "#5f5a52",
+    "background": "#fffdf9",
+    "contrast": 6.73,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "label": "Override label on inset",
+    "foreground": "#86551d",
+    "background": "#ece8e0",
+    "contrast": 5.16,
+    "minimum": 4.5,
+    "pass": true
+  }
+]

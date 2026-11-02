@@ -1,0 +1,3 @@
+Browser tab: 15, Title: "Conversation UI fixture · no factory work", URL: "http://localhost:5173/conversation-proof.html".
+There has been no change in the accessibility tree.
+The focused UI element is 4 button Add agent update

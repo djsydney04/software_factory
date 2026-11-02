@@ -1,0 +1,16 @@
+{
+  "paused": true,
+  "runIds": [
+    "e685ce75-c210-4efa-8f39-f275cd99f37b",
+    "38fc37c3-b9b1-48ff-8796-4d062823dc5d"
+  ],
+  "statuses": [
+    "succeeded",
+    "interrupted"
+  ],
+  "reviewIds": [
+    "3821f0f4-26a2-41b2-a5c4-dd288a5e37fe"
+  ],
+  "decision": "accepted_local",
+  "interruptedProcessAbsent": true
+}

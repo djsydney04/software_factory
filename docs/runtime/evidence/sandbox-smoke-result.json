@@ -1,0 +1,13 @@
+{
+  "allowedInsideWriteExit": 0,
+  "effort": "low",
+  "hostReadIsolationClaimed": false,
+  "listenerReceivedConnection": false,
+  "model": "gpt-6.1-sol",
+  "networkExit": 1,
+  "noInference": true,
+  "outsideFileAbsent": true,
+  "outsideWriteExit": 1,
+  "threadId": "01a19ac9-c5af-71f0-af84-1194e2db3e83",
+  "worktreeWriteEnforced": true
+}

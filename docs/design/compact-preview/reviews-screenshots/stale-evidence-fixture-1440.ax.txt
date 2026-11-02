@@ -1,0 +1,3 @@
+Browser tab: 11, Title: "Reviews · QA fixture", URL: "http://localhost:5173/reviews-proof.html".
+There has been no change in the accessibility tree.
+The focused UI element is 31 tab (selected, settable, boolean) Evidence, Value: 1, ID: rv-RV-24-tab-evidence

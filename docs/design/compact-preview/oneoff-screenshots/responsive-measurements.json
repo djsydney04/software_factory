@@ -1,0 +1,1152 @@
+[
+  {
+    "view": "composer-expanded",
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 295,
+        "name": "composer",
+        "right": 1214,
+        "w": 820,
+        "x": 394,
+        "y": 589
+      },
+      {
+        "bottom": 777,
+        "h": 129,
+        "name": "next-run",
+        "right": 1213,
+        "w": 818,
+        "x": 395,
+        "y": 648
+      },
+      {
+        "bottom": 815,
+        "h": 38,
+        "name": "composer-intent",
+        "right": 1213,
+        "w": 818,
+        "x": 395,
+        "y": 777
+      },
+      {
+        "bottom": 883,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 1213,
+        "w": 818,
+        "x": 395,
+        "y": 839
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "send",
+        "right": 1205,
+        "w": 32,
+        "x": 1173,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "view": "composer-expanded",
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 295,
+        "name": "composer",
+        "right": 1134,
+        "w": 820,
+        "x": 314,
+        "y": 589
+      },
+      {
+        "bottom": 777,
+        "h": 129,
+        "name": "next-run",
+        "right": 1133,
+        "w": 818,
+        "x": 315,
+        "y": 648
+      },
+      {
+        "bottom": 815,
+        "h": 38,
+        "name": "composer-intent",
+        "right": 1133,
+        "w": 818,
+        "x": 315,
+        "y": 777
+      },
+      {
+        "bottom": 883,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 1133,
+        "w": 818,
+        "x": 315,
+        "y": 839
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "send",
+        "right": 1125,
+        "w": 32,
+        "x": 1093,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "view": "composer-expanded",
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 295,
+        "name": "composer",
+        "right": 1006,
+        "w": 820,
+        "x": 186,
+        "y": 589
+      },
+      {
+        "bottom": 777,
+        "h": 129,
+        "name": "next-run",
+        "right": 1005,
+        "w": 818,
+        "x": 187,
+        "y": 648
+      },
+      {
+        "bottom": 815,
+        "h": 38,
+        "name": "composer-intent",
+        "right": 1005,
+        "w": 818,
+        "x": 187,
+        "y": 777
+      },
+      {
+        "bottom": 883,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 1005,
+        "w": 818,
+        "x": 187,
+        "y": 839
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "send",
+        "right": 997,
+        "w": 32,
+        "x": 965,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "view": "composer-expanded",
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 888,
+        "h": 411,
+        "name": "composer",
+        "right": 756,
+        "w": 744,
+        "x": 12,
+        "y": 477
+      },
+      {
+        "bottom": 781,
+        "h": 245,
+        "name": "next-run",
+        "right": 755,
+        "w": 742,
+        "x": 13,
+        "y": 536
+      },
+      {
+        "bottom": 819,
+        "h": 38,
+        "name": "composer-intent",
+        "right": 755,
+        "w": 742,
+        "x": 13,
+        "y": 781
+      },
+      {
+        "bottom": 887,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 755,
+        "w": 742,
+        "x": 13,
+        "y": 843
+      },
+      {
+        "bottom": 879,
+        "h": 32,
+        "name": "send",
+        "right": 747,
+        "w": 32,
+        "x": 715,
+        "y": 847
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "view": "composer-expanded",
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 832,
+        "h": 497,
+        "name": "composer",
+        "right": 378,
+        "w": 366,
+        "x": 12,
+        "y": 335
+      },
+      {
+        "bottom": 669,
+        "h": 275,
+        "name": "next-run",
+        "right": 377,
+        "w": 364,
+        "x": 13,
+        "y": 394
+      },
+      {
+        "bottom": 743,
+        "h": 74,
+        "name": "composer-intent",
+        "right": 377,
+        "w": 364,
+        "x": 13,
+        "y": 669
+      },
+      {
+        "bottom": 831,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 377,
+        "w": 364,
+        "x": 13,
+        "y": 787
+      },
+      {
+        "bottom": 823,
+        "h": 32,
+        "name": "send",
+        "right": 369,
+        "w": 32,
+        "x": 337,
+        "y": 791
+      }
+    ],
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "view": "composer",
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 166,
+        "name": "composer",
+        "right": 1214,
+        "w": 820,
+        "x": 394,
+        "y": 718
+      },
+      {
+        "bottom": 815,
+        "h": 38,
+        "name": "composer-intent",
+        "right": 1213,
+        "w": 818,
+        "x": 395,
+        "y": 777
+      },
+      {
+        "bottom": 883,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 1213,
+        "w": 818,
+        "x": 395,
+        "y": 839
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "send",
+        "right": 1205,
+        "w": 32,
+        "x": 1173,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "view": "composer",
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 166,
+        "name": "composer",
+        "right": 1134,
+        "w": 820,
+        "x": 314,
+        "y": 718
+      },
+      {
+        "bottom": 815,
+        "h": 38,
+        "name": "composer-intent",
+        "right": 1133,
+        "w": 818,
+        "x": 315,
+        "y": 777
+      },
+      {
+        "bottom": 883,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 1133,
+        "w": 818,
+        "x": 315,
+        "y": 839
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "send",
+        "right": 1125,
+        "w": 32,
+        "x": 1093,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "view": "composer",
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 884,
+        "h": 166,
+        "name": "composer",
+        "right": 1006,
+        "w": 820,
+        "x": 186,
+        "y": 718
+      },
+      {
+        "bottom": 815,
+        "h": 38,
+        "name": "composer-intent",
+        "right": 1005,
+        "w": 818,
+        "x": 187,
+        "y": 777
+      },
+      {
+        "bottom": 883,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 1005,
+        "w": 818,
+        "x": 187,
+        "y": 839
+      },
+      {
+        "bottom": 875,
+        "h": 32,
+        "name": "send",
+        "right": 997,
+        "w": 32,
+        "x": 965,
+        "y": 843
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "view": "composer",
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 888,
+        "h": 166,
+        "name": "composer",
+        "right": 756,
+        "w": 744,
+        "x": 12,
+        "y": 722
+      },
+      {
+        "bottom": 819,
+        "h": 38,
+        "name": "composer-intent",
+        "right": 755,
+        "w": 742,
+        "x": 13,
+        "y": 781
+      },
+      {
+        "bottom": 887,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 755,
+        "w": 742,
+        "x": 13,
+        "y": 843
+      },
+      {
+        "bottom": 879,
+        "h": 32,
+        "name": "send",
+        "right": 747,
+        "w": 32,
+        "x": 715,
+        "y": 847
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "view": "composer",
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 832,
+        "h": 222,
+        "name": "composer",
+        "right": 378,
+        "w": 366,
+        "x": 12,
+        "y": 610
+      },
+      {
+        "bottom": 743,
+        "h": 74,
+        "name": "composer-intent",
+        "right": 377,
+        "w": 364,
+        "x": 13,
+        "y": 669
+      },
+      {
+        "bottom": 831,
+        "h": 44,
+        "name": "composer-bar",
+        "right": 377,
+        "w": 364,
+        "x": 13,
+        "y": 787
+      },
+      {
+        "bottom": 823,
+        "h": 32,
+        "name": "send",
+        "right": 369,
+        "w": 32,
+        "x": 337,
+        "y": 791
+      }
+    ],
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "view": "schedule-list",
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 0
+      },
+      {
+        "bottom": 84,
+        "h": 44,
+        "name": "toolbar",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 40
+      },
+      {
+        "bottom": 900,
+        "h": 816,
+        "name": "schedule-workspace ",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 84
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "view": "schedule-list",
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 0
+      },
+      {
+        "bottom": 84,
+        "h": 44,
+        "name": "toolbar",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 40
+      },
+      {
+        "bottom": 900,
+        "h": 816,
+        "name": "schedule-workspace ",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 84
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "view": "schedule-list",
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 0
+      },
+      {
+        "bottom": 84,
+        "h": 44,
+        "name": "toolbar",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 40
+      },
+      {
+        "bottom": 900,
+        "h": 816,
+        "name": "schedule-workspace ",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 84
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "view": "schedule-list",
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "bottom": 119,
+        "h": 79,
+        "name": "toolbar",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 40
+      },
+      {
+        "bottom": 900,
+        "h": 781,
+        "name": "schedule-workspace ",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 119
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "view": "schedule-list",
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "bottom": 151,
+        "h": 111,
+        "name": "toolbar",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 40
+      },
+      {
+        "bottom": 844,
+        "h": 693,
+        "name": "schedule-workspace ",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 151
+      }
+    ],
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "view": "schedule-detail",
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 0
+      },
+      {
+        "bottom": 900,
+        "h": 816,
+        "name": "schedule-workspace has-selection",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 84
+      },
+      {
+        "bottom": 900,
+        "h": 816,
+        "name": "request-detail",
+        "right": 1440,
+        "w": 340,
+        "x": 1100,
+        "y": 84
+      },
+      {
+        "bottom": 396,
+        "h": 28,
+        "name": "btn-row request-actions",
+        "right": 1409,
+        "w": 292,
+        "x": 1117,
+        "y": 368
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "view": "schedule-detail",
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 0
+      },
+      {
+        "bottom": 900,
+        "h": 816,
+        "name": "schedule-workspace has-selection",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 84
+      },
+      {
+        "bottom": 900,
+        "h": 816,
+        "name": "request-detail",
+        "right": 1280,
+        "w": 340,
+        "x": 940,
+        "y": 84
+      },
+      {
+        "bottom": 396,
+        "h": 28,
+        "name": "btn-row request-actions",
+        "right": 1249,
+        "w": 292,
+        "x": 957,
+        "y": 368
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "view": "schedule-detail",
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 0
+      },
+      {
+        "bottom": 900,
+        "h": 860,
+        "name": "schedule-workspace has-selection",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 40
+      },
+      {
+        "bottom": 900,
+        "h": 860,
+        "name": "request-detail",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 40
+      },
+      {
+        "bottom": 290,
+        "h": 28,
+        "name": "btn-row request-actions",
+        "right": 993,
+        "w": 809,
+        "x": 184,
+        "y": 262
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "view": "schedule-detail",
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "bottom": 900,
+        "h": 860,
+        "name": "schedule-workspace has-selection",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 40
+      },
+      {
+        "bottom": 900,
+        "h": 860,
+        "name": "request-detail",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 40
+      },
+      {
+        "bottom": 290,
+        "h": 28,
+        "name": "btn-row request-actions",
+        "right": 737,
+        "w": 721,
+        "x": 16,
+        "y": 262
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "view": "schedule-detail",
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 40,
+        "h": 40,
+        "name": "topbar has-switch",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "bottom": 844,
+        "h": 804,
+        "name": "schedule-workspace has-selection",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 40
+      },
+      {
+        "bottom": 844,
+        "h": 804,
+        "name": "request-detail",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 40
+      },
+      {
+        "bottom": 352,
+        "h": 28,
+        "name": "btn-row request-actions",
+        "right": 359,
+        "w": 343,
+        "x": 16,
+        "y": 324
+      }
+    ],
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "view": "reschedule",
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 628,
+        "h": 356,
+        "name": "dialog ",
+        "right": 960,
+        "w": 480,
+        "x": 480,
+        "y": 272
+      },
+      {
+        "bottom": 461,
+        "h": 30,
+        "name": "SELECT",
+        "right": 943,
+        "w": 446,
+        "x": 497,
+        "y": 431
+      },
+      {
+        "bottom": 529,
+        "h": 30,
+        "name": "INPUT",
+        "right": 943,
+        "w": 446,
+        "x": 497,
+        "y": 499
+      },
+      {
+        "bottom": 611,
+        "h": 42,
+        "name": "dialog-foot",
+        "right": 943,
+        "w": 446,
+        "x": 497,
+        "y": 569
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "view": "reschedule",
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 628,
+        "h": 356,
+        "name": "dialog ",
+        "right": 880,
+        "w": 480,
+        "x": 400,
+        "y": 272
+      },
+      {
+        "bottom": 461,
+        "h": 30,
+        "name": "SELECT",
+        "right": 863,
+        "w": 446,
+        "x": 417,
+        "y": 431
+      },
+      {
+        "bottom": 529,
+        "h": 30,
+        "name": "INPUT",
+        "right": 863,
+        "w": 446,
+        "x": 417,
+        "y": 499
+      },
+      {
+        "bottom": 611,
+        "h": 42,
+        "name": "dialog-foot",
+        "right": 863,
+        "w": 446,
+        "x": 417,
+        "y": 569
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "view": "reschedule",
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 628,
+        "h": 356,
+        "name": "dialog ",
+        "right": 752,
+        "w": 480,
+        "x": 272,
+        "y": 272
+      },
+      {
+        "bottom": 461,
+        "h": 30,
+        "name": "SELECT",
+        "right": 735,
+        "w": 446,
+        "x": 289,
+        "y": 431
+      },
+      {
+        "bottom": 529,
+        "h": 30,
+        "name": "INPUT",
+        "right": 735,
+        "w": 446,
+        "x": 289,
+        "y": 499
+      },
+      {
+        "bottom": 611,
+        "h": 42,
+        "name": "dialog-foot",
+        "right": 735,
+        "w": 446,
+        "x": 289,
+        "y": 569
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "view": "reschedule",
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 628,
+        "h": 356,
+        "name": "dialog ",
+        "right": 624,
+        "w": 480,
+        "x": 144,
+        "y": 272
+      },
+      {
+        "bottom": 461,
+        "h": 30,
+        "name": "SELECT",
+        "right": 607,
+        "w": 446,
+        "x": 161,
+        "y": 431
+      },
+      {
+        "bottom": 529,
+        "h": 30,
+        "name": "INPUT",
+        "right": 607,
+        "w": 446,
+        "x": 161,
+        "y": 499
+      },
+      {
+        "bottom": 611,
+        "h": 42,
+        "name": "dialog-foot",
+        "right": 607,
+        "w": 446,
+        "x": 161,
+        "y": 569
+      }
+    ],
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "view": "reschedule",
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 631,
+        "h": 418,
+        "name": "dialog ",
+        "right": 373,
+        "w": 356,
+        "x": 17,
+        "y": 213
+      },
+      {
+        "bottom": 444,
+        "h": 30,
+        "name": "SELECT",
+        "right": 356,
+        "w": 322,
+        "x": 34,
+        "y": 414
+      },
+      {
+        "bottom": 512,
+        "h": 30,
+        "name": "INPUT",
+        "right": 356,
+        "w": 322,
+        "x": 34,
+        "y": 482
+      },
+      {
+        "bottom": 614,
+        "h": 42,
+        "name": "dialog-foot",
+        "right": 356,
+        "w": 322,
+        "x": 34,
+        "y": 572
+      }
+    ],
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  }
+]

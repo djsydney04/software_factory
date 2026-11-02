@@ -1,0 +1,92 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/files".
+1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/files
+	2 container root
+		18 container
+			21 button (collapsed) Description: Open navigation, Secondary Actions: Expand
+				22 image
+			23 text Make the Collection faster to browse Design preview
+		24 container main
+			25 container Project files
+				26 heading Files, Value: 1
+					27 text Files
+				28 text File
+				29 pop up button (collapsed, settable) File, Value: README.md, ID: file-select, Secondary Actions: Expand
+					30 menu
+						31 (selected) README.md
+						32 AGENTS.md
+						33 .factory/config.toml
+						34 docs/collection.md
+						35 src/Collection/CollectionGrid.swift
+						36 src/Collection/ArtistRecordCard.swift
+						37 src/Collection/RecordsCarousel.swift
+						38 src/Venue/VenueDetailView.swift
+						39 src/Media/MediaCache.swift
+			40 container README.md
+				41 container
+					42 heading README.md, Value: 2, ID: file-path
+						43 text README.md
+					44 text In context Agents:  Worktree edits Saved
+					45 button (disabled) Discard
+					46 button (disabled) Save preview
+				47 container
+					48 text Contents of  README.md
+				49 text entry area (settable) Contents of README.md, ID: file-editor, Value: # Green Room
+
+A personal concert diary for iOS. Log shows, collect artists and venues,
+and browse your history as a record collection.
+
+## Develop
+- Xcode 17, iOS 19 SDK
+- `make test` runs unit and snapshot tests
+
+			50 container File settings
+				51 container
+					52 heading This file, Value: 2
+						53 text This file
+					54 checkbox (settable, integer) Description: Allow in automatic context, Value: 1
+					55 text Allow in automatic context Project root file .
+					56 checkbox (settable, integer) Description: Attach to next message, Value: 0
+					57 text Attach to next message An attachment is an input. It doesn't grant edit access.
+					58 definition list
+						59 container Agent edits
+							60 text Agent edits
+						61 container
+							62 text Worktree edits · project
+					63 link Description: Change in Settings, Value: 127.0.0.1:5173/#/settings
+				64 container
+					65 heading Project context, Value: 2
+						66 text Project context
+					67 container Roots
+						68 text Roots
+						69 container
+							70 checkbox (settable, integer) Description: Project root files, Value: 1
+							71 text Project root files
+						72 container
+							73 checkbox (settable, integer) Description: src/, Value: 1
+							74 text src/
+						75 container
+							76 checkbox (settable, integer) Description: docs/, Value: 0
+							77 text docs/
+						78 container
+							79 checkbox (settable, integer) Description: .factory/, Value: 1
+							80 text .factory/
+					81 text Ignore patterns
+					82 content list
+						83 container
+							84 text DerivedData/
+							85 button Remove pattern DerivedData/
+								86 image
+						87 container
+							88 text *.xcuserstate
+							89 button Remove pattern *.xcuserstate
+								90 image
+						91 container
+							92 text .env*
+							93 button Remove pattern .env*
+								94 image
+					95 text New ignore pattern
+					96 text field (settable) New ignore pattern, ID: pattern-input
+					97 button (disabled) Add
+					98 text Excluding a file never deletes it. Running work keeps its captured context.
+
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/files

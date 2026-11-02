@@ -1,0 +1,122 @@
+Browser tab: 2, Title: "Software Factory · Design preview", URL: "http://127.0.0.1:5173/#/files".
+1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/files
+	2 container root
+		3 container Primary
+			4 pop up button (collapsed, settable) Description: Project, Value: Green Room, Secondary Actions: Expand
+				5 menu
+					6 (selected) Green Room
+					7 (disabled) Other projects aren't in this preview
+			8 container Destinations
+				9 content list
+					10 link Description: Conversation, Value: 127.0.0.1:5173/#/conversation
+					11 link Description: Runs, Value: 127.0.0.1:5173/#/runs
+					12 link Description: Progress, Value: 127.0.0.1:5173/#/progress
+					13 link Description: Reviews 2 ready, Value: 127.0.0.1:5173/#/reviews
+			14 container Project utilities
+				15 content list
+					16 link Description: Files, Value: 127.0.0.1:5173/#/files
+					17 link Description: Settings, Value: 127.0.0.1:5173/#/settings
+		18 container
+			19 text Make the Collection faster to browse Now:  Records carousel respects Reduce Motion Running ·  2 agents Design preview
+		20 container main
+			21 container Project files
+				22 heading Files, Value: 1
+					23 text Files
+				24 text File
+				25 content list
+					26 content list
+						27 button README.md
+						28 button AGENTS.md
+					29 container
+						30 text .factory/
+						31 content list
+							32 button config.toml
+					33 container
+						34 text docs/
+						35 content list
+							36 button collection.md excluded
+								37 text collection.md
+								38 text excluded
+					39 container
+						40 text src/Collection/
+						41 content list
+							42 button CollectionGrid.swift
+							43 button ArtistRecordCard.swift
+							44 button RecordsCarousel.swift
+					45 container
+						46 text src/Media/
+						47 content list
+							48 button MediaCache.swift
+					49 container
+						50 text src/Venue/
+						51 content list
+							52 button VenueDetailView.swift
+			53 container README.md
+				54 container
+					55 heading README.md, Value: 2, ID: file-path
+						56 text README.md
+					57 text In context Agents:  Worktree edits Saved
+					58 button (disabled) Discard
+					59 button (disabled) Save preview
+				60 container
+					61 text Contents of  README.md
+				62 text entry area (settable) Contents of README.md, ID: file-editor, Value: # Green Room
+
+A personal concert diary for iOS. Log shows, collect artists and venues,
+and browse your history as a record collection.
+
+## Develop
+- Xcode 17, iOS 19 SDK
+- `make test` runs unit and snapshot tests
+
+			63 container File settings
+				64 container
+					65 heading This file, Value: 2
+						66 text This file
+					67 checkbox (settable, integer) Description: Allow in automatic context, Value: 1
+					68 text Allow in automatic context Project root file .
+					69 checkbox (settable, integer) Description: Attach to next message, Value: 0
+					70 text Attach to next message An attachment is an input. It doesn't grant edit access.
+					71 definition list
+						72 container Agent edits
+							73 text Agent edits
+						74 container
+							75 text Worktree edits · project
+					76 link Description: Change in Settings, Value: 127.0.0.1:5173/#/settings
+				77 container
+					78 heading Project context, Value: 2
+						79 text Project context
+					80 container Roots
+						81 text Roots
+						82 container
+							83 checkbox (settable, integer) Description: Project root files, Value: 1
+							84 text Project root files
+						85 container
+							86 checkbox (settable, integer) Description: src/, Value: 1
+							87 text src/
+						88 container
+							89 checkbox (settable, integer) Description: docs/, Value: 0
+							90 text docs/
+						91 container
+							92 checkbox (settable, integer) Description: .factory/, Value: 1
+							93 text .factory/
+					94 text Ignore patterns
+					95 content list
+						96 container
+							97 text DerivedData/
+							98 button Remove pattern DerivedData/
+								99 image
+						100 container
+							101 text *.xcuserstate
+							102 button Remove pattern *.xcuserstate
+								103 image
+						104 container
+							105 text .env*
+							106 button Remove pattern .env*
+								107 image
+					108 text New ignore pattern
+					109 text field (settable) New ignore pattern, ID: pattern-input
+					110 button (disabled) Add
+					111 text Excluding a file never deletes it. Running work keeps its captured context.
+
+The focused UI element is 1 AXWebArea Software Factory · Design preview, URL: 127.0.0.1:5173/#/files

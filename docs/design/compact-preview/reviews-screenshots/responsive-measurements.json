@@ -1,0 +1,2477 @@
+[
+  {
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 617.5,
+        "h": 335,
+        "name": "Request changes on #24Attempt 1 · a4f3c2",
+        "right": 960,
+        "w": 480,
+        "x": 480,
+        "y": 282.5
+      },
+      {
+        "bottom": 323.5,
+        "h": 28,
+        "name": "Close",
+        "right": 947,
+        "w": 28,
+        "x": 919,
+        "y": 295.5
+      },
+      {
+        "bottom": 500.5,
+        "h": 114,
+        "name": "Check the grid at large text sizes befor",
+        "right": 943,
+        "w": 446,
+        "x": 497,
+        "y": 386.5
+      },
+      {
+        "bottom": 600.5,
+        "h": 30,
+        "name": "Cancel",
+        "right": 814.28125,
+        "w": 68.5,
+        "x": 745.78125,
+        "y": 570.5
+      },
+      {
+        "bottom": 600.5,
+        "h": 30,
+        "name": "Record request",
+        "right": 943,
+        "w": 120.71875,
+        "x": 822.28125,
+        "y": 570.5
+      }
+    ],
+    "view": "feedback-dialog",
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 617.5,
+        "h": 335,
+        "name": "Request changes on #24Attempt 1 · a4f3c2",
+        "right": 880,
+        "w": 480,
+        "x": 400,
+        "y": 282.5
+      },
+      {
+        "bottom": 323.5,
+        "h": 28,
+        "name": "Close",
+        "right": 867,
+        "w": 28,
+        "x": 839,
+        "y": 295.5
+      },
+      {
+        "bottom": 500.5,
+        "h": 114,
+        "name": "Check the grid at large text sizes befor",
+        "right": 863,
+        "w": 446,
+        "x": 417,
+        "y": 386.5
+      },
+      {
+        "bottom": 600.5,
+        "h": 30,
+        "name": "Cancel",
+        "right": 734.28125,
+        "w": 68.5,
+        "x": 665.78125,
+        "y": 570.5
+      },
+      {
+        "bottom": 600.5,
+        "h": 30,
+        "name": "Record request",
+        "right": 863,
+        "w": 120.71875,
+        "x": 742.28125,
+        "y": 570.5
+      }
+    ],
+    "view": "feedback-dialog",
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 617.5,
+        "h": 335,
+        "name": "Request changes on #24Attempt 1 · a4f3c2",
+        "right": 752,
+        "w": 480,
+        "x": 272,
+        "y": 282.5
+      },
+      {
+        "bottom": 323.5,
+        "h": 28,
+        "name": "Close",
+        "right": 739,
+        "w": 28,
+        "x": 711,
+        "y": 295.5
+      },
+      {
+        "bottom": 500.5,
+        "h": 114,
+        "name": "Check the grid at large text sizes befor",
+        "right": 735,
+        "w": 446,
+        "x": 289,
+        "y": 386.5
+      },
+      {
+        "bottom": 600.5,
+        "h": 30,
+        "name": "Cancel",
+        "right": 606.28125,
+        "w": 68.5,
+        "x": 537.78125,
+        "y": 570.5
+      },
+      {
+        "bottom": 600.5,
+        "h": 30,
+        "name": "Record request",
+        "right": 735,
+        "w": 120.71875,
+        "x": 614.28125,
+        "y": 570.5
+      }
+    ],
+    "view": "feedback-dialog",
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 617.5,
+        "h": 335,
+        "name": "Request changes on #24Attempt 1 · a4f3c2",
+        "right": 624,
+        "w": 480,
+        "x": 144,
+        "y": 282.5
+      },
+      {
+        "bottom": 323.5,
+        "h": 28,
+        "name": "Close",
+        "right": 611,
+        "w": 28,
+        "x": 583,
+        "y": 295.5
+      },
+      {
+        "bottom": 500.5,
+        "h": 114,
+        "name": "Check the grid at large text sizes befor",
+        "right": 607,
+        "w": 446,
+        "x": 161,
+        "y": 386.5
+      },
+      {
+        "bottom": 600.5,
+        "h": 30,
+        "name": "Cancel",
+        "right": 478.28125,
+        "w": 68.5,
+        "x": 409.78125,
+        "y": 570.5
+      },
+      {
+        "bottom": 600.5,
+        "h": 30,
+        "name": "Record request",
+        "right": 607,
+        "w": 120.71875,
+        "x": 486.28125,
+        "y": 570.5
+      }
+    ],
+    "view": "feedback-dialog",
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 599.5,
+        "h": 355,
+        "name": "Request changes on #24Attempt 1 · a4f3c2",
+        "right": 373,
+        "w": 356,
+        "x": 17,
+        "y": 244.5
+      },
+      {
+        "bottom": 285.5,
+        "h": 28,
+        "name": "Close",
+        "right": 360,
+        "w": 28,
+        "x": 332,
+        "y": 257.5
+      },
+      {
+        "bottom": 462.5,
+        "h": 114,
+        "name": "Check the grid at large text sizes befor",
+        "right": 356,
+        "w": 322,
+        "x": 34,
+        "y": 348.5
+      },
+      {
+        "bottom": 582.5,
+        "h": 30,
+        "name": "Cancel",
+        "right": 227.28125,
+        "w": 68.5,
+        "x": 158.78125,
+        "y": 552.5
+      },
+      {
+        "bottom": 582.5,
+        "h": 30,
+        "name": "Record request",
+        "right": 356,
+        "w": 120.71875,
+        "x": 235.28125,
+        "y": 552.5
+      }
+    ],
+    "view": "feedback-dialog",
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "imageWidth": 520,
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 257.4375,
+        "w": 69.4375,
+        "x": 188,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 1340,
+        "w": 28,
+        "x": 1312,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 1420,
+        "w": 28,
+        "x": 1392,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 265.984375,
+        "w": 73.984375,
+        "x": 192,
+        "y": 108
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Preview",
+        "right": 242.8125,
+        "w": 50.8125,
+        "x": 192,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Changes3",
+        "right": 327.390625,
+        "w": 66.578125,
+        "x": 260.8125,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Evidence",
+        "right": 402.484375,
+        "w": 57.09375,
+        "x": 345.390625,
+        "y": 173
+      },
+      {
+        "bottom": 204.5,
+        "h": 26,
+        "name": "Fit width",
+        "right": 1360.859375,
+        "w": 69.984375,
+        "x": 1290.875,
+        "y": 178.5
+      },
+      {
+        "bottom": 204.5,
+        "h": 26,
+        "name": "100%",
+        "right": 1416,
+        "w": 52.140625,
+        "x": 1363.859375,
+        "y": 178.5
+      },
+      {
+        "bottom": 847,
+        "h": 636,
+        "name": "Sample screenshot",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 211
+      },
+      {
+        "bottom": 900,
+        "h": 53,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 847
+      },
+      {
+        "bottom": 886,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 478.515625,
+        "w": 286.515625,
+        "x": 192,
+        "y": 862
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Request changes",
+        "right": 1290.71875,
+        "w": 132.703125,
+        "x": 1158.015625,
+        "y": 859
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 1416,
+        "w": 117.28125,
+        "x": 1298.71875,
+        "y": 859
+      }
+    ],
+    "view": "preview",
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "imageWidth": 520,
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 257.4375,
+        "w": 69.4375,
+        "x": 188,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 1180,
+        "w": 28,
+        "x": 1152,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 1260,
+        "w": 28,
+        "x": 1232,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 265.984375,
+        "w": 73.984375,
+        "x": 192,
+        "y": 108
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Preview",
+        "right": 242.8125,
+        "w": 50.8125,
+        "x": 192,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Changes3",
+        "right": 327.390625,
+        "w": 66.578125,
+        "x": 260.8125,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Evidence",
+        "right": 402.484375,
+        "w": 57.09375,
+        "x": 345.390625,
+        "y": 173
+      },
+      {
+        "bottom": 204.5,
+        "h": 26,
+        "name": "Fit width",
+        "right": 1200.859375,
+        "w": 69.984375,
+        "x": 1130.875,
+        "y": 178.5
+      },
+      {
+        "bottom": 204.5,
+        "h": 26,
+        "name": "100%",
+        "right": 1256,
+        "w": 52.140625,
+        "x": 1203.859375,
+        "y": 178.5
+      },
+      {
+        "bottom": 847,
+        "h": 636,
+        "name": "Sample screenshot",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 211
+      },
+      {
+        "bottom": 900,
+        "h": 53,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 847
+      },
+      {
+        "bottom": 886,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 478.515625,
+        "w": 286.515625,
+        "x": 192,
+        "y": 862
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Request changes",
+        "right": 1130.71875,
+        "w": 132.703125,
+        "x": 998.015625,
+        "y": 859
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 1256,
+        "w": 117.28125,
+        "x": 1138.71875,
+        "y": 859
+      }
+    ],
+    "view": "preview",
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "imageWidth": 520,
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 257.4375,
+        "w": 69.4375,
+        "x": 188,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 924,
+        "w": 28,
+        "x": 896,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 1004,
+        "w": 28,
+        "x": 976,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 265.984375,
+        "w": 73.984375,
+        "x": 192,
+        "y": 108
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Preview",
+        "right": 242.8125,
+        "w": 50.8125,
+        "x": 192,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Changes3",
+        "right": 327.390625,
+        "w": 66.578125,
+        "x": 260.8125,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Evidence",
+        "right": 402.484375,
+        "w": 57.09375,
+        "x": 345.390625,
+        "y": 171
+      },
+      {
+        "bottom": 202.5,
+        "h": 26,
+        "name": "Fit width",
+        "right": 944.859375,
+        "w": 69.984375,
+        "x": 874.875,
+        "y": 176.5
+      },
+      {
+        "bottom": 202.5,
+        "h": 26,
+        "name": "100%",
+        "right": 1000,
+        "w": 52.140625,
+        "x": 947.859375,
+        "y": 176.5
+      },
+      {
+        "bottom": 847,
+        "h": 638,
+        "name": "Sample screenshot",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 209
+      },
+      {
+        "bottom": 900,
+        "h": 53,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 847
+      },
+      {
+        "bottom": 886,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 478.515625,
+        "w": 286.515625,
+        "x": 192,
+        "y": 862
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Request changes",
+        "right": 874.71875,
+        "w": 132.703125,
+        "x": 742.015625,
+        "y": 859
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 1000,
+        "w": 117.28125,
+        "x": 882.71875,
+        "y": 859
+      }
+    ],
+    "view": "preview",
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "imageWidth": 520,
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 81.4375,
+        "w": 69.4375,
+        "x": 12,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 676,
+        "w": 28,
+        "x": 648,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 756,
+        "w": 28,
+        "x": 728,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 89.984375,
+        "w": 73.984375,
+        "x": 16,
+        "y": 108
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Preview",
+        "right": 66.8125,
+        "w": 50.8125,
+        "x": 16,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Changes3",
+        "right": 151.390625,
+        "w": 66.578125,
+        "x": 84.8125,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Evidence",
+        "right": 226.484375,
+        "w": 57.09375,
+        "x": 169.390625,
+        "y": 171
+      },
+      {
+        "bottom": 202.5,
+        "h": 26,
+        "name": "Fit width",
+        "right": 696.859375,
+        "w": 69.984375,
+        "x": 626.875,
+        "y": 176.5
+      },
+      {
+        "bottom": 202.5,
+        "h": 26,
+        "name": "100%",
+        "right": 752,
+        "w": 52.140625,
+        "x": 699.859375,
+        "y": 176.5
+      },
+      {
+        "bottom": 851,
+        "h": 642,
+        "name": "Sample screenshot",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 209
+      },
+      {
+        "bottom": 900,
+        "h": 49,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 851
+      },
+      {
+        "bottom": 888,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 302.515625,
+        "w": 286.515625,
+        "x": 16,
+        "y": 864
+      },
+      {
+        "bottom": 891,
+        "h": 30,
+        "name": "Request changes",
+        "right": 626.71875,
+        "w": 132.703125,
+        "x": 494.015625,
+        "y": 861
+      },
+      {
+        "bottom": 891,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 752,
+        "w": 117.28125,
+        "x": 634.71875,
+        "y": 861
+      }
+    ],
+    "view": "preview",
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "imageWidth": 351,
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 81.4375,
+        "w": 69.4375,
+        "x": 12,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 298,
+        "w": 28,
+        "x": 270,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 378,
+        "w": 28,
+        "x": 350,
+        "y": 45.5
+      },
+      {
+        "bottom": 130,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 149.5625,
+        "w": 73.984375,
+        "x": 75.578125,
+        "y": 106
+      },
+      {
+        "bottom": 220,
+        "h": 36,
+        "name": "Preview",
+        "right": 66.8125,
+        "w": 50.8125,
+        "x": 16,
+        "y": 184
+      },
+      {
+        "bottom": 220,
+        "h": 36,
+        "name": "Changes3",
+        "right": 151.390625,
+        "w": 66.578125,
+        "x": 84.8125,
+        "y": 184
+      },
+      {
+        "bottom": 220,
+        "h": 36,
+        "name": "Evidence",
+        "right": 226.484375,
+        "w": 57.09375,
+        "x": 169.390625,
+        "y": 184
+      },
+      {
+        "bottom": 215.5,
+        "h": 26,
+        "name": "Fit width",
+        "right": 327.859375,
+        "w": 63.984375,
+        "x": 263.875,
+        "y": 189.5
+      },
+      {
+        "bottom": 215.5,
+        "h": 26,
+        "name": "100%",
+        "right": 374,
+        "w": 46.140625,
+        "x": 327.859375,
+        "y": 189.5
+      },
+      {
+        "bottom": 764,
+        "h": 542,
+        "name": "Sample screenshot",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 222
+      },
+      {
+        "bottom": 844,
+        "h": 80,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 764
+      },
+      {
+        "bottom": 796,
+        "h": 22,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 302.515625,
+        "w": 286.515625,
+        "x": 16,
+        "y": 774
+      },
+      {
+        "bottom": 835,
+        "h": 32,
+        "name": "Request changes",
+        "right": 191,
+        "w": 175,
+        "x": 16,
+        "y": 803
+      },
+      {
+        "bottom": 835,
+        "h": 32,
+        "name": "Merge preview",
+        "right": 374,
+        "w": 175,
+        "x": 199,
+        "y": 803
+      }
+    ],
+    "view": "preview",
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 257.4375,
+        "w": 69.4375,
+        "x": 188,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 1340,
+        "w": 28,
+        "x": 1312,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 1420,
+        "w": 28,
+        "x": 1392,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 265.984375,
+        "w": 73.984375,
+        "x": 192,
+        "y": 108
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Preview",
+        "right": 241.546875,
+        "w": 49.546875,
+        "x": 192,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Changes3",
+        "right": 327.25,
+        "w": 67.703125,
+        "x": 259.546875,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Evidence",
+        "right": 402.34375,
+        "w": 57.09375,
+        "x": 345.25,
+        "y": 173
+      },
+      {
+        "bottom": 847,
+        "h": 636,
+        "name": "Filesrc/Collection/ArtistRecordCard.swif",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 211
+      },
+      {
+        "bottom": 251,
+        "h": 30,
+        "name": "Changed file",
+        "right": 843.0625,
+        "w": 620,
+        "x": 223.0625,
+        "y": 221
+      },
+      {
+        "bottom": 289,
+        "h": 32,
+        "name": "Tests/CollectionGridSnapshotTests.swift",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 257
+      },
+      {
+        "bottom": 900,
+        "h": 53,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 847
+      },
+      {
+        "bottom": 886,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 478.515625,
+        "w": 286.515625,
+        "x": 192,
+        "y": 862
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Request changes",
+        "right": 1290.71875,
+        "w": 132.703125,
+        "x": 1158.015625,
+        "y": 859
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 1416,
+        "w": 117.28125,
+        "x": 1298.71875,
+        "y": 859
+      }
+    ],
+    "selectedFile": "2",
+    "view": "changes",
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 257.4375,
+        "w": 69.4375,
+        "x": 188,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 1180,
+        "w": 28,
+        "x": 1152,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 1260,
+        "w": 28,
+        "x": 1232,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 265.984375,
+        "w": 73.984375,
+        "x": 192,
+        "y": 108
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Preview",
+        "right": 241.546875,
+        "w": 49.546875,
+        "x": 192,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Changes3",
+        "right": 327.25,
+        "w": 67.703125,
+        "x": 259.546875,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Evidence",
+        "right": 402.34375,
+        "w": 57.09375,
+        "x": 345.25,
+        "y": 173
+      },
+      {
+        "bottom": 847,
+        "h": 636,
+        "name": "Filesrc/Collection/ArtistRecordCard.swif",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 211
+      },
+      {
+        "bottom": 251,
+        "h": 30,
+        "name": "Changed file",
+        "right": 843.0625,
+        "w": 620,
+        "x": 223.0625,
+        "y": 221
+      },
+      {
+        "bottom": 289,
+        "h": 32,
+        "name": "Tests/CollectionGridSnapshotTests.swift",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 257
+      },
+      {
+        "bottom": 900,
+        "h": 53,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 847
+      },
+      {
+        "bottom": 886,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 478.515625,
+        "w": 286.515625,
+        "x": 192,
+        "y": 862
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Request changes",
+        "right": 1130.71875,
+        "w": 132.703125,
+        "x": 998.015625,
+        "y": 859
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 1256,
+        "w": 117.28125,
+        "x": 1138.71875,
+        "y": 859
+      }
+    ],
+    "selectedFile": "2",
+    "view": "changes",
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 257.4375,
+        "w": 69.4375,
+        "x": 188,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 924,
+        "w": 28,
+        "x": 896,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 1004,
+        "w": 28,
+        "x": 976,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 265.984375,
+        "w": 73.984375,
+        "x": 192,
+        "y": 108
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Preview",
+        "right": 241.546875,
+        "w": 49.546875,
+        "x": 192,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Changes3",
+        "right": 327.25,
+        "w": 67.703125,
+        "x": 259.546875,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Evidence",
+        "right": 402.34375,
+        "w": 57.09375,
+        "x": 345.25,
+        "y": 171
+      },
+      {
+        "bottom": 847,
+        "h": 638,
+        "name": "Filesrc/Collection/ArtistRecordCard.swif",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 209
+      },
+      {
+        "bottom": 249,
+        "h": 30,
+        "name": "Changed file",
+        "right": 843.0625,
+        "w": 620,
+        "x": 223.0625,
+        "y": 219
+      },
+      {
+        "bottom": 287,
+        "h": 32,
+        "name": "Tests/CollectionGridSnapshotTests.swift",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 255
+      },
+      {
+        "bottom": 900,
+        "h": 53,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 847
+      },
+      {
+        "bottom": 886,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 478.515625,
+        "w": 286.515625,
+        "x": 192,
+        "y": 862
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Request changes",
+        "right": 874.71875,
+        "w": 132.703125,
+        "x": 742.015625,
+        "y": 859
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 1000,
+        "w": 117.28125,
+        "x": 882.71875,
+        "y": 859
+      }
+    ],
+    "selectedFile": "2",
+    "view": "changes",
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 81.4375,
+        "w": 69.4375,
+        "x": 12,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 676,
+        "w": 28,
+        "x": 648,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 756,
+        "w": 28,
+        "x": 728,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 89.984375,
+        "w": 73.984375,
+        "x": 16,
+        "y": 108
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Preview",
+        "right": 65.546875,
+        "w": 49.546875,
+        "x": 16,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Changes3",
+        "right": 151.25,
+        "w": 67.703125,
+        "x": 83.546875,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Evidence",
+        "right": 226.34375,
+        "w": 57.09375,
+        "x": 169.25,
+        "y": 171
+      },
+      {
+        "bottom": 851,
+        "h": 642,
+        "name": "Filesrc/Collection/ArtistRecordCard.swif",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 209
+      },
+      {
+        "bottom": 249,
+        "h": 30,
+        "name": "Changed file",
+        "right": 667.0625,
+        "w": 620,
+        "x": 47.0625,
+        "y": 219
+      },
+      {
+        "bottom": 287,
+        "h": 32,
+        "name": "Tests/CollectionGridSnapshotTests.swift",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 255
+      },
+      {
+        "bottom": 900,
+        "h": 49,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 851
+      },
+      {
+        "bottom": 888,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 302.515625,
+        "w": 286.515625,
+        "x": 16,
+        "y": 864
+      },
+      {
+        "bottom": 891,
+        "h": 30,
+        "name": "Request changes",
+        "right": 626.71875,
+        "w": 132.703125,
+        "x": 494.015625,
+        "y": 861
+      },
+      {
+        "bottom": 891,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 752,
+        "w": 117.28125,
+        "x": 634.71875,
+        "y": 861
+      }
+    ],
+    "selectedFile": "2",
+    "view": "changes",
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 81.4375,
+        "w": 69.4375,
+        "x": 12,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 298,
+        "w": 28,
+        "x": 270,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 378,
+        "w": 28,
+        "x": 350,
+        "y": 45.5
+      },
+      {
+        "bottom": 130,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 149.5625,
+        "w": 73.984375,
+        "x": 75.578125,
+        "y": 106
+      },
+      {
+        "bottom": 220,
+        "h": 36,
+        "name": "Preview",
+        "right": 65.546875,
+        "w": 49.546875,
+        "x": 16,
+        "y": 184
+      },
+      {
+        "bottom": 220,
+        "h": 36,
+        "name": "Changes3",
+        "right": 151.25,
+        "w": 67.703125,
+        "x": 83.546875,
+        "y": 184
+      },
+      {
+        "bottom": 220,
+        "h": 36,
+        "name": "Evidence",
+        "right": 226.34375,
+        "w": 57.09375,
+        "x": 169.25,
+        "y": 184
+      },
+      {
+        "bottom": 764,
+        "h": 542,
+        "name": "Filesrc/Collection/ArtistRecordCard.swif",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 222
+      },
+      {
+        "bottom": 260,
+        "h": 30,
+        "name": "Changed file",
+        "right": 326.6875,
+        "w": 310.6875,
+        "x": 16,
+        "y": 230
+      },
+      {
+        "bottom": 292,
+        "h": 26,
+        "name": "Tests/CollectionGridSnapshotTests.swift",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 266
+      },
+      {
+        "bottom": 844,
+        "h": 80,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 764
+      },
+      {
+        "bottom": 796,
+        "h": 22,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 302.515625,
+        "w": 286.515625,
+        "x": 16,
+        "y": 774
+      },
+      {
+        "bottom": 835,
+        "h": 32,
+        "name": "Request changes",
+        "right": 191,
+        "w": 175,
+        "x": 16,
+        "y": 803
+      },
+      {
+        "bottom": 835,
+        "h": 32,
+        "name": "Merge preview",
+        "right": 374,
+        "w": 175,
+        "x": 199,
+        "y": 803
+      }
+    ],
+    "selectedFile": "2",
+    "view": "changes",
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "checks": 6,
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 257.4375,
+        "w": 69.4375,
+        "x": 188,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 1340,
+        "w": 28,
+        "x": 1312,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 1420,
+        "w": 28,
+        "x": 1392,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 265.984375,
+        "w": 73.984375,
+        "x": 192,
+        "y": 108
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Preview",
+        "right": 241.546875,
+        "w": 49.546875,
+        "x": 192,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Changes3",
+        "right": 326.125,
+        "w": 66.578125,
+        "x": 259.546875,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Evidence",
+        "right": 402.40625,
+        "w": 58.28125,
+        "x": 344.125,
+        "y": 173
+      },
+      {
+        "bottom": 847,
+        "h": 636,
+        "name": "SourceEvidence belongs to this review's ",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 211
+      },
+      {
+        "bottom": 900,
+        "h": 53,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 1440,
+        "w": 1272,
+        "x": 168,
+        "y": 847
+      },
+      {
+        "bottom": 886,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 478.515625,
+        "w": 286.515625,
+        "x": 192,
+        "y": 862
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Request changes",
+        "right": 1290.71875,
+        "w": 132.703125,
+        "x": 1158.015625,
+        "y": 859
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 1416,
+        "w": 117.28125,
+        "x": 1298.71875,
+        "y": 859
+      }
+    ],
+    "view": "evidence",
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "checks": 6,
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 257.4375,
+        "w": 69.4375,
+        "x": 188,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 1180,
+        "w": 28,
+        "x": 1152,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 1260,
+        "w": 28,
+        "x": 1232,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 265.984375,
+        "w": 73.984375,
+        "x": 192,
+        "y": 108
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Preview",
+        "right": 241.546875,
+        "w": 49.546875,
+        "x": 192,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Changes3",
+        "right": 326.125,
+        "w": 66.578125,
+        "x": 259.546875,
+        "y": 173
+      },
+      {
+        "bottom": 211,
+        "h": 38,
+        "name": "Evidence",
+        "right": 402.40625,
+        "w": 58.28125,
+        "x": 344.125,
+        "y": 173
+      },
+      {
+        "bottom": 847,
+        "h": 636,
+        "name": "SourceEvidence belongs to this review's ",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 211
+      },
+      {
+        "bottom": 900,
+        "h": 53,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 1280,
+        "w": 1112,
+        "x": 168,
+        "y": 847
+      },
+      {
+        "bottom": 886,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 478.515625,
+        "w": 286.515625,
+        "x": 192,
+        "y": 862
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Request changes",
+        "right": 1130.71875,
+        "w": 132.703125,
+        "x": 998.015625,
+        "y": 859
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 1256,
+        "w": 117.28125,
+        "x": 1138.71875,
+        "y": 859
+      }
+    ],
+    "view": "evidence",
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "checks": 6,
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 257.4375,
+        "w": 69.4375,
+        "x": 188,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 924,
+        "w": 28,
+        "x": 896,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 1004,
+        "w": 28,
+        "x": 976,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 265.984375,
+        "w": 73.984375,
+        "x": 192,
+        "y": 108
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Preview",
+        "right": 241.546875,
+        "w": 49.546875,
+        "x": 192,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Changes3",
+        "right": 326.125,
+        "w": 66.578125,
+        "x": 259.546875,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Evidence",
+        "right": 402.40625,
+        "w": 58.28125,
+        "x": 344.125,
+        "y": 171
+      },
+      {
+        "bottom": 847,
+        "h": 638,
+        "name": "SourceEvidence belongs to this review's ",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 209
+      },
+      {
+        "bottom": 900,
+        "h": 53,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 1024,
+        "w": 856,
+        "x": 168,
+        "y": 847
+      },
+      {
+        "bottom": 886,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 478.515625,
+        "w": 286.515625,
+        "x": 192,
+        "y": 862
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Request changes",
+        "right": 874.71875,
+        "w": 132.703125,
+        "x": 742.015625,
+        "y": 859
+      },
+      {
+        "bottom": 889,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 1000,
+        "w": 117.28125,
+        "x": 882.71875,
+        "y": 859
+      }
+    ],
+    "view": "evidence",
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "checks": 6,
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 81.4375,
+        "w": 69.4375,
+        "x": 12,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 676,
+        "w": 28,
+        "x": 648,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 756,
+        "w": 28,
+        "x": 728,
+        "y": 45.5
+      },
+      {
+        "bottom": 132,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 89.984375,
+        "w": 73.984375,
+        "x": 16,
+        "y": 108
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Preview",
+        "right": 65.546875,
+        "w": 49.546875,
+        "x": 16,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Changes3",
+        "right": 150.125,
+        "w": 66.578125,
+        "x": 83.546875,
+        "y": 171
+      },
+      {
+        "bottom": 209,
+        "h": 38,
+        "name": "Evidence",
+        "right": 226.40625,
+        "w": 58.28125,
+        "x": 168.125,
+        "y": 171
+      },
+      {
+        "bottom": 851,
+        "h": 642,
+        "name": "SourceEvidence belongs to this review's ",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 209
+      },
+      {
+        "bottom": 900,
+        "h": 49,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 768,
+        "w": 768,
+        "x": 0,
+        "y": 851
+      },
+      {
+        "bottom": 888,
+        "h": 24,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 302.515625,
+        "w": 286.515625,
+        "x": 16,
+        "y": 864
+      },
+      {
+        "bottom": 891,
+        "h": 30,
+        "name": "Request changes",
+        "right": 626.71875,
+        "w": 132.703125,
+        "x": 494.015625,
+        "y": 861
+      },
+      {
+        "bottom": 891,
+        "h": 30,
+        "name": "Merge preview",
+        "right": 752,
+        "w": 117.28125,
+        "x": 634.71875,
+        "y": 861
+      }
+    ],
+    "view": "evidence",
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "checks": 6,
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Reviews",
+        "right": 81.4375,
+        "w": 69.4375,
+        "x": 12,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Previous review",
+        "right": 298,
+        "w": 28,
+        "x": 270,
+        "y": 45.5
+      },
+      {
+        "bottom": 73.5,
+        "h": 28,
+        "name": "Next review",
+        "right": 378,
+        "w": 28,
+        "x": 350,
+        "y": 45.5
+      },
+      {
+        "bottom": 130,
+        "h": 24,
+        "name": "Run R-3B7T",
+        "right": 149.5625,
+        "w": 73.984375,
+        "x": 75.578125,
+        "y": 106
+      },
+      {
+        "bottom": 220,
+        "h": 36,
+        "name": "Preview",
+        "right": 65.546875,
+        "w": 49.546875,
+        "x": 16,
+        "y": 184
+      },
+      {
+        "bottom": 220,
+        "h": 36,
+        "name": "Changes3",
+        "right": 150.125,
+        "w": 66.578125,
+        "x": 83.546875,
+        "y": 184
+      },
+      {
+        "bottom": 220,
+        "h": 36,
+        "name": "Evidence",
+        "right": 226.40625,
+        "w": 58.28125,
+        "x": 168.125,
+        "y": 184
+      },
+      {
+        "bottom": 764,
+        "h": 542,
+        "name": "SourceEvidence belongs to this review's ",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 222
+      },
+      {
+        "bottom": 844,
+        "h": 80,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 390,
+        "w": 390,
+        "x": 0,
+        "y": 764
+      },
+      {
+        "bottom": 796,
+        "h": 22,
+        "name": "6/6 checks passed · 3 limitations · Evid",
+        "right": 302.515625,
+        "w": 286.515625,
+        "x": 16,
+        "y": 774
+      },
+      {
+        "bottom": 835,
+        "h": 32,
+        "name": "Request changes",
+        "right": 191,
+        "w": 175,
+        "x": 16,
+        "y": 803
+      },
+      {
+        "bottom": 835,
+        "h": 32,
+        "name": "Merge preview",
+        "right": 374,
+        "w": 175,
+        "x": 199,
+        "y": 803
+      }
+    ],
+    "view": "evidence",
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  },
+  {
+    "pageWidth": 1440,
+    "regions": [
+      {
+        "bottom": 156,
+        "h": 30,
+        "name": "INPUT",
+        "right": 542,
+        "w": 316,
+        "x": 226,
+        "y": 126
+      },
+      {
+        "bottom": 157,
+        "h": 32,
+        "name": "All activeReadyChanges requestedMerged",
+        "right": 744,
+        "w": 182,
+        "x": 562,
+        "y": 125
+      },
+      {
+        "bottom": 279,
+        "h": 105,
+        "name": "#24 Tighten Collection grid spacingReduc",
+        "right": 1416,
+        "w": 1224,
+        "x": 192,
+        "y": 174
+      },
+      {
+        "bottom": 384,
+        "h": 105,
+        "name": "#22 Share sheet button labelRenames the ",
+        "right": 1416,
+        "w": 1224,
+        "x": 192,
+        "y": 279
+      }
+    ],
+    "rows": 2,
+    "view": "inbox",
+    "viewport": {
+      "h": 900,
+      "w": 1440
+    }
+  },
+  {
+    "pageWidth": 1280,
+    "regions": [
+      {
+        "bottom": 156,
+        "h": 30,
+        "name": "INPUT",
+        "right": 542,
+        "w": 316,
+        "x": 226,
+        "y": 126
+      },
+      {
+        "bottom": 157,
+        "h": 32,
+        "name": "All activeReadyChanges requestedMerged",
+        "right": 744,
+        "w": 182,
+        "x": 562,
+        "y": 125
+      },
+      {
+        "bottom": 279,
+        "h": 105,
+        "name": "#24 Tighten Collection grid spacingReduc",
+        "right": 1256,
+        "w": 1064,
+        "x": 192,
+        "y": 174
+      },
+      {
+        "bottom": 384,
+        "h": 105,
+        "name": "#22 Share sheet button labelRenames the ",
+        "right": 1256,
+        "w": 1064,
+        "x": 192,
+        "y": 279
+      }
+    ],
+    "rows": 2,
+    "view": "inbox",
+    "viewport": {
+      "h": 900,
+      "w": 1280
+    }
+  },
+  {
+    "pageWidth": 1024,
+    "regions": [
+      {
+        "bottom": 156,
+        "h": 30,
+        "name": "INPUT",
+        "right": 542,
+        "w": 316,
+        "x": 226,
+        "y": 126
+      },
+      {
+        "bottom": 157,
+        "h": 32,
+        "name": "All activeReadyChanges requestedMerged",
+        "right": 744,
+        "w": 182,
+        "x": 562,
+        "y": 125
+      },
+      {
+        "bottom": 279,
+        "h": 105,
+        "name": "#24 Tighten Collection grid spacingReduc",
+        "right": 1000,
+        "w": 808,
+        "x": 192,
+        "y": 174
+      },
+      {
+        "bottom": 405,
+        "h": 126,
+        "name": "#22 Share sheet button labelRenames the ",
+        "right": 1000,
+        "w": 808,
+        "x": 192,
+        "y": 279
+      }
+    ],
+    "rows": 2,
+    "view": "inbox",
+    "viewport": {
+      "h": 900,
+      "w": 1024
+    }
+  },
+  {
+    "pageWidth": 768,
+    "regions": [
+      {
+        "bottom": 152,
+        "h": 30,
+        "name": "INPUT",
+        "right": 366,
+        "w": 316,
+        "x": 50,
+        "y": 122
+      },
+      {
+        "bottom": 153,
+        "h": 32,
+        "name": "All activeReadyChanges requestedMerged",
+        "right": 568,
+        "w": 182,
+        "x": 386,
+        "y": 121
+      },
+      {
+        "bottom": 292,
+        "h": 124,
+        "name": "#24 Tighten Collection grid spacingReduc",
+        "right": 752,
+        "w": 736,
+        "x": 16,
+        "y": 168
+      },
+      {
+        "bottom": 416,
+        "h": 124,
+        "name": "#22 Share sheet button labelRenames the ",
+        "right": 752,
+        "w": 736,
+        "x": 16,
+        "y": 292
+      }
+    ],
+    "rows": 2,
+    "view": "inbox",
+    "viewport": {
+      "h": 900,
+      "w": 768
+    }
+  },
+  {
+    "pageWidth": 390,
+    "regions": [
+      {
+        "bottom": 172,
+        "h": 30,
+        "name": "INPUT",
+        "right": 211,
+        "w": 161,
+        "x": 50,
+        "y": 142
+      },
+      {
+        "bottom": 173,
+        "h": 32,
+        "name": "All activeReadyChanges requestedMerged",
+        "right": 374,
+        "w": 145,
+        "x": 229,
+        "y": 141
+      },
+      {
+        "bottom": 330,
+        "h": 142,
+        "name": "#24 Tighten Collection grid spacingReduc",
+        "right": 374,
+        "w": 358,
+        "x": 16,
+        "y": 188
+      },
+      {
+        "bottom": 472,
+        "h": 142,
+        "name": "#22 Share sheet button labelRenames the ",
+        "right": 374,
+        "w": 358,
+        "x": 16,
+        "y": 330
+      }
+    ],
+    "rows": 2,
+    "view": "inbox",
+    "viewport": {
+      "h": 844,
+      "w": 390
+    }
+  }
+]
