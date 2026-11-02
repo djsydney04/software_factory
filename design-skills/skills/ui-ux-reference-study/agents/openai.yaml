@@ -1,0 +1,6 @@
+interface:
+  display_name: "UI/UX Reference Study"
+  short_description: "Extract reusable patterns from inspected references"
+  default_prompt: "Use $ui-ux-reference-study to improve this product and provide a concrete, reviewable result."
+policy:
+  allow_implicit_invocation: true

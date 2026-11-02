@@ -21,3 +21,7 @@ The intended stack is Rust, SQLite, Axum, Ratatui and Tauri. Codex app-server is
 [Workspace overview](docs/design/soft-charcoal/overview.png) · [Conversation](docs/design/soft-charcoal/conversation.png) · [Progress / Sundial radar](docs/design/soft-charcoal/progress.png) · [Reviews](docs/design/soft-charcoal/reviews.png) · [Run detail](docs/design/soft-charcoal/run-detail.png)
 
 ![Software Factory workspace design proposal](docs/design/soft-charcoal/overview.png)
+
+## Reusable design skills
+
+The [UI/UX design suite](design-skills/README.md) provides seven focused skills plus checks for contrast, layout budgets and interaction handoffs. Start with `ui-ux-designer`; the soft-charcoal operating style is an optional project profile.

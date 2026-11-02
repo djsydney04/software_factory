@@ -1,0 +1,6 @@
+interface:
+  display_name: "UI/UX Editorial"
+  short_description: "Compose technical product pages and visual catalogs"
+  default_prompt: "Use $ui-ux-editorial to improve this product and provide a concrete, reviewable result."
+policy:
+  allow_implicit_invocation: true

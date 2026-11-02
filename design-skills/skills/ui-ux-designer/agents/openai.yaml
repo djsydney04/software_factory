@@ -1,0 +1,6 @@
+interface:
+  display_name: "UI/UX Designer"
+  short_description: "Design cohesive products and route focused design work"
+  default_prompt: "Use $ui-ux-designer to improve this product and provide a concrete, reviewable result."
+policy:
+  allow_implicit_invocation: true

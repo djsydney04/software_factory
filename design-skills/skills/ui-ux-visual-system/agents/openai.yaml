@@ -1,0 +1,6 @@
+interface:
+  display_name: "UI/UX Visual System"
+  short_description: "Build restrained tokens, typography and UI states"
+  default_prompt: "Use $ui-ux-visual-system to improve this product and provide a concrete, reviewable result."
+policy:
+  allow_implicit_invocation: true

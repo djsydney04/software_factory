@@ -1,0 +1,65 @@
+{
+  "screens": [
+    {
+      "id": "project-progress",
+      "scope": "projectId",
+      "required_states": [
+        "loading",
+        "empty",
+        "ready",
+        "error"
+      ],
+      "designed_states": [
+        "loading",
+        "empty",
+        "ready",
+        "error"
+      ]
+    },
+    {
+      "id": "run-detail",
+      "scope": "projectId/runId/attemptId",
+      "required_states": [
+        "running",
+        "failed",
+        "succeeded",
+        "cancelled",
+        "stale",
+        "not-found"
+      ],
+      "designed_states": [
+        "running",
+        "failed",
+        "succeeded",
+        "cancelled",
+        "stale",
+        "not-found"
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "open-run",
+      "screen": "project-progress",
+      "target": "run-detail",
+      "trigger": "Activate run link",
+      "result": "Open canonical scoped run URL and focus its heading",
+      "keyboard": "Tab to run link; Enter opens detail"
+    },
+    {
+      "id": "back",
+      "screen": "run-detail",
+      "target": "project-progress",
+      "trigger": "Activate project breadcrumb",
+      "result": "Restore project filters and selected run",
+      "keyboard": "Tab to breadcrumb; Enter returns; focus selected run"
+    },
+    {
+      "id": "retry",
+      "screen": "run-detail",
+      "trigger": "Activate Retry after failed attempt; disabled if another attempt is active",
+      "result": "Create one new attempt; pending blocks duplicate action; failure preserves previous attempt",
+      "keyboard": "Tab and Enter; announce pending/error and retain focus"
+    }
+  ]
+}

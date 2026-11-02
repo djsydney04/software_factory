@@ -1,0 +1,20 @@
+{
+  "viewport_width": 1280,
+  "fixed_regions": [
+    {
+      "width": 224
+    },
+    {
+      "width": 280
+    }
+  ],
+  "region_gap": 1,
+  "content_padding": 16,
+  "columns": [
+    {
+      "min_width": 560,
+      "padding": 8
+    }
+  ],
+  "column_gap": 0
+}
