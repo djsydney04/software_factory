@@ -4,15 +4,16 @@ Status: current Claude design proposal, November 1, 2026; awaiting visual select
 
 The latest user request is authoritative: more compact controls, clearer hierarchy, no changes embedded in Radar or other monitoring views, and a distinctive original radar design. The user specifically requested Claude through the Cursor CLI. Claude inspected the previous screens and references, authored the redesign, and refined the radar in the same session.
 
-[Open the current Charcoal Desk redesign and screens](charcoal-desk/README.md).
+[Open the current Soft Charcoal redesign and screens](soft-charcoal/README.md).
 
-The latest pass uses charcoal dark surfaces, no emoji, text navigation and explicit provider/model/effort pickers. A workspace Overview operates across projects; each project owns Conversation, Progress and Reviews. [Operating Desk](operating-desk/README.md) and [the preceding Claude mockups](claude-redesign/README.md) remain available for comparison.
+The latest pass uses softer warm charcoal surfaces, quieter dividers, stone buttons, no emoji, text navigation and explicit provider/model/effort pickers. Run links open project-scoped run details and attempt history. A workspace Overview operates across projects; each project owns Conversation, Progress and Reviews. [Charcoal Desk](charcoal-desk/README.md), [Operating Desk](operating-desk/README.md) and [the preceding Claude mockups](claude-redesign/README.md) remain available for comparison.
 
 ## Current hierarchy
 
 - **Workspace Overview:** project goals, states, pending reviews and scoped controls across projects.
 - **Project Conversation:** one main agent and one steering input. Details unfold on selection. Results link to Reviews without embedding the review workspace.
 - **Project Progress:** Graph, Board and Radar show work and ownership. Radar contains only Plan, Build, Check and Waiting, with no changes, PRs, previews, diffs or merge controls.
+- **Run detail within Progress:** inspect a specific attempt, tool activity, changes, checks and artifacts; steer or interrupt active work and inspect previous attempts.
 - **Project Reviews:** changes have their own destination, with a compact queue and a large selected preview/diff, checks, limitations and actions.
 - **Settings:** a secondary bottom utility.
 
@@ -22,7 +23,7 @@ The smaller Sundial radar uses faint charcoal rings and restrained delegation li
 
 ## Source and history
 
-- [Current Claude brief](charcoal-desk/claude-design-brief.md) and [execution provenance](charcoal-desk/provenance.json).
+- [Current Claude brief](soft-charcoal/claude-design-brief.md) and [execution provenance](soft-charcoal/provenance.json).
 
 - [Claude's original brief](claude-redesign/claude-design-brief.md), with the initial Radar proposal superseded by [its refinement](claude-redesign/radar-refinement.md).
 - [Execution provenance](claude-redesign/provenance.json) and [render prompts](claude-redesign/render-prompts.md).

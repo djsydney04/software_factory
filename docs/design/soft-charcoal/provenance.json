@@ -1,0 +1,22 @@
+{
+  "model_requested": "claude-opus-5-5-high",
+  "exit_code": 0,
+  "duration_seconds": 143,
+  "model": "Claude Opus 5.5 300K High",
+  "session_id": "62534188-02c8-432b-b0ea-931fa3aa61a2",
+  "subtype": "success",
+  "is_error": false,
+  "renderer": "built-in Image Gen",
+  "artifact_files": [
+    "overview.png",
+    "conversation.png",
+    "progress.png",
+    "reviews.png",
+    "run-detail.png"
+  ],
+  "status": "visual proposal; no working application",
+  "render_adjustments": [
+    "Keep text wordmark and no window-control symbols",
+    "Repeat build after source edits before associating checks with the example head commit"
+  ]
+}

@@ -1,0 +1,16 @@
+Polished flat 1440x900 macOS app screenshot, one screen, no collage. Soft warm charcoal dark theme. No emoji, icons, avatars, logos or status dots; only monochrome chevrons and send arrow. SHELL: chrome and sidebar #1E1D1B, plain small Software Factory wordmark; no window-control symbols. Top bar 40px, no divider: breadcrumb 13px #ADA79D at x200; right 12px "Local daemon · connected". Sidebar 176px, text-only 14px, 30px rows: "Overview"; label "PROJECTS"; "Tasklet", "Software Factory", "Docs Kit" with tertiary "Paused"; bottom "Settings". Active row #2E2C29, 7px radius. Content sheet #232220, 10px top-left radius, no hard borders. Inter 14/20 #E6E1D8, secondary 13px #ADA79D, labels 11px uppercase #8E887E; JetBrains Mono 12px for IDs, commits, times. Panels #292825, menus #33312E soft shadow, faint separators #312F2C, 7px controls, 10px panels, no gradients. State text: Running #9DB394, Needs you #D2AE78, Blocked/Failed #CF8B76, Paused #8E887E. Primary button #CFC8BC, dark text; secondary #2E2C29. Example data.
+PROJECT HEADER: "Tasklet" 16px semibold, goal "Ship offline-first task lists" #ADA79D; right "Running", secondary "Pause project". Text tabs "Conversation", "Progress", "Reviews 2"; active has 2px soft underline.
+
+SCREEN: Tasklet active; breadcrumb "Example workspace / Tasklet"; Conversation tab. Log column 720px; right rail 272px inset panel #262522.
+
+Log, 24px gaps, names 12px semibold, mono times:
+- "You · 1h": "This week tasks must survive offline. Keep sync out of scope."
+- "Lead · 56m": "Saved as the goal. Four tasks, three delegated." Inset list, 32px rows: "Persist tasks in SQLite · Build · Codex 5.3"; "Keyboard shortcuts for lists · Check · Claude Opus 5.5"; "Validate offline data · Plan · Lead".
+- "Lead · 28m": "Due-date sorting is ready for review." Row "Add due-date sorting #18", link "Open in Reviews".
+- "Lead · 12m": "Fixture migration needs write access outside its worktree." Buttons "Allow once" primary, "Skip task" secondary.
+
+Composer 76px #292825, 10px radius: placeholder "Steer the lead agent"; bottom-left pickers "Queue" and "Lead · Claude Opus 5.5 · High" with chevrons; right 30px soft circular send arrow.
+Open menu rising from model picker, 288px #33312E: label "LEAD MODEL"; rows "Codex 5.3" tertiary "Codex", "Claude Opus 5.5" tertiary "Claude" with "Current"; label "EFFORT"; segmented "Low | Medium | High", High active; footer 12px "Applies from the next turn. Example models." Menu does not cover message text.
+
+Right rail "DELEGATED", 36px rows, state text right: Persist tasks in SQLite Running; Local search index Running; Keyboard shortcuts for lists Running; Migrate fixture data Needs you; Push reminder scheduling Blocked. Link "Open Progress".
+Use the input screen as the structural reference, but visibly SOFTEN it: lifted warm charcoal (not black), quiet warm text, muted stone buttons, subtle separators, modest rounded surfaces. Keep an operations tool density and readable body type. No emoji, icons or decorative symbols. Do not invent extra panels or explanatory paragraphs. Keep all main body content comfortably inside the viewport and avoid cropped tables. Current date2026-11-01; all model names and project data are examples, not live availability claims.

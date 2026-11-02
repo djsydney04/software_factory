@@ -11,12 +11,12 @@ cd software_factory
 
 Read these in order:
 
-1. [Current designs](design/charcoal-desk/README.md): Conversation, Progress and Reviews, with the Sundial radar.
+1. [Current designs](design/soft-charcoal/README.md): Conversation, Progress and Reviews, with the Sundial radar.
 2. [Architecture](architecture.md): one Rust crate, durable SQLite state and a shared daemon for both clients.
 3. [Provider integration](providers.md): Codex app-server first, including the limits of the completed probes.
 4. [Acceptance criteria](acceptance.md): the observable behavior required before calling this a working alpha.
 
-Earlier screenshots remain in the design folder for history. Use the `charcoal-desk` set as the current proposal; the previous screens that embed reviews in monitoring are superseded.
+Earlier screenshots remain in the design folder for history. Use the `soft-charcoal` set as the current proposal; the previous screens that embed reviews in monitoring are superseded.
 
 ## First implementation slice
 
