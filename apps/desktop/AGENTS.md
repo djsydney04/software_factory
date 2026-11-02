@@ -6,6 +6,8 @@ The native local alpha supports repository/objective registration, observed Code
 
 Project permissions must be enforced by the runtime, not only UI selections. Keep immutable requested/effective snapshots and separate attempt-scoped execution authorization. The alpha narrows agent command networking and integrations to Deny; legacy provider controls do not isolate host reads. The output-token limit is an observed threshold, not a prepaid cap. Keep daemon credentials native-only and out of frontend storage, assets and event text.
 
+Native **Settings → Integrations** connects the registered project's GitHub.com/GitLab.com `origin` through existing `gh`/`glab` authentication. **Reviews → Repository** reads open PRs/MRs and selected-request CI, while **Reviews → Local** preserves the supervisor's review packets. See [integration setup and boundaries](../../docs/integrations.md). Browser preview must show an unavailable notice, never a fake account connection. Keep integration reads separate from agent permission ceilings and preserve explicit loading, unavailable, permission, stale-revision and incomplete-CI states. Never turn provider CI into local Review certification or merge readiness.
+
 ## Design preview workflow
 
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
@@ -41,3 +43,9 @@ Keep conversation activity quiet: routine goal/assignment details may collapse, 
 The user requested a total overhaul of Reviews. The current implementation separates a compact inbox from a full-width selected review desk, with stable review-ID routes. Preserve the large inspection area: no permanent queue and no default split. Preview, Changes, and Evidence have separate modes; screenshots use readable width and their own scroll region, while code and file selection stay in Changes. Back restores inbox context and row focus; Previous/Next preserves each review's view choices.
 
 Pin review source to its run, attempt, and revision. Stale checks never certify new work. Browser-preview simulated merge requires current passing checks, a matching succeeded source, and no newer task attempt; confirmation rechecks these conditions. Native local acceptance and changes requests bind to the observed current source and never call GitHub. Missing optional screenshots remain explicit gaps without blocking text-only changes. Missing sources and unknown review IDs recover safely. Keep feedback drafts and local decision history across navigation/reload. No review action mutates execution Runs or appears in Radar.
+
+## Repository integrations — November 2026
+
+The user selected connecting repositories and showing pull/merge requests plus CI as the first integration workflow. Keep setup in Settings, with one saved connection for the registered project, a verified supported `origin`, and external CLI authentication instructions. Disconnect removes the project link without logging out the CLI. Self-hosted providers, account/token collection and provider writes are outside this increment.
+
+Keep the compact Local/Repository switch inside Reviews. Repository lists are manually loaded in bounded pages; only a selected request loads CI. Display the full reported head SHA, fetched time and limitations. No CI in Sundial and no permanent second queue. Validated public-provider HTTPS links open in the system browser through the narrow native command; remote HTML never becomes trusted app UI. Neither connecting nor reading modifies a Task, Run, local Review decision or the alpha's agent Network/Integrations Deny authorization.

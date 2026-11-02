@@ -73,6 +73,15 @@ stores its pending command identity before transport and exposes **Retry saved
 action**. Rejections and disconnected-service errors must not become successful
 mutations or fall back to sample data.
 
+The same authorized native bridge exposes `factory_repository_detect`,
+`factory_repository_changes` and `factory_repository_change` for explicit
+read-only project integration requests. Connect/disconnect use durable
+`factory_command` envelopes. The daemon uses the existing provider CLI's
+authentication; provider tokens never pass through JavaScript. See
+[GitHub/GitLab setup](../../../docs/integrations.md) for the UI procedure,
+prerequisites and CI limits. These reads do not change agent execution policy
+or certify a local Review.
+
 Rust reads the owner-only connection file through `client::default_data_dir()`
 and uses the authenticated loopback client. Neither credentials nor arbitrary
 destinations are passed through JavaScript. No shell, file-system or HTTP plugin
@@ -82,7 +91,11 @@ Commands require the `main` window and its trusted URL. Bundled navigation uses
 `tauri://localhost`; debug builds additionally accept the exact configured
 `http://127.0.0.1:5173` origin. Remote/confusable navigation and new embedded
 windows are blocked. Project HTML is not trusted application UI; external
-project-preview opening is not implemented by this bridge. The config has an
+project-preview opening is not implemented by this bridge. The separate
+`factory_open_repository_url` command validates plain HTTPS links on
+`github.com`/`gitlab.com` before opening the system browser on macOS; it never
+embeds provider content. Other destinations, credentials, queries and fragments
+are rejected. The config has an
 explicit command capability and separate CSP for packaged assets and Vite's
 debug refresh requirements.
 
@@ -111,7 +124,7 @@ cargo test --manifest-path apps/desktop/src-tauri/Cargo.toml
 cargo fmt --manifest-path apps/desktop/src-tauri/Cargo.toml --check
 ```
 
-The focused native test rejects remote and confusable origins. It does not alone
+The focused native checks cover trusted-window and provider-link validation. They do not alone
 prove the rendered end-to-end workflow; use the checkpoint and recorded native
 evidence for that result. The default Rust tests and frontend checks do not
 repeat the goal's single paid Codex trial.

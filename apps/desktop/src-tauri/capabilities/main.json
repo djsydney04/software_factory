@@ -7,6 +7,10 @@
     "allow-factory-snapshot",
     "allow-factory-events",
     "allow-factory-command",
-    "allow-factory-capabilities"
+    "allow-factory-capabilities",
+    "allow-factory-repository-detect",
+    "allow-factory-repository-changes",
+    "allow-factory-repository-change",
+    "allow-factory-open-repository-url"
   ]
 }

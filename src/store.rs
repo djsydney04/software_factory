@@ -54,7 +54,7 @@ impl Store {
         }
         connection.pragma_update(None, "journal_mode", "WAL")?;
         let version: u32 = connection.pragma_query_value(None, "user_version", |row| row.get(0))?;
-        if version > 2 {
+        if version > 3 {
             return Err(StoreError::Invalid(
                 "database schema is newer than this application".into(),
             ));
@@ -69,6 +69,12 @@ impl Store {
             let tx = connection.transaction_with_behavior(TransactionBehavior::Immediate)?;
             tx.execute_batch("CREATE TABLE lead_wakes(id TEXT PRIMARY KEY,project_id TEXT NOT NULL REFERENCES projects(id),wake_key TEXT NOT NULL UNIQUE,json TEXT NOT NULL);")?;
             tx.pragma_update(None, "user_version", 2)?;
+            tx.commit()?;
+        }
+        if version < 3 {
+            let tx = connection.transaction_with_behavior(TransactionBehavior::Immediate)?;
+            tx.execute_batch("CREATE TABLE repository_connections(id TEXT PRIMARY KEY REFERENCES projects(id),json TEXT NOT NULL);")?;
+            tx.pragma_update(None, "user_version", 3)?;
             tx.commit()?;
         }
         Ok(store)
@@ -114,6 +120,79 @@ impl Store {
         )?;
         tx.commit()?;
         Ok(result)
+    }
+
+    /// Replays before remote inspection, so retries do not depend on current CLI or origin state.
+    pub fn replay_repository_connection(
+        &self,
+        command_id: &str,
+        project_id: &str,
+        provider: RepositoryProvider,
+    ) -> Result<Option<RepositoryConnection>> {
+        text(command_id, "command identity", 200)?;
+        let connection = self.connect()?;
+        let previous: Option<(String, String, String)> = connection
+            .query_row(
+                "SELECT kind,payload,result FROM commands WHERE id=?1",
+                [command_id],
+                |row| Ok((row.get(0)?, row.get(1)?, row.get(2)?)),
+            )
+            .optional()?;
+        let Some((kind, payload, result)) = previous else {
+            return Ok(None);
+        };
+        if kind != "connect_repository"
+            || payload != serde_json::to_string(&(project_id, provider))?
+        {
+            return Err(StoreError::Conflict(
+                "command identity was already used for different input".into(),
+            ));
+        }
+        Ok(Some(serde_json::from_str(&result)?))
+    }
+
+    pub fn connect_repository(
+        &self,
+        command_id: &str,
+        project_id: &str,
+        target: RepositoryTarget,
+    ) -> Result<RepositoryConnection> {
+        crate::integrations::validate_target(&target)
+            .map_err(|_| StoreError::Invalid("unsupported repository target".into()))?;
+        self.command(command_id, "connect_repository", &(project_id, target.provider), |tx| {
+            let _: Project = read(tx, "projects", project_id)?;
+            let connection = RepositoryConnection {
+                project_id: project_id.into(), remote_name: "origin".into(), provider: target.provider, host: target.host,
+                path: target.path, web_url: target.web_url, connected_at: now(),
+            };
+            tx.execute("INSERT INTO repository_connections(id,json) VALUES(?1,?2) ON CONFLICT(id) DO UPDATE SET json=excluded.json", params![project_id, serde_json::to_string(&connection)?])?;
+            event(tx, project_id, None, "repository_connected", serde_json::to_value(&connection)?)?;
+            Ok(connection)
+        })
+    }
+
+    pub fn repository_connection(&self, project_id: &str) -> Result<RepositoryConnection> {
+        let connection = self.connect()?;
+        read(&connection, "repository_connections", project_id)
+    }
+
+    pub fn disconnect_repository(&self, command_id: &str, project_id: &str) -> Result<Value> {
+        self.command(command_id, "disconnect_repository", &project_id, |tx| {
+            let _: Project = read(tx, "projects", project_id)?;
+            tx.execute(
+                "DELETE FROM repository_connections WHERE id=?1",
+                [project_id],
+            )?;
+            let result = json!({"projectId":project_id,"connected":false});
+            event(
+                tx,
+                project_id,
+                None,
+                "repository_disconnected",
+                result.clone(),
+            )?;
+            Ok(result)
+        })
     }
 
     pub fn create_project(&self, command_id: &str, input: NewProject) -> Result<Project> {
@@ -1349,6 +1428,7 @@ impl Store {
             reviews: list(&tx, "reviews")?,
             approvals: list(&tx, "approvals")?,
             lead_wakes: list(&tx, "lead_wakes")?,
+            repository_connections: list(&tx, "repository_connections")?,
             ..Default::default()
         };
         snapshot.last_event_sequence =

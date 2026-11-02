@@ -1,5 +1,7 @@
 # Local alpha implementation checkpoint
 
+Follow-up: read-only GitHub/GitLab repository connections and remote Reviews are now implemented. See [repository integration verification](REPOSITORY-INTEGRATIONS.md) and [setup](../integrations.md). The original local-alpha goal/trial below is complete; this later work does not repeat its paid trial. The initial alpha is committed and pushed at `8e3fbd7`; the original handoff's base/snapshot statements describe its packaging history.
+
 The active goal is a usable native application, not a store-only milestone. Preserve the approved React interface. The authoritative scope is [GOAL.md](GOAL.md), with [the build plan](../handoff/BUILD-PLAN.md) and [current design contracts](../design/compact-preview/README.md).
 
 ## Completion predicate

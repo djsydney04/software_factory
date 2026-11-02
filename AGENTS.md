@@ -4,6 +4,8 @@ Read [START-HERE.md](START-HERE.md) before editing. The active local-alpha scope
 
 This checkout contains a Rust/SQLite core, authenticated local `factoryd` service, Codex app-server adapter, managed Git worktrees, and a thin Tauri client over the approved React UI. Browser-only Vite remains a separate **design preview** with fixtures and local simulations. Native live mode uses daemon records and never falls back to fixtures. Implementation does not by itself prove the goal's complete workflow; use the checkpoint and recorded integration evidence for acceptance status. TUI, additional providers, GitHub/deployment writes, hosted continuity and recurring Scratchpad triage remain later work.
 
+The subsequent [repository integration](docs/integrations.md) adds explicit human-requested reads of GitHub.com/GitLab.com repositories, open PRs/MRs and selected-request CI through existing `gh`/`glab` authentication. Keep these separate from agent execution and from local Review certification. No provider writes or interactive login are implemented by this integration.
+
 ## Source precedence
 
 1. Current explicit user direction.
@@ -22,6 +24,7 @@ If available on this machine, follow `/Users/dylanmitic/workspace/agent-skills/g
 - Enforce project edit/command/network/integration ceilings in the real runtime. A next-send choice can narrow them. A worktree is not a security sandbox. Unsupported restrictions must fail visibly and closed.
 - State changes and their events commit together. Reconcile uncertain execution on restart before launching another attempt; preserve existing worktrees and unrelated dirty work.
 - Checks and review decisions bind to the exact Run/attempt/revision. A changed head invalidates old green evidence. Preview actions are never real GitHub actions.
+- Repository integration reads are bounded and manually requested. Keep provider credentials CLI-managed, raw CLI output private, and public-provider hosts fixed. Remote CI must show its observed revision, time and gaps; it never certifies a local Review or grants an agent integration access.
 - Preserve the 168px rail, 40px header, restrained 14/13px typography, bottom composer controls, blank Scratchpad, active-only Sundial, and Reviews inbox → full-width desk. See the desktop instructions for the complete current direction.
 - Keep provider credentials out of browser assets, source, logs, event payloads and handoff files. Use supported authentication mechanisms; do not copy local account/session state into the project.
 - Keep `connection.json`, databases, provider sessions, managed worktrees and private runtime state out of source handoffs. The connection credential is native-only and rotates on daemon restart.

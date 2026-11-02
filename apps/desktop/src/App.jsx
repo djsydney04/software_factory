@@ -17,6 +17,7 @@ import { normalizePermissions, normalizeAccess, resolvePermissions } from "./per
 import { PermissionFields, PermissionFacts } from "./Permissions.jsx";
 import { ScratchpadPage, ScratchpadSettings } from "./Scratchpad.jsx";
 import { restoreScratchpad, previewDocumentTriage } from "./scratchpad.js";
+import { RepositoryPreviewNotice } from "./RepositoryIntegration.jsx";
 
 const PAGES = ["conversation", "scratchpad", "runs", "progress", "reviews", "files", "settings"];
 // shortcut: browser-local sample state; use the shared service before production execution.
@@ -893,6 +894,7 @@ const SETTING_TABS = [
   { id: "general", label: "General" },
   { id: "models", label: "Models & execution" },
   { id: "permissions", label: "Permissions" },
+  { id: "integrations", label: "Integrations" },
   { id: "files", label: "Files & context" },
   { id: "scratchpad", label: "Scratchpad" },
 ];
@@ -907,7 +909,8 @@ function SettingsPage({ saved, setSaved, override, storeError, resetPreview, sec
   const err = validateCombo(draft.model, draft.effort);
   const set = (k, v) => setDraft((d) => ({ ...d, [k]: v }));
   const nextModel = override.model ?? saved.model;
-  const Panel = tab === "scratchpad" ? "section" : "form";
+  const standalone = ["scratchpad", "integrations"].includes(tab);
+  const Panel = standalone ? "section" : "form";
   useEffect(() => { if (SETTING_TABS.some((item) => item.id === section)) setTab(section); }, [section]);
   useEffect(() => {
     if (section === "permissions") settingsNav.current?.querySelector("#settings-tab-permissions")?.focus();
@@ -924,18 +927,19 @@ function SettingsPage({ saved, setSaved, override, storeError, resetPreview, sec
         id="settings-panel"
         role="tabpanel"
         aria-labelledby={`settings-tab-${tab}`}
-        onSubmit={tab === "scratchpad" ? undefined : (e) => {
+        onSubmit={standalone ? undefined : (e) => {
           e.preventDefault();
           if (err || !dirty) return;
           setSaved(draft);
           setNotice(tab === "permissions" ? "Project permissions saved locally. Future sends inherit these rules; existing runs and requests keep their captured permissions." : "Project defaults saved locally. Existing runs and requests keep their captured settings.");
         }}
       >
-        {tab !== "scratchpad" && <p className="scope-line">
+        {!standalone && <p className="scope-line">
           <strong>Project defaults</strong> · {saved.projectName} · apply to future sends and runs.
         </p>}
 
         {tab === "scratchpad" && <ScratchpadSettings value={scratchpad} setValue={setScratchpad} onTriage={onTriage} notice={scratchpadNotice} storeError={storeError} />}
+        {tab === "integrations" && <RepositoryPreviewNotice />}
 
         {tab === "general" && (
           <div className="fields">
@@ -1010,7 +1014,7 @@ function SettingsPage({ saved, setSaved, override, storeError, resetPreview, sec
           </div>
         )}
 
-        {tab !== "scratchpad" && <footer className="form-foot">
+        {!standalone && <footer className="form-foot">
           <Notice text={notice} />
           <span className="spacer" />
           <span className="muted small">{dirty ? "Unsaved changes" : "No changes"}</span>

@@ -1,0 +1,33 @@
+{
+  "observedAt": "2026-11-02T06:59:22.245683+00:00",
+  "provider": "real GitHub CLI 2.102.0 using existing supported authentication",
+  "projectPaused": true,
+  "connection": {
+    "projectId": "3f9287d5-6d95-492e-b30b-038c3de6260d",
+    "remoteName": "origin",
+    "provider": "github",
+    "host": "github.com",
+    "path": "djsydney04/software_factory",
+    "webUrl": "https://github.com/djsydney04/software_factory",
+    "connectedAt": "2026-11-02T06:57:31.256Z"
+  },
+  "response": {
+    "connection": {
+      "projectId": "3f9287d5-6d95-492e-b30b-038c3de6260d",
+      "remoteName": "origin",
+      "provider": "github",
+      "host": "github.com",
+      "path": "djsydney04/software_factory",
+      "webUrl": "https://github.com/djsydney04/software_factory",
+      "connectedAt": "2026-11-02T06:57:31.256Z"
+    },
+    "items": [],
+    "page": 1,
+    "hasMore": false,
+    "fetchedAt": "2026-11-02T06:59:22.245257+00:00"
+  },
+  "modelExecutionCount": 0,
+  "gitlabLiveVerified": false,
+  "gitlabLimitation": "glab is not installed/authenticated on this machine; deterministic adapter checks passed",
+  "providerWritesPerformed": false
+}

@@ -61,11 +61,15 @@ Turn deadlines are enforced by the supervisor; output-token thresholds are enfor
 
 Reviews opens a compact inbox and then a full-width **Preview / Changes / Evidence** desk. Inspect the real diff, exact Run/attempt/SHA, supervisor check argv and exit codes, and stated limitations. Optional screenshot gaps remain visible. Changes in the source head, dirty state or latest attempt make old evidence ineligible for a current decision.
 
-**Accept locally** and **Request changes** persist feedback on that revision. They do not push, merge, create a PR, mark work delivered, or automatically launch a successor. GitHub and deployment writes are not connected.
+**Accept locally** and **Request changes** persist feedback on that revision. They do not push, merge, create a PR, mark work delivered, or automatically launch a successor. GitHub/GitLab and deployment writes are not connected.
 
 Use the header's **Pause future dispatch** to stop new claims and lead work. Use a Run's **Interrupt** to request a stop. A saved interrupt request is not a stopped process: the app reports the observed terminal outcome or an explicit unresolved state. Cancelling pending scheduled intent prevents future dispatch and does not interrupt an existing attempt.
 
 Close and reopen the client against the same daemon/data directory to recover the same records. To restart the daemon, stop its own terminal with Ctrl+C and run the same command again. Its private connection credential rotates; reconnect the client. Interrupted or uncertain external execution can remain **Recovery required / Needs reconciliation**, fencing further work rather than blindly launching a duplicate. There is no general recovery-resolution UI in this alpha. Preserve its database, provider IDs and worktree for inspection; do not delete state to force another attempt.
+
+## Connect GitHub or GitLab
+
+With the native project registered, open **Settings → Integrations** to detect its supported `origin` and connect using existing provider CLI authentication. **Reviews → Repository** then reads open pull/merge requests and selected-request CI on demand; **Reviews → Local** retains the supervisor's separate review packets. Follow [repository integration setup](integrations.md) for `gh`/`glab` prerequisites, authentication, supported hosts and CI limitations. Connecting does not grant the lead or worker integration permissions.
 
 ## Scratchpad and unavailable features
 
@@ -73,7 +77,7 @@ Scratchpad is a blank autosaved document in this native client's local storage. 
 
 Native drafts, review feedback drafts and UI preferences are client-local; authoritative project settings, steering, requests, attempts, approvals and local decisions live in SQLite. Keep the window open and copy unfinished text if local draft storage reports an error.
 
-Attachments, arbitrary file editing/custom context selection, TUI, additional providers, hosted continuity, live GitHub/deployments and recurring Scratchpad triage remain later work. Worktree isolation and the current provider sandbox do not restrict host read roots or guarantee credential-read isolation. Work does not continue through laptop sleep.
+Attachments, arbitrary file editing/custom context selection, TUI, additional providers, hosted continuity, repository/deployment writes and recurring Scratchpad triage remain later work. Worktree isolation and the current provider sandbox do not restrict host read roots or guarantee credential-read isolation. Work does not continue through laptop sleep.
 
 ## Open the browser design preview
 

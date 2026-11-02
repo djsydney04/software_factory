@@ -1,0 +1,72 @@
+.repo-settings { display: grid; gap: 18px; max-width: 640px; min-width: 0; }
+.repo-heading { display: flex; justify-content: space-between; align-items: center; gap: 14px; min-width: 0; }
+.repo-heading .section-title { margin: 0; }
+.repo-read-only { flex: none; color: var(--muted); font-size: 12px; border: 1px solid var(--separator); border-radius: 3px; padding: 0 6px; line-height: 21px; }
+.repo-connection { display: flex; align-items: flex-start; gap: 12px; padding: 15px 0; border-block: 1px solid var(--separator); }
+.repo-connection > svg { flex: none; margin-top: 3px; color: var(--sage); }
+.repo-connection > div { min-width: 0; }
+.repo-connection .mono, .repo-auth code { overflow-wrap: anywhere; }
+.repo-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.repo-auth { border-top: 1px solid var(--separator); padding-top: 15px; }
+.repo-auth summary { cursor: pointer; color: var(--secondary); }
+.repo-auth p { margin-top: 10px; }
+.repo-auth code { font: 12px/20px var(--mono); }
+.repo-review-source { display: flex; flex: none; align-items: center; gap: 12px; padding: 10px 22px; border-bottom: 1px solid var(--separator); }
+.repo-review-source > .help { margin: 0; }
+.repo-reviews-container { display: flex; flex-direction: column; height: 100%; min-height: 0; min-width: 0; }
+.repo-source-panel { display: flex; flex: 1; flex-direction: column; min-height: 0; min-width: 0; }
+.repo-source-panel > .rv-inbox { flex: 1; min-height: 0; }
+.repo-review-empty { display: flex; flex: 1; flex-direction: column; align-items: flex-start; justify-content: center; width: min(100%, 580px); margin: 0 auto; padding: 28px; gap: 14px; }
+.repo-reviews { display: flex; flex: 1; flex-direction: column; min-height: 0; min-width: 0; }
+.repo-reviews-head { padding: 18px 22px 14px; border-bottom: 1px solid var(--separator); }
+.repo-reviews-head > .help { margin-top: 9px; }
+.repo-reviews-head .pane-title { margin: 0 0 2px; }
+.repo-fetched { margin-top: 4px; }
+.repo-back { margin-bottom: 12px; }
+.repo-message { padding: 28px 22px; }
+.repo-message h2 { font-size: 15px; font-weight: 550; margin-bottom: 6px; }
+.repo-message .text-link { margin-top: 10px; }
+.repo-list-scroll, .repo-detail-scroll { flex: 1; min-height: 0; overflow: auto; }
+.repo-change-list { margin: 0 22px; }
+.repo-change-list > li + li { border-top: 1px solid var(--separator); }
+.repo-change-row { display: flex; align-items: flex-start; gap: 12px; width: 100%; text-align: left; border: 0; background: transparent; padding: 16px 4px; }
+.repo-change-row:hover { background: var(--hover); }
+.repo-change-row > svg { flex: none; color: var(--muted); margin-top: 3px; }
+.repo-row-copy { flex: 1; min-width: 0; }
+.repo-row-title { display: block; font-weight: 550; overflow-wrap: anywhere; }
+.repo-row-meta { display: flex; flex-wrap: wrap; column-gap: 12px; color: var(--muted); font-size: 13px; margin-top: 4px; overflow-wrap: anywhere; }
+.repo-pagination { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 22px; border-top: 1px solid var(--separator); }
+.repo-detail { width: min(100%, 940px); margin: 0 auto; padding: 24px 28px 40px; }
+.repo-detail-title { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 8px; }
+.repo-detail-title h2 { font-size: 20px; line-height: 29px; font-weight: 550; overflow-wrap: anywhere; }
+.repo-detail header > .small { overflow-wrap: anywhere; }
+.repo-revision { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 12px 0; }
+.repo-revision code, .repo-check-list .mono { font: 12px/20px var(--mono); overflow-wrap: anywhere; }
+.repo-open { display: inline-flex; flex-direction: column; align-items: flex-start; max-width: 100%; }
+.repo-open .text-link { font-size: 13px; display: inline-flex; align-items: center; gap: 5px; }
+.repo-ci { border-top: 1px solid var(--separator); margin-top: 25px; padding-top: 20px; }
+.repo-ci h3 { font-size: 14px; font-weight: 550; }
+.repo-ci-state { flex: none; font-size: 12px; color: var(--muted); }
+.repo-ci-success { color: var(--success); }
+.repo-ci-failure { color: var(--danger); }
+.repo-ci-running, .repo-ci-pending { color: var(--warning); }
+.repo-ci-note { margin-top: 14px; font-size: 13px; }
+.repo-check-list { margin: 12px 0 18px; }
+.repo-check-list li { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--separator); }
+.repo-check-list li > div { min-width: 0; overflow-wrap: anywhere; }
+.repo-check-list strong { font-weight: 500; }
+.repo-ci-limitations { margin: 14px 0; list-style: disc; padding-left: 18px; color: var(--warning); font-size: 13px; }
+@media (max-width: 768px) {
+  .repo-review-source { padding: 9px 12px; }
+  .repo-review-source > .help { display: none; }
+  .repo-reviews-head { padding: 16px 12px 12px; }
+  .repo-reviews-head .repo-heading { align-items: flex-start; }
+  .repo-reviews-head .repo-heading .btn { flex: none; }
+  .repo-message { padding: 24px 12px; }
+  .repo-change-list { margin-inline: 12px; }
+  .repo-pagination { padding: 10px 12px; gap: 6px; }
+  .repo-pagination > span { font-size: 12px; }
+  .repo-detail { padding: 20px 14px 32px; }
+  .repo-detail-title h2 { font-size: 18px; line-height: 26px; }
+  .repo-review-empty { padding: 24px 16px; }
+}

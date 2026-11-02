@@ -10,14 +10,17 @@ In native mode, register a repository and objective, save a supported model and 
 
 The browser-only Vite app remains a [design preview](docs/design/compact-preview/README.md), with fixture activity and browser-local simulations. It needs no provider credentials and cannot run agents. The native app never falls back to those fixtures. Scratchpad remains a blank client-local document with its configurable morning plan in Settings; recurring agent triage is later work.
 
+[Connect GitHub or GitLab](docs/integrations.md) in native **Settings → Integrations** using existing `gh` or `glab` authentication. **Reviews → Repository** reads open pull/merge requests and selected-request CI separately from local review evidence. These human-requested reads do not change agent permission ceilings.
+
 The alpha does not push, create or merge PRs, deploy, or install recurring jobs. Additional providers, TUI parity and hosted continuity are later milestones. Legacy provider sandbox controls restrict writes and networking but permit host reads; worktrees are not credential isolation. Output-token limits are observed thresholds rather than hard prepaid spend caps.
 
 - [Active goal](docs/runtime/GOAL.md), [agent prompt](docs/handoff/AGENT-PROMPT.md), and [build plan](docs/handoff/BUILD-PLAN.md)
 - [All mocks, references and current screens](docs/handoff/DESIGN-INDEX.md)
 - [Native bridge and service boundary](apps/desktop/src-tauri/README.md)
+- [Repository integration setup and CI limits](docs/integrations.md)
 - [Architecture](docs/architecture.md), [harness](docs/harness.md), [providers](docs/providers.md), and [broader acceptance](docs/acceptance.md)
 
-The full supplied source snapshot contains uncommitted and untracked files absent from its recorded Git base. Use the complete handoff when continuing the project.
+The local alpha is committed and pushed on `main` at `8e3fbd7`; a current clone includes its runtime and design source. The original frozen handoff's manifest records an earlier base that omitted those files. Preserve that historical manifest when comparing snapshots. The subsequent repository-integration changes have their own verification status in the checkpoint.
 
 ![Software Factory frontend design preview](docs/design/compact-preview/agent-flow-screenshots/conversation-user-desktop.png)
 

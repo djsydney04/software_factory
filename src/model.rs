@@ -476,6 +476,67 @@ pub struct Snapshot {
     pub lead_wakes: Vec<LeadWake>,
     #[serde(default)]
     pub review_sources: Vec<ReviewSourceState>,
+    #[serde(default)]
+    pub repository_connections: Vec<RepositoryConnection>,
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "snake_case")]
+pub enum RepositoryProvider {
+    Github,
+    Gitlab,
+}
+
+impl RepositoryProvider {
+    pub fn host(self) -> &'static str {
+        match self {
+            Self::Github => "github.com",
+            Self::Gitlab => "gitlab.com",
+        }
+    }
+    pub fn cli(self) -> &'static str {
+        match self {
+            Self::Github => "gh",
+            Self::Gitlab => "glab",
+        }
+    }
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct RepositoryTarget {
+    pub provider: RepositoryProvider,
+    pub host: String,
+    pub path: String,
+    pub web_url: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct RepositoryConnection {
+    pub project_id: String,
+    #[serde(default = "origin_remote")]
+    pub remote_name: String,
+    pub provider: RepositoryProvider,
+    pub host: String,
+    pub path: String,
+    pub web_url: String,
+    pub connected_at: String,
+}
+
+fn origin_remote() -> String {
+    "origin".into()
+}
+
+impl RepositoryConnection {
+    pub fn target(&self) -> RepositoryTarget {
+        RepositoryTarget {
+            provider: self.provider,
+            host: self.host.clone(),
+            path: self.path.clone(),
+            web_url: self.web_url.clone(),
+        }
+    }
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

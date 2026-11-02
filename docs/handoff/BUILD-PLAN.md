@@ -15,7 +15,9 @@ Start with [START-HERE](../../START-HERE.md), [getting started](../getting-start
 | Managed worktrees/checkpoint | `src/worktree.rs` | No submodules, sanitized local Git, no publishing |
 | Native and live React client | `apps/desktop/src-tauri`, `apps/desktop/src/LiveApp.jsx` | Separate from browser-only fixtures |
 
-The static Sites worker remains asset delivery, not execution. Scratchpad's blank document and morning review plan remain client-local; recurring triage is not connected. TUI, other providers, hosted execution, file editing/attachments, GitHub and deployments remain later work.
+The subsequent [read-only repository integration](../integrations.md) adds explicit GitHub.com/GitLab.com connection, open PR/MR lists and selected-request CI through existing provider CLI authentication. Provider reads are separate from agent permissions and local Review evidence; their recorded verification belongs in the checkpoint.
+
+The static Sites worker remains asset delivery, not execution. Scratchpad's blank document and morning review plan remain client-local; recurring triage is not connected. TUI, other providers, hosted execution, file editing/attachments, repository writes and deployments remain later work.
 
 ## 1. Durable identity and state
 

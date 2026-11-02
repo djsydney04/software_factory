@@ -575,7 +575,9 @@ fn schema_one_migration_preserves_existing_records_and_wake_reservation_rolls_ba
     f.steering("steering");
     let connection = rusqlite::Connection::open(&f.database).unwrap();
     connection
-        .execute_batch("DROP TABLE lead_wakes; PRAGMA user_version=1;")
+        .execute_batch(
+            "DROP TABLE repository_connections; DROP TABLE lead_wakes; PRAGMA user_version=1;",
+        )
         .unwrap();
     let reopened = Store::open(&f.database).unwrap();
     let migrated = reopened.snapshot().unwrap();

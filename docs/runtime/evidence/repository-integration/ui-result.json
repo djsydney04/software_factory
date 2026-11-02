@@ -1,0 +1,21 @@
+{
+  "provider": "deterministic CLI fixture; no provider network",
+  "allFixedGET": true,
+  "neutralCwd": true,
+  "debugDisabled": true,
+  "fixtureCalls": 8,
+  "countsAfterDisconnect": {
+    "requests": 0,
+    "tasks": 0,
+    "runs": 0,
+    "reviews": 0,
+    "repository_connections": 0
+  },
+  "observedScreens": [
+    "failed check with passing sibling",
+    "partial results with missing checks",
+    "phone width no horizontal overflow",
+    "disconnect removed connection",
+    "GitLab missing CLI visible and Connect disabled"
+  ]
+}

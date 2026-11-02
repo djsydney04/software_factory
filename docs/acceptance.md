@@ -4,6 +4,8 @@ Status: independent design review from October 31, 2026, amended for the impleme
 
 Observed local evidence now includes a bounded real Codex worker, an exact-revision diff and independently observed check exit 0, local Review acceptance, and unchanged records after daemon restart. Native fake-provider exercises cover client closure during execution and observed interruption. These results establish the local slice; they do not certify TUI parity, every experiment below, signing/notarization, hosted continuity or external integration writes.
 
+The subsequent [read-only repository integration](integrations.md) adds human-requested GitHub/GitLab PR/MR and CI reads. Its connection metadata and provider snapshots do not certify local Review evidence, required-check policy or merge readiness. Consult the checkpoint for that increment's verification; the broader write/merge flow below remains future work.
+
 ## Smallest useful release
 
 An awake-host alpha must complete one real cycle: a saved factory objective and eligible request produce a justified task, an agent changes an isolated worktree, the supervisor verifies the change, and the human can inspect evidence from the native client. Saved steering must reach subsequent lead context. Closing the client must not stop the supervisor. A board populated with sample runs is a prototype, not this release.

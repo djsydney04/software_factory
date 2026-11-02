@@ -2,7 +2,7 @@
 
 Status: broader v1 architecture proposed October 31, 2026; local-alpha implementation added November 1. The Rust/SQLite core, authenticated Axum daemon, Codex app-server adapter, managed attempt worktrees and thin Tauri client now exist. One bounded real fixture run produced a verified local Review; its records survived daemon restart. See the [runtime checkpoint](runtime/IMPLEMENTATION.md) and [integration trial](runtime/INTEGRATION-TRIAL.md). The browser-only React/Vite app remains a separate design preview with fixtures.
 
-The active [local-alpha goal](runtime/GOAL.md) narrows this older design: one project, one Codex lead, one worker and local review decisions. TUI, additional providers, GitHub/merge/deployment actions, recurring triage and hosted continuity remain later work. Tables and signatures labeled proposed below describe the broader design, not the current wire contract.
+The active [local-alpha goal](runtime/GOAL.md) narrows this older design: one project, one Codex lead, one worker and local review decisions. A subsequent [read-only repository integration](integrations.md) connects GitHub.com/GitLab.com through existing provider CLI authentication for human-requested PR/MR and CI reads. TUI, additional providers, repository/merge/deployment writes, recurring triage and hosted continuity remain later work. Tables and signatures labeled proposed below describe the broader design, not the current wire contract.
 
 For current implementation sequencing and amendments from later UI decisions, read the [agent build plan](handoff/BUILD-PLAN.md). It adds Request/source provenance and permission snapshots to this older inventory, treats approvals as nonterminal waiting, and narrows the first usable local cycle before TUI/provider expansion.
 

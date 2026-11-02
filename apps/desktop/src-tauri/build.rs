@@ -5,6 +5,10 @@ fn main() {
             "factory_events",
             "factory_command",
             "factory_capabilities",
+            "factory_repository_detect",
+            "factory_repository_changes",
+            "factory_repository_change",
+            "factory_open_repository_url",
         ]),
     ))
     .expect("failed to prepare the Software Factory native shell");

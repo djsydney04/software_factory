@@ -1,4 +1,5 @@
 pub mod client;
+pub mod integrations;
 pub mod lead;
 pub mod model;
 pub mod provider;

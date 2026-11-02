@@ -3,10 +3,11 @@
 Continue this project and its approved interface. The repository now includes the local-alpha runtime: a Rust/SQLite core, independent authenticated Axum daemon, Codex app-server adapter, managed worktrees, and Tauri desktop client. The ordinary browser app remains a separate design preview.
 
 - **Use the native alpha:** follow [getting started](docs/getting-started.md) for the tested build, service launch, registration and first request.
+- **Connect a provider repository:** follow [GitHub/GitLab setup](docs/integrations.md) for existing CLI authentication, read-only pull/merge requests and CI.
 - **Continue implementation:** read the [active goal](docs/runtime/GOAL.md), [checkpoint](docs/runtime/IMPLEMENTATION.md), [copyable agent prompt](docs/handoff/AGENT-PROMPT.md), and [build plan](docs/handoff/BUILD-PLAN.md).
 - **Inspect the design:** use the [design index](docs/handoff/DESIGN-INDEX.md) for current desktop/phone screens, all mocks and superseded directions.
 
-The full supplied source snapshot includes uncommitted and untracked runtime/design files. A clone of the recorded base commit alone does **not** contain this work. Preserve the working tree.
+The local alpha is committed and pushed on `main` at `8e3fbd7`; a current clone includes its runtime and design source. The original frozen handoff's recorded base predates that implementation and remains historical evidence. Preserve any current working-tree changes, including the subsequent repository-integration increment, and use the checkpoint for its verification status.
 
 ## Connected and deferred
 
@@ -18,9 +19,10 @@ The full supplied source snapshot includes uncommitted and untracked runtime/des
 | Isolated linked worktree, sanitized supervisor checkpoint, independent checks | Worktrees separate edits; they do not isolate host reads |
 | Scoped command approval, pause, interruption and recovery fencing | Network/integrations disabled for alpha execution; uncertain control remains explicit |
 | Real Runs/Progress and exact-revision local Reviews | Local acceptance is not merge or delivery |
+| Read-only GitHub.com/GitLab.com connection and repository Reviews | Existing provider CLI authentication; manual reads; remote CI does not certify local Reviews |
 | Blank Scratchpad and saved configurable 09:00 review plan | Client-local document/plan; no recurring triage or installed cron |
 
-Files/context editing, attachments, additional providers, TUI, GitHub actions, deployments and hosted continuity remain unavailable or later milestones. Native live mode states these gaps explicitly. Browser preview interactions remain simulations and cannot supply runtime evidence. `apps/desktop/worker/index.js` serves static assets; it is not an agent executor.
+Files/context editing, attachments, additional providers, TUI, repository writes, deployments and hosted continuity remain unavailable or later milestones. Native live mode states these gaps explicitly. Browser preview interactions remain simulations and cannot supply runtime evidence. `apps/desktop/worker/index.js` serves static assets; it is not an agent executor.
 
 ## Read in this order
 

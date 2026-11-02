@@ -12,6 +12,8 @@ import { resolvePermissions } from "./permissions.js";
 import { validateTiming } from "./scheduling.js";
 import { ACTIVE } from "./data.js";
 import { buildLiveView, emptySnapshot, liveDefaults, liveScheduleLabel, observedCatalog, validateLiveCombo, validateSnapshot } from "./live-state.js";
+import { RepositoryReviews, RepositorySettings } from "./RepositoryIntegration.jsx";
+import { repositoryConnectionKey } from "./repository-state.js";
 import "./live.css";
 
 const UI_KEY = "software-factory.native-ui.v1";
@@ -140,6 +142,7 @@ export function LiveApp() {
     } catch { /* Retain this same identity until the outcome can be reconciled. */ }
   };
   const settings = project ? { ...project.settings, projectName: project.name, mode: "bounded" } : null;
+  const repositoryConnection = factory.snapshot.repositoryConnections.find((item) => item.projectId === project?.id) ?? null;
   const nextRun = settings ? { ...settings, model: composer.override.model ?? settings.model, effort: composer.override.effort ?? settings.effort,
     ...resolvePermissions(settings, composer.permissionOverride) } : null;
   const submit = async () => {
@@ -164,6 +167,8 @@ export function LiveApp() {
     if (approval) safeAction({ type: "resolve_approval", approvalId: approval.id, allow: decision === "allow" }, "Approval decision recorded by the service.");
   };
   const page = route.page;
+  const repositoryReviews = page === "reviews" && route.id === "repository";
+  const localReviewId = repositoryReviews ? null : route.id;
   const newOneOff = () => { setComposer((previous) => ({ ...previous, mode: "oneoff" })); navigate("conversation"); setFocusComposer((value) => value + 1); };
   const view = route.schedule ? "schedule" : runsUi.view;
   const progressView = ui.progressView ?? "graph";
@@ -186,10 +191,15 @@ export function LiveApp() {
         {page === "conversation" && <Conversation messages={messages} runs={runs} composer={composer} setComposer={setComposer} settings={settings} nextRun={nextRun} submit={submit} toggleAttach={() => {}} decisions={{}} decide={decide} notice={notice} openReview={(id) => navigate(`reviews/${id}`)} focusComposer={focusComposer} storeError={storeError} reviews={reviews} live={{ busy: factory.busy || factory.connection !== "connected", catalog, validate: (model, effort) => validateLiveCombo(catalog, model, effort) }} />}
         {page === "runs" && ((!route.id && view === "schedule") || route.requestId ? <LiveSchedule requests={requests} tasks={tasks} runs={runs} requestId={route.requestId} navigate={navigate} newOneOff={newOneOff} busy={factory.busy} notice={notice} cancel={(id) => safeAction({ type: "cancel_request", requestId: id })} /> : <RunsPage runs={runs} tasks={tasks} runId={route.id} ui={{ ...runsUi, view }} setUi={setRunsUi} navigate={navigate} settings={settings} retry={() => null} interrupt={(runId) => safeAction({ type: "interrupt_run", runId }, "Interrupt request saved.")} cancelQueued={() => {}} decisions={{}} decide={decide} notice={notice} openReview={(id) => navigate(`reviews/${id}`)} />)}
         {page === "progress" && <ProgressPage live view={progressView} runs={runs} tasks={tasks} reviewStatus={reviewState.status} openRun={(id) => navigate(`runs/${id}`)} decisions={{}} decide={decide} notice={notice} goal={{ title: project.objective, leadStatus: leadRecovery ? "Needs reconciliation" : leadWorking ? "Applying project context" : running.length ? "Coordinating active work" : "Waiting for eligible work" }} now={now} />}
-        {page === "reviews" && <ReviewsPage reviewId={route.id} navigate={navigate} runs={runs} tasks={tasks} reviews={reviews} mergedHistory={[]} state={{ ...reviewState, drafts: ui.reviewDrafts ?? {} }} setState={setReviewState} ui={reviewsUi} setUi={setReviewsUi} openRun={(id) => navigate(`runs/${id}`)} storeError={storeError} busy={factory.busy} onDecision={(decision) => action({ type: "record_local_review_decision", reviewId: decision.reviewId, decision: decision.type === "merge" ? "accepted_local" : "changes_requested", feedback: decision.text ?? "" })} />}
+        {page === "reviews" && <div className="repo-reviews-container">
+          {!localReviewId && <div className="repo-review-source"><Tabs id="reviewsource" label="Review source" value={repositoryReviews ? "repository" : "local"} onChange={(value) => navigate(value === "repository" ? "reviews/repository" : "reviews")} items={[{ id: "local", label: "Local" }, { id: "repository", label: "Repository" }]} /><p className="help">Local evidence and provider status</p></div>}
+          <div className="repo-source-panel" id="reviewsource-panel" role={!localReviewId ? "tabpanel" : undefined} aria-labelledby={!localReviewId ? `reviewsource-tab-${repositoryReviews ? "repository" : "local"}` : undefined}>
+          {repositoryReviews ? <RepositoryReviews key={`${project.id}|${repositoryConnectionKey(repositoryConnection)}`} project={project} connection={repositoryConnection} invoke={invoke} connected={factory.connection === "connected"} /> : <ReviewsPage reviewId={localReviewId} navigate={navigate} runs={runs} tasks={tasks} reviews={reviews} mergedHistory={[]} state={{ ...reviewState, drafts: ui.reviewDrafts ?? {} }} setState={setReviewState} ui={reviewsUi} setUi={setReviewsUi} openRun={(id) => navigate(`runs/${id}`)} storeError={storeError} busy={factory.busy} onDecision={(decision) => action({ type: "record_local_review_decision", reviewId: decision.reviewId, decision: decision.type === "merge" ? "accepted_local" : "changes_requested", feedback: decision.text ?? "" })} />}
+          </div>
+        </div>}
         {page === "scratchpad" && <ScratchpadPage value={scratchpad} setValue={setScratchpad} requests={[]} runs={[]} storeError={storeError} />}
         {page === "files" && <div className="empty-state"><h1 className="pane-title">Files & context</h1><p className="mono">{project.repoPath}</p><p>Agents receive the captured repository objective and steering in isolated worktrees. Editing project files from this client is not connected yet.</p><a className="text-link" href="#/runs">Inspect captured attempt context <ArrowRight size={13} /></a></div>}
-        {page === "settings" && <LiveSettings project={project} catalog={catalog} capabilities={factory.capabilities} section={route.id} navigate={navigate} busy={factory.busy} notice={notice} save={(settings) => action({ type: "save_settings", projectId: project.id, settings }, "Project settings saved. Previous requests and attempts retain their snapshots.")} objective={(objective) => action({ type: "set_objective", projectId: project.id, objective }, "Objective saved for future planning turns.")} scratchpad={scratchpad} setScratchpad={setScratchpad} storeError={storeError} />}
+        {page === "settings" && <LiveSettings project={project} catalog={catalog} capabilities={factory.capabilities} section={route.id} navigate={navigate} busy={factory.busy} notice={notice} save={(settings) => action({ type: "save_settings", projectId: project.id, settings }, "Project settings saved. Previous requests and attempts retain their snapshots.")} objective={(objective) => action({ type: "set_objective", projectId: project.id, objective }, "Objective saved for future planning turns.")} scratchpad={scratchpad} setScratchpad={setScratchpad} storeError={storeError} repositoryConnection={repositoryConnection} invoke={invoke} action={action} connected={factory.connection === "connected"} />}
       </>}
     </main></div></div>;
 }
@@ -206,8 +216,8 @@ function RegisterProject({ onRegister, busy, notice }) {
     </form></section>;
 }
 
-function LiveSettings({ project, catalog, capabilities, section, navigate, busy, notice, save, objective, scratchpad, setScratchpad, storeError }) {
-  const tabs = [{ id: "general", label: "General" }, { id: "models", label: "Models & execution" }, { id: "permissions", label: "Permissions" }, { id: "files", label: "Files & context" }, { id: "scratchpad", label: "Scratchpad" }];
+function LiveSettings({ project, catalog, capabilities, section, navigate, busy, notice, save, objective, scratchpad, setScratchpad, storeError, repositoryConnection, invoke, action, connected }) {
+  const tabs = [{ id: "general", label: "General" }, { id: "models", label: "Models & execution" }, { id: "permissions", label: "Permissions" }, { id: "integrations", label: "Integrations" }, { id: "files", label: "Files & context" }, { id: "scratchpad", label: "Scratchpad" }];
   const tab = tabs.some((item) => item.id === section) ? section : "models";
   const [draft, setDraft] = useState(project.settings);
   const [goal, setGoal] = useState(project.objective);
@@ -218,8 +228,8 @@ function LiveSettings({ project, catalog, capabilities, section, navigate, busy,
   const set = (key, value) => setDraft((previous) => ({ ...previous, [key]: value }));
   const submit = (event) => { event.preventDefault(); (tab === "general" ? objective(goal) : save(draft)).catch(() => {}); };
   return <div className="settings"><div className="settings-nav"><h1 className="pane-title">Settings</h1><Tabs id="settings" label="Settings categories" vertical items={tabs} value={tab} onChange={(next) => navigate(`settings/${next}`)} /></div>
-    <div className="settings-form" id="settings-panel" role="tabpanel" aria-labelledby={`settings-tab-${tab}`}><p className="scope-line"><strong>Project defaults</strong> · {project.name} · future sends and attempts.</p>
-      {tab === "scratchpad" ? <><p className="help">This document and review plan are saved in this client. Recurring agent triage is a later milestone; no cron is installed.</p><ScratchpadSettings live value={scratchpad} setValue={setScratchpad} onTriage={() => {}} notice="" storeError={storeError} /></> : <form onSubmit={submit}>
+    <div className="settings-form" id="settings-panel" role="tabpanel" aria-labelledby={`settings-tab-${tab}`}><p className="scope-line"><strong>{tab === "integrations" ? "Project connection" : "Project defaults"}</strong> · {project.name}{tab === "integrations" ? " · read-only repository access." : " · future sends and attempts."}</p>
+      {tab === "integrations" ? <RepositorySettings key={`${project.id}|${repositoryConnectionKey(repositoryConnection)}`} project={project} connection={repositoryConnection} invoke={invoke} action={action} busy={busy} connected={connected} notice={notice} /> : tab === "scratchpad" ? <><p className="help">This document and review plan are saved in this client. Recurring agent triage is a later milestone; no cron is installed.</p><ScratchpadSettings live value={scratchpad} setValue={setScratchpad} onTriage={() => {}} notice="" storeError={storeError} /></> : <form onSubmit={submit}>
       {tab === "general" && <div className="fields"><h2 className="section-title">{project.name}</h2><p className="mono live-path">{project.repoPath}</p><label className="field"><span className="field-label">Persistent goal</span><textarea rows={7} value={goal} onChange={(event) => setGoal(event.target.value)} required /></label><p className="help">Context revision {project.contextRevision}. Changing the goal does not rewrite captured request or attempt context.</p></div>}
       {tab === "models" && <div className="fields"><label className="field"><span className="field-label">Default model</span><ModelSelect value={draft.model} catalog={catalog} onChange={(model) => { const selected = catalog.find((item) => item.id === model); setDraft((previous) => ({ ...previous, model, effort: selected?.defaultEffort || selected?.efforts[0] || previous.effort })); }} label="Default model" /></label><label className="field"><span className="field-label">Effort</span><EffortSelect value={draft.effort} catalog={catalog} modelId={draft.model} onChange={(value) => set("effort", value)} label="Default effort" /></label>
         {modelError && <p className="error" role="status">{modelError}</p>}{(capabilities?.limitations ?? []).map((item) => <p key={item} className="help">{item}</p>)}

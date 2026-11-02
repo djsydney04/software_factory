@@ -133,6 +133,53 @@ impl DaemonClient {
         )
         .await
     }
+    async fn repository_read(
+        &self,
+        route: &str,
+        project_id: &str,
+        parameter: Option<(&str, String)>,
+    ) -> Result<Value, ClientError> {
+        let mut url = reqwest::Url::parse(&format!(
+            "{}v1/repository/{route}",
+            self.connection.base_url
+        ))
+        .map_err(|_| ClientError::Invalid)?;
+        url.query_pairs_mut().append_pair("projectId", project_id);
+        if let Some((name, value)) = parameter {
+            url.query_pairs_mut().append_pair(name, &value);
+        }
+        self.response(self.http.get(url).timeout(Duration::from_secs(45)))
+            .await
+    }
+    pub async fn repository_detect(&self, project_id: &str) -> Result<Value, ClientError> {
+        self.repository_read("detect", project_id, None).await
+    }
+    pub async fn repository_changes(
+        &self,
+        project_id: &str,
+        page: u32,
+    ) -> Result<Value, ClientError> {
+        if page == 0 || page > 1000 {
+            return Err(ClientError::Rejected(
+                "Repository page must be between 1 and 1000.".into(),
+            ));
+        }
+        self.repository_read("changes", project_id, Some(("page", page.to_string())))
+            .await
+    }
+    pub async fn repository_change(
+        &self,
+        project_id: &str,
+        number: u64,
+    ) -> Result<Value, ClientError> {
+        if number == 0 || number > i64::MAX as u64 {
+            return Err(ClientError::Rejected(
+                "Change number must be a positive integer.".into(),
+            ));
+        }
+        self.repository_read("change", project_id, Some(("number", number.to_string())))
+            .await
+    }
     pub async fn command(&self, command: Value) -> Result<Value, ClientError> {
         self.response(
             self.http

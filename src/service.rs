@@ -1,5 +1,6 @@
 use crate::{
     client::ConnectionInfo,
+    integrations::{RepositoryClient, RepositoryError},
     model::*,
     store::{Store, StoreError},
 };
@@ -29,6 +30,7 @@ pub struct ServiceState {
     pub store: Store,
     pub wake: Arc<Notify>,
     pub capabilities: Arc<RwLock<Value>>,
+    repository_client: RepositoryClient,
     data_dir: Option<PathBuf>,
     token: String,
     host: String,
@@ -41,13 +43,19 @@ impl ServiceState {
             capabilities: Arc::new(RwLock::new(
                 json!({"available":false,"authenticated":false,"models":[],"limitations":["Provider capabilities are being checked."]}),
             )),
+            repository_client: RepositoryClient::discover(std::env::temp_dir()),
             data_dir: None,
             token,
             host: address.to_string(),
         }
     }
     pub fn with_data_dir(mut self, path: PathBuf) -> Self {
+        self.repository_client = RepositoryClient::discover(path.clone());
         self.data_dir = Some(path);
+        self
+    }
+    pub fn with_repository_client(mut self, client: RepositoryClient) -> Self {
+        self.repository_client = client;
         self
     }
 }
@@ -122,6 +130,9 @@ pub fn router(state: ServiceState) -> Router {
         .route("/v1/events", get(events))
         .route("/v1/commands", post(command))
         .route("/v1/capabilities", get(capabilities))
+        .route("/v1/repository/detect", get(repository_detect))
+        .route("/v1/repository/changes", get(repository_changes))
+        .route("/v1/repository/change", get(repository_change))
         .layer(DefaultBodyLimit::max(128 * 1024))
         .layer(middleware::from_fn_with_state(state.clone(), authorize))
         .with_state(state)
@@ -172,15 +183,27 @@ fn valid_token(headers: &HeaderMap, expected: &str) -> bool {
 fn error(status: StatusCode, message: &str) -> Response {
     (status, Json(json!({"error":message}))).into_response()
 }
-struct ApiError(StoreError);
+enum ApiError {
+    Store(StoreError),
+    Repository(RepositoryError),
+}
 impl From<StoreError> for ApiError {
     fn from(value: StoreError) -> Self {
-        Self(value)
+        Self::Store(value)
+    }
+}
+impl From<RepositoryError> for ApiError {
+    fn from(value: RepositoryError) -> Self {
+        Self::Repository(value)
     }
 }
 impl IntoResponse for ApiError {
     fn into_response(self) -> Response {
-        let status = match self.0 {
+        let store = match self {
+            Self::Repository(error) => return repository_error(error),
+            Self::Store(error) => error,
+        };
+        let status = match store {
             StoreError::Invalid(_) => StatusCode::BAD_REQUEST,
             StoreError::Conflict(_) => StatusCode::CONFLICT,
             StoreError::NotFound(_) => StatusCode::NOT_FOUND,
@@ -189,7 +212,7 @@ impl IntoResponse for ApiError {
         let message = if status == StatusCode::INTERNAL_SERVER_ERROR {
             "Local storage operation failed".into()
         } else {
-            self.0.to_string()
+            store.to_string()
         };
         error(status, &message)
     }
@@ -198,11 +221,89 @@ async fn snapshot(State(state): State<ServiceState>) -> Result<Json<Snapshot>, A
     let value = tokio::task::spawn_blocking(move || observed_snapshot(&state))
         .await
         .map_err(|_| {
-            ApiError(StoreError::Io(std::io::Error::other(
+            ApiError::Store(StoreError::Io(std::io::Error::other(
                 "snapshot observer failed",
             )))
         })??;
     Ok(Json(value))
+}
+
+#[derive(Deserialize)]
+#[serde(rename_all = "camelCase", deny_unknown_fields)]
+struct RepositoryQuery {
+    project_id: String,
+    #[serde(default = "repository_page")]
+    page: u32,
+    #[serde(default)]
+    number: u64,
+}
+fn repository_page() -> u32 {
+    1
+}
+fn repository_error(error: RepositoryError) -> Response {
+    let status = match error {
+        RepositoryError::Invalid(_) => StatusCode::BAD_REQUEST,
+        RepositoryError::Busy => StatusCode::CONFLICT,
+        RepositoryError::RateLimited => StatusCode::TOO_MANY_REQUESTS,
+        RepositoryError::MissingCli(_) => StatusCode::SERVICE_UNAVAILABLE,
+        RepositoryError::TimedOut => StatusCode::GATEWAY_TIMEOUT,
+        _ => StatusCode::BAD_GATEWAY,
+    };
+    (
+        status,
+        Json(json!({"error":error.to_string(),"code":error.code()})),
+    )
+        .into_response()
+}
+async fn repository_detect(
+    State(state): State<ServiceState>,
+    Query(query): Query<RepositoryQuery>,
+) -> Response {
+    let project = match state.store.project(&query.project_id) {
+        Ok(value) => value,
+        Err(error) => return ApiError::Store(error).into_response(),
+    };
+    Json(
+        state
+            .repository_client
+            .detect(Path::new(&project.repo_path))
+            .await,
+    )
+    .into_response()
+}
+async fn repository_changes(
+    State(state): State<ServiceState>,
+    Query(query): Query<RepositoryQuery>,
+) -> Response {
+    let connection = match state.store.repository_connection(&query.project_id) {
+        Ok(value) => value,
+        Err(error) => return ApiError::Store(error).into_response(),
+    };
+    match state
+        .repository_client
+        .changes(connection, query.page)
+        .await
+    {
+        Ok(value) => Json(value).into_response(),
+        Err(error) => repository_error(error),
+    }
+}
+async fn repository_change(
+    State(state): State<ServiceState>,
+    Query(query): Query<RepositoryQuery>,
+) -> Response {
+    let connection = match state.store.repository_connection(&query.project_id) {
+        Ok(value) => value,
+        Err(error) => return ApiError::Store(error).into_response(),
+    };
+    match state
+        .repository_client
+        .change(connection, query.number)
+        .await
+    {
+        Ok(value) => Json(value).into_response(),
+        Err(error) => repository_error(error),
+    }
 }
 pub fn observed_snapshot(state: &ServiceState) -> Result<Snapshot, StoreError> {
     let mut snapshot = state.store.snapshot()?;
@@ -303,6 +404,13 @@ pub struct CommandEnvelope {
     deny_unknown_fields
 )]
 pub enum UserCommand {
+    ConnectRepository {
+        project_id: String,
+        provider: RepositoryProvider,
+    },
+    DisconnectRepository {
+        project_id: String,
+    },
     RegisterProject {
         project: NewProject,
     },
@@ -345,6 +453,37 @@ async fn command(
     State(state): State<ServiceState>,
     Json(input): Json<CommandEnvelope>,
 ) -> Result<Json<Value>, ApiError> {
+    if let UserCommand::ConnectRepository {
+        project_id,
+        provider,
+    } = &input.command
+    {
+        if let Some(previous) =
+            state
+                .store
+                .replay_repository_connection(&input.command_id, project_id, *provider)?
+        {
+            return Ok(Json(
+                serde_json::to_value(previous).map_err(StoreError::from)?,
+            ));
+        }
+        let project = state.store.project(project_id)?;
+        let target = state
+            .repository_client
+            .origin(Path::new(&project.repo_path))
+            .await?;
+        if target.provider != *provider {
+            return Err(StoreError::Invalid(
+                "The selected provider does not match this project's origin.".into(),
+            )
+            .into());
+        }
+        let target = state.repository_client.verify(&target).await?;
+        let saved = state
+            .store
+            .connect_repository(&input.command_id, project_id, target)?;
+        return Ok(Json(serde_json::to_value(saved).map_err(StoreError::from)?));
+    }
     let value = execute_command(&state, input)?;
     state.wake.notify_one();
     Ok(Json(value))
@@ -352,6 +491,15 @@ async fn command(
 pub fn execute_command(state: &ServiceState, input: CommandEnvelope) -> Result<Value, StoreError> {
     let id = &input.command_id;
     let result = match input.command {
+        UserCommand::ConnectRepository { .. } => {
+            return Err(StoreError::Invalid(
+                "Repository connection requires the authenticated asynchronous verification path"
+                    .into(),
+            ))
+        }
+        UserCommand::DisconnectRepository { project_id } => {
+            state.store.disconnect_repository(id, &project_id)?
+        }
         UserCommand::RegisterProject { project } => {
             serde_json::to_value(state.store.create_project(id, project)?)?
         }

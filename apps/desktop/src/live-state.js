@@ -1,9 +1,10 @@
 import { formatRequestTime } from "./scheduling.js";
 
-const ARRAYS = ["projects", "steering", "requests", "tasks", "runs", "reviews", "reviewSources", "approvals", "events", "leadWakes"];
+const ARRAYS = ["projects", "steering", "requests", "tasks", "runs", "reviews", "reviewSources", "approvals", "events", "leadWakes", "repositoryConnections"];
 export const emptySnapshot = () => Object.fromEntries([...ARRAYS.map((key) => [key, []]), ["lastEventSequence", 0]]);
 
 export function validateSnapshot(value) {
+  if (value && value.repositoryConnections == null) value = { ...value, repositoryConnections: [] };
   if (!value || !ARRAYS.every((key) => Array.isArray(value[key])) || !Number.isSafeInteger(value.lastEventSequence)) {
     throw new Error("The service returned an unsupported snapshot. Reconnect after checking its version.");
   }
